@@ -239,7 +239,7 @@
 body {
     font-family: 'gorditaregular';
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
     line-height: 2em;
     color: var(--text-color);
@@ -491,6 +491,15 @@ h6 {
     line-height: 1.31em;
     letter-spacing: -1px;
     margin: 0;
+}
+@media screen and (min-width:0px) and (max-width:475px){
+    .title-style-three .main-title {
+        font-family: 'gorditamedium';
+        font-size: 40px;
+        line-height: 1.31em;
+        letter-spacing: -1px;
+        margin: 0;
+    } 
 }
 
 .title-style-three .main-title span {
@@ -859,13 +868,13 @@ body .btn-eight:hover {
 }
 
 .theme-main-menu {
-    position: absolute;
+    /* position: absolute; */
     z-index: 99;
     top: 0;
     left: 0;
     right: 0;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     transition: all 0.4s ease-out;
 }
 
@@ -4551,14 +4560,29 @@ body .btn-eight:hover {
 .hero-banner-five {
     position: relative;
     z-index: 2;
-    padding: 220px 0 100px;
+    padding: 220px 10px 100px 10px;
     background: linear-gradient(0deg, rgba(248, 253, 255, 0) 0%, rgba(241, 252, 255, 0.51782) 48.22%, #F6FDFF 100%);
+}
+@media screen and (min-width:0px) and (max-width:475px){
+    .hero-banner-five {
+        position: relative;
+        z-index: 2;
+        padding: 100px 10px 100px 10px;
+        background: linear-gradient(0deg, rgba(248, 253, 255, 0) 0%, rgba(241, 252, 255, 0.51782) 48.22%, #F6FDFF 100%);
+    }
 }
 
 .hero-banner-five .hero-heading {
     font-family: 'gorditamedium';
     font-size: 85px;
     line-height: 1.17em;
+}
+@media screen and (min-width:0px) and (max-width:640px){
+    .hero-banner-five .hero-heading {
+        font-family: 'gorditamedium';
+        font-size: 35px;
+        line-height: 1.17em;
+    }
 }
 
 .hero-banner-five .hero-heading span {
@@ -4603,6 +4627,39 @@ body .btn-eight:hover {
     top: 25%;
     width: 36.4%;
 }
+@media screen and (min-width:0px) and (max-width:320px){
+    .hero-banner-five .illustration-holder {
+        position: absolute;
+        right: 100%;
+        top: 13%;
+        width: 36.4%;
+    }
+}
+@media screen and (min-width:375px) and (max-width:425px){
+    .hero-banner-five .illustration-holder {
+        position: absolute;
+        right: 115%;
+        top: 13%;
+        width: 36.4%;
+    }
+}
+@media screen and (min-width:425px) and (max-width:475px){
+    .hero-banner-five .illustration-holder {
+        position: absolute;
+        right: 115%;
+        top: 9%;
+        width: 36.4%;
+    }
+}
+@media screen and (min-width:640px) and (max-width:768px){
+    .hero-banner-five .illustration-holder {
+        position: absolute;
+        left: 71%;
+        top: 25%;
+        width: 36.4%;
+    }
+}
+
 
 .hero-banner-five .illustration-holder:before {
     content: '';
@@ -4611,11 +4668,32 @@ body .btn-eight:hover {
     width: 1056px;
     height: 1056px;
     right: -305px;
-    top: -385px;
+    top: -220px;
     border-radius: 50%;
     background: #FFFFFF;
     box-shadow: 6px 73px 62px rgba(0, 12, 119, 0.03);
     z-index: -1;
+}
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .hero-banner-five .illustration-holder:before {
+        content: '';
+        position: absolute;
+        position: absolute;
+        width: 1056px;
+        height: 1056px;
+        right: -305px;
+        top: -253px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-shadow: 6px 73px 62px rgba(0, 12, 119, 0.03);
+        z-index: -1;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: var(--swiper-pagination-bottom, 0px) !important;
+        top: var(--swiper-pagination-top, auto);
+        left: 0;
+        width: 100%;
+    }
 }
 
 .hero-banner-five .illustration-holder .shape-one {
@@ -4667,11 +4745,17 @@ body .btn-eight:hover {
     padding: 52px 40px 45px 50px;
     transition: all 0.3s ease-in-out;
 }
+.block-style-twelve:hover h5 a{
+    color: white;
+}
 .block-style-twelve:hover{
+    background-color: #ec143c ;
+    color: white ;
     transition: all ease-in-out;
-    animation: bounce 1s ease-in-out infinite alternate;
+    animation: bounce 1s ease-in-out  alternate;
    
 }
+
 @keyframes bounce {
     0%, 100%, 20%, 50%, 80% {
       transform: translateY(0);
@@ -4683,8 +4767,9 @@ body .btn-eight:hover {
       transform: translateY(-5px);
     }
   }
+
 .block-style-twelve.active {
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
     box-shadow: 0px 30px 60px rgba(0, 19, 87, 0.04);
 }
 
@@ -4705,7 +4790,9 @@ body .btn-eight:hover {
 
 .block-style-twelve h5 a:hover {
     text-decoration: underline;
+    
 }
+
 
 .block-style-twelve p {
     font-size: 19px;
@@ -4762,6 +4849,17 @@ body .btn-eight:hover {
     width: 37.13%;
     z-index: -1;
 }
+
+@media screen and (min-width:0px) and (max-width:475px){
+    .fancy-feature-eighteen .illustration-holder {
+        position: absolute;
+        left: 52%;
+        top: 12%;
+        width: 37.13%;
+        z-index: -1;
+    }
+}
+
 
 .fancy-feature-eighteen .illustration-holder:before {
     content: '';
@@ -4884,6 +4982,16 @@ body .btn-eight:hover {
     width: 38.65%;
     z-index: 2;
 }
+@media screen and (min-width:0px) and (max-width:475px){
+    .fancy-feature-nineteen .illustration-holder {
+        position: absolute;
+        right: 6%;
+        top: 10%;
+        width: 38.65%;
+        z-index: 2;
+    }
+}
+
 
 .fancy-feature-nineteen .illustration-holder .shape-one {
     top: 8.1%;
@@ -6831,9 +6939,26 @@ body .btn-eight:hover {
 .top-bar{
     background-color: #ec143c;
     color: white;
-    padding: 5px 2px 5px 2px;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
     z-index: 999;
     transition: all 0.5s;
     height: 40px;
     z-index: 999;
+}
+.top-bar a:hover{
+    color: white !important;
+}
+@media screen and (min-width:0px) and (max-width:320px){
+    .top-bar{
+        background-color: #ec143c;
+        color: white;
+        font-size: 12px;
+        font-weight: bolder;
+        padding: 5px 5px 5px 5px;
+        z-index: 999;
+        transition: all 0.5s;
+        height: 40px;
+        z-index: 999;
+    }
 }
