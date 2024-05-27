@@ -4741,18 +4741,22 @@ body .btn-eight:hover {
 }
 
 .block-style-twelve {
+    background-color: transparent;
     border-radius: 15px;
-    padding: 52px 40px 45px 50px;
-    transition: all 0.3s ease-in-out;
+    padding: 30px 30px 30px 30px;
+    transition: transform 0.9s;
 }
 .block-style-twelve:hover h5 a{
-    color: white;
+    color: white ;
+}
+.block-style-twelve:hover img {
+  filter: grayscale(0%) invert(100%) brightness(100%) !important;
 }
 .block-style-twelve:hover{
-    background-color: #ec143c ;
-    color: white ;
-    transition: all ease-in-out;
-    animation: bounce 1s ease-in-out  alternate;
+    background-color:  #f15a76 ;
+    color: white  ;
+    /* transform: scale(1.0);
+     */
    
 }
 
@@ -4768,10 +4772,65 @@ body .btn-eight:hover {
     }
   }
 
-.block-style-twelve.active {
-    /* background: #FFFFFF; */
+/* .block-style-twelve.active {
+    background: #FFFFFF;
     box-shadow: 0px 30px 60px rgba(0, 19, 87, 0.04);
+} */
+.block-style-twelve img{
+    position: relative;
+    z-index: 1;
 }
+.block-style-twelve span{
+    position: absolute;
+    font-size: 150px;
+    font-weight: bold;
+    top: 143px;
+    left: 200px;
+    opacity: 0.1;
+    z-index: 99;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+@media screen and (min-width:0px) and (max-width:475px){
+    .block-style-twelve span{
+        position: absolute;
+        font-size: 150px;
+        font-weight: bold;
+        top: 143px;
+        left: 90px;
+        opacity: 0.1;
+        z-index: 99;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+}
+@media screen and (min-width:640px) and (max-width:768px){
+    .block-style-twelve span{
+        position: absolute;
+        font-size: 150px;
+        font-weight: bold;
+        top: 143px;
+        left: 155px;
+        opacity: 0.1;
+        z-index: 99;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    .block-style-twelve span{
+        position: absolute;
+        font-size: 150px;
+        font-weight: bold;
+        top: 143px;
+        left: 100px;
+        opacity: 0.1;
+        z-index: 99;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+}
+
 
 .block-style-twelve .icon {
     height: 45px;
@@ -4790,9 +4849,9 @@ body .btn-eight:hover {
 
 .block-style-twelve h5 a:hover {
     text-decoration: underline;
-    
+    color: white    ;
 }
-
+.block-style-twelve:hover {opacity: 1}
 
 .block-style-twelve p {
     font-size: 19px;
@@ -6897,6 +6956,9 @@ body .btn-eight:hover {
     border-radius: 15px;
     box-shadow: 2px 3px 2px 3px rgba(53, 3, 3, 0.37);
 }
+.ind-ser .ind-crd:hover{
+    background-color: white;
+}
 
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!testmonial section css !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -6920,7 +6982,7 @@ body .btn-eight:hover {
 .ser-fot{
     color:grey;
 }
-.ser-fot h3{
+.ser-fot h6{
     color: white !important;
 }
 .ser-fot  p:hover{
@@ -6935,6 +6997,31 @@ body .btn-eight:hover {
 .socials-a a:hover{
     color: #ec143c !important;
 }
+.foot-sec .copy-right-sec{
+    margin-top: 150px;
+}
+@media screen and (min-width:0px) and (max-width:475px){
+    .foot-sec .copy-right-sec{
+        margin-top: 30px;
+    }
+    .foot-sec .copy-right-sec h4{
+        font-size: 19px;
+    }
+}
+@media screen and (min-width:640px) and (max-width:768px){
+    .foot-sec .copy-right-sec{
+        margin-top: 30px;
+    }
+    
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    .foot-sec .copy-right-sec{
+        margin-top: 50px;
+    }
+    
+}
+
+
 /* top bar css  */
 .top-bar{
     background-color: #ec143c;
@@ -6960,5 +7047,101 @@ body .btn-eight:hover {
         transition: all 0.5s;
         height: 40px;
         z-index: 999;
+    }
+}
+/* !!!!!!!!!!!!! scrolling icons !!!!!!!!!!!!!!!!!!!!!! */
+#whatsapp-icon {
+    position: fixed;
+    right: 9px; /* Adjust horizontal position as needed */
+    bottom: 90px; /* Adjust vertical position as needed */
+    width: 50px;
+    height: 50px;
+    /* background-color: #25d366;     */
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px; /* Center icon vertically */
+    font-size: 25px;
+    z-index: 100; /* Ensure icon stays above other elements */
+  }
+
+  #skype-icon{
+    position: fixed;
+    right: 9px; /* Adjust horizontal position as needed */
+    bottom: 140px; /* Adjust vertical position as needed */
+    width: 50px;
+    height: 50px;
+    /* background-color: #25d366;     */
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px; /* Center icon vertically */
+    font-size: 25px;
+    z-index: 100; /* Ensure icon stays above other elements */
+  }
+
+  /*!!!!!!!!!!!!!!!!!!!! zigzag image css !!!!!!!!!!! */
+  .image-container{
+    position: relative;
+  }
+  .zigzag-image{
+    width: 2%;
+    z-index: -1 !important;
+    position: absolute;
+  top: 60%; /* Center vertically */
+  transform: translateY(-50%);
+  animation: zigzag 20s infinite alternate ease-in-out;
+}
+
+@keyframes zigzag {
+  0% { transform: translateX(0); }
+  15% { transform: translateX(20px); } /* Adjust offset for zig-zag */
+  25% { transform: translateX(400px); }
+  35% { transform: translateX(10px); }
+  45% { transform: translateX(500px); }
+  55% { transform: translateX(30px); }
+  35% { transform: translateX(550px); }
+  75% { transform: translateX(50px); } /* Adjust offset for zag-zig */
+  85% { transform: translateX(600px); } 
+  95% { transform: translateX(60px); } 
+  100% { transform: translateX(700px); } 
+}
+
+.asteroid {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    overflow: hidden;
+    margin: 0;
+    z-index: 99 !important;
+    background-image: url('/static/images/assets/38.png'); /* Replace with your image path */
+    background-size: cover;
+    position: absolute;
+    animation: fly 10s linear infinite;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(10vw, 20vh) rotate(90deg);
+    }
+    35% {
+        transform: translate(50vw, 10vh) rotate(180deg);
+    }
+    50% {
+        transform: translate(30vw, 10vh) rotate(180deg);
+    }
+    65% {
+        transform: translate(60vw, 40vh) rotate(270deg);
+    }
+    75% {
+        transform: translate(80vw, 10vh) rotate(270deg);
+    }
+    85% {
+        transform: translate(90vw, 10vh) rotate(270deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
     }
 }
