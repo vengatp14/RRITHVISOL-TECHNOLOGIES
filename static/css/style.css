@@ -239,7 +239,7 @@
 body {
     font-family: 'gorditaregular';
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
     line-height: 2em;
     color: var(--text-color);
@@ -492,6 +492,15 @@ h6 {
     letter-spacing: -1px;
     margin: 0;
 }
+@media screen and (min-width:0px) and (max-width:475px){
+    .title-style-three .main-title {
+        font-family: 'gorditamedium';
+        font-size: 40px;
+        line-height: 1.31em;
+        letter-spacing: -1px;
+        margin: 0;
+    } 
+}
 
 .title-style-three .main-title span {
     color: var(--prime-three);
@@ -519,6 +528,25 @@ h6 {
     letter-spacing: -1px;
     margin: 0;
 }
+.bg-sch .sch-tittle {
+    font-family: 'gorditamedium';
+    font-size: 35px;
+    line-height: 1.4em;
+    letter-spacing: -1px;
+    margin: 0;
+}
+.bg-sch .sch-tittle span {
+    color: var(--prime-three);
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
+.bg-sch{
+    padding: 50px;
+    background-color: #1DA1F2;
+    border-radius: 15px;
+}
+
 
 .title-style-four .main-title span {
     color: var(--prime-three);
@@ -840,13 +868,13 @@ body .btn-eight:hover {
 }
 
 .theme-main-menu {
-    position: absolute;
+    /* position: absolute; */
     z-index: 99;
     top: 0;
     left: 0;
     right: 0;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     transition: all 0.4s ease-out;
 }
 
@@ -4532,14 +4560,29 @@ body .btn-eight:hover {
 .hero-banner-five {
     position: relative;
     z-index: 2;
-    padding: 220px 0 100px;
+    padding: 220px 10px 100px 10px;
     background: linear-gradient(0deg, rgba(248, 253, 255, 0) 0%, rgba(241, 252, 255, 0.51782) 48.22%, #F6FDFF 100%);
+}
+@media screen and (min-width:0px) and (max-width:475px){
+    .hero-banner-five {
+        position: relative;
+        z-index: 2;
+        padding: 100px 10px 100px 10px;
+        background: linear-gradient(0deg, rgba(248, 253, 255, 0) 0%, rgba(241, 252, 255, 0.51782) 48.22%, #F6FDFF 100%);
+    }
 }
 
 .hero-banner-five .hero-heading {
     font-family: 'gorditamedium';
     font-size: 85px;
     line-height: 1.17em;
+}
+@media screen and (min-width:0px) and (max-width:640px){
+    .hero-banner-five .hero-heading {
+        font-family: 'gorditamedium';
+        font-size: 35px;
+        line-height: 1.17em;
+    }
 }
 
 .hero-banner-five .hero-heading span {
@@ -4584,6 +4627,39 @@ body .btn-eight:hover {
     top: 25%;
     width: 36.4%;
 }
+@media screen and (min-width:0px) and (max-width:320px){
+    .hero-banner-five .illustration-holder {
+        position: absolute;
+        right: 100%;
+        top: 13%;
+        width: 36.4%;
+    }
+}
+@media screen and (min-width:375px) and (max-width:425px){
+    .hero-banner-five .illustration-holder {
+        position: absolute;
+        right: 115%;
+        top: 13%;
+        width: 36.4%;
+    }
+}
+@media screen and (min-width:425px) and (max-width:475px){
+    .hero-banner-five .illustration-holder {
+        position: absolute;
+        right: 115%;
+        top: 9%;
+        width: 36.4%;
+    }
+}
+@media screen and (min-width:640px) and (max-width:768px){
+    .hero-banner-five .illustration-holder {
+        position: absolute;
+        left: 71%;
+        top: 25%;
+        width: 36.4%;
+    }
+}
+
 
 .hero-banner-five .illustration-holder:before {
     content: '';
@@ -4592,11 +4668,32 @@ body .btn-eight:hover {
     width: 1056px;
     height: 1056px;
     right: -305px;
-    top: -385px;
+    top: -220px;
     border-radius: 50%;
     background: #FFFFFF;
     box-shadow: 6px 73px 62px rgba(0, 12, 119, 0.03);
     z-index: -1;
+}
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .hero-banner-five .illustration-holder:before {
+        content: '';
+        position: absolute;
+        position: absolute;
+        width: 1056px;
+        height: 1056px;
+        right: -305px;
+        top: -253px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-shadow: 6px 73px 62px rgba(0, 12, 119, 0.03);
+        z-index: -1;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: var(--swiper-pagination-bottom, 0px) !important;
+        top: var(--swiper-pagination-top, auto);
+        left: 0;
+        width: 100%;
+    }
 }
 
 .hero-banner-five .illustration-holder .shape-one {
@@ -4644,15 +4741,96 @@ body .btn-eight:hover {
 }
 
 .block-style-twelve {
+    background-color: transparent;
     border-radius: 15px;
-    padding: 52px 40px 45px 50px;
-    transition: all 0.3s ease-in-out;
+    padding: 30px 30px 30px 30px;
+    transition: transform 0.9s;
+}
+.block-style-twelve:hover h5 a{
+    color: white ;
+}
+.block-style-twelve:hover img {
+  filter: grayscale(0%) invert(100%) brightness(100%) !important;
+}
+.block-style-twelve:hover{
+    background-color:  #f15a76 ;
+    color: white  ;
+    /* transform: scale(1.0);
+     */
+   
 }
 
-.block-style-twelve.active {
+@keyframes bounce {
+    0%, 100%, 20%, 50%, 80% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+/* .block-style-twelve.active {
     background: #FFFFFF;
     box-shadow: 0px 30px 60px rgba(0, 19, 87, 0.04);
+} */
+.block-style-twelve img{
+    position: relative;
+    z-index: 1;
 }
+.block-style-twelve span{
+    position: absolute;
+    font-size: 150px;
+    font-weight: bold;
+    top: 143px;
+    left: 200px;
+    opacity: 0.1;
+    z-index: 99;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+@media screen and (min-width:0px) and (max-width:475px){
+    .block-style-twelve span{
+        position: absolute;
+        font-size: 150px;
+        font-weight: bold;
+        top: 143px;
+        left: 90px;
+        opacity: 0.1;
+        z-index: 99;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+}
+@media screen and (min-width:640px) and (max-width:768px){
+    .block-style-twelve span{
+        position: absolute;
+        font-size: 150px;
+        font-weight: bold;
+        top: 143px;
+        left: 155px;
+        opacity: 0.1;
+        z-index: 99;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    .block-style-twelve span{
+        position: absolute;
+        font-size: 150px;
+        font-weight: bold;
+        top: 143px;
+        left: 100px;
+        opacity: 0.1;
+        z-index: 99;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+}
+
 
 .block-style-twelve .icon {
     height: 45px;
@@ -4671,7 +4849,9 @@ body .btn-eight:hover {
 
 .block-style-twelve h5 a:hover {
     text-decoration: underline;
+    color: white    ;
 }
+.block-style-twelve:hover {opacity: 1}
 
 .block-style-twelve p {
     font-size: 19px;
@@ -4728,6 +4908,17 @@ body .btn-eight:hover {
     width: 37.13%;
     z-index: -1;
 }
+
+@media screen and (min-width:0px) and (max-width:475px){
+    .fancy-feature-eighteen .illustration-holder {
+        position: absolute;
+        left: 52%;
+        top: 12%;
+        width: 37.13%;
+        z-index: -1;
+    }
+}
+
 
 .fancy-feature-eighteen .illustration-holder:before {
     content: '';
@@ -4850,6 +5041,16 @@ body .btn-eight:hover {
     width: 38.65%;
     z-index: 2;
 }
+@media screen and (min-width:0px) and (max-width:475px){
+    .fancy-feature-nineteen .illustration-holder {
+        position: absolute;
+        right: 6%;
+        top: 10%;
+        width: 38.65%;
+        z-index: 2;
+    }
+}
+
 
 .fancy-feature-nineteen .illustration-holder .shape-one {
     top: 8.1%;
@@ -5105,7 +5306,56 @@ body .btn-eight:hover {
     bottom: 8px;
     background: var(--prime-three);
 }
-
+.bg-sch  button {
+    font-family: 'gorditamedium';
+    font-size: 18px;
+    color: #fff;
+    width: 150px;
+    position: relative;
+    top: 10px;
+    left: 350px;
+    border-radius: 8px;
+    background: var(--prime-three);
+}
+@media screen and (min-width:0px) and (max-width:640px){
+    .bg-sch  button{
+        font-family: 'gorditamedium';
+        font-size: 18px;
+        color: #fff;
+        width: 150px;
+        border-radius: 8px;
+      position: relative;
+      top: 10px;
+      left: 0px !important;
+        background: var(--prime-three);
+    }
+}
+@media screen and (min-width:640px) and (max-width:768px){
+    .bg-sch  button{
+        font-family: 'gorditamedium';
+        font-size: 18px;
+        color: #fff;
+        width: 150px;
+        border-radius: 8px;
+      position: relative;
+      top: 10px;
+      left: 0px !important;
+        background: var(--prime-three);
+    }
+}
+@media screen and (min-width:1020px) and (max-width:1439px){
+    .bg-sch  button{
+        font-family: 'gorditamedium';
+        font-size: 18px;
+        color: #fff;
+        width: 150px;
+        border-radius: 8px;
+      position: relative;
+      top: 10px;
+      left: 250px !important;
+        background: var(--prime-three);
+    }
+}
 .theme-basic-footer .subscribe-form form button:hover {
     background: var(--prime-two);
 }
@@ -6672,4 +6922,226 @@ body .btn-eight:hover {
 
 .user-data-form .btn-eight {
     line-height: 52px;
+}
+/* !!!!!!!!!!!!!!!!!!our approch section css !!!!!!!!!!!!!!!!!!!!!!!!!! */
+ .our-appr    .ou-title{
+    display: inline-block;
+    line-height: 28px;
+    border-radius: 15px;
+    background: rgba(145, 59, 255, 0.07);
+    padding: 0 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--prime-three);
+    margin-bottom: 20px; 
+}
+.our-appr .main-title{
+    font-family: 'gorditamedium';
+    font-size: 50px;
+    line-height: 1.4em;
+    letter-spacing: -1px;
+    margin: 0;
+}
+.our-appr .main-title span {
+    color: var(--prime-three);
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!industries we serve css !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.ind-ser .ind-crd{
+    background-color: rgb(232, 236, 240);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 2px 3px rgba(53, 3, 3, 0.37);
+}
+.ind-ser .ind-crd:hover{
+    background-color: white;
+}
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!testmonial section css !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.swi-rev .rev-p{
+    font-size: 18px;
+}
+.swi-rev .rev-s{
+    font-size: 15px;
+}
+ .swi-rev  .crd-rev{
+    background-color: white;
+    padding: 30px;
+    box-shadow: 5px 5px 5px 5px rgba(53, 3, 3, 0.37);
+ }
+ /* footer css  */
+
+.foot{
+    padding: 70px;
+}
+
+.ser-fot{
+    color:grey;
+}
+.ser-fot h6{
+    color: white !important;
+}
+.ser-fot  p:hover{
+    color: aliceblue;
+}
+.color-text-a{
+    color: white;
+}
+.socials-a{
+    color: white;
+}
+.socials-a a:hover{
+    color: #ec143c !important;
+}
+.foot-sec .copy-right-sec{
+    margin-top: 150px;
+}
+@media screen and (min-width:0px) and (max-width:475px){
+    .foot-sec .copy-right-sec{
+        margin-top: 30px;
+    }
+    .foot-sec .copy-right-sec h4{
+        font-size: 19px;
+    }
+}
+@media screen and (min-width:640px) and (max-width:768px){
+    .foot-sec .copy-right-sec{
+        margin-top: 30px;
+    }
+    
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    .foot-sec .copy-right-sec{
+        margin-top: 50px;
+    }
+    
+}
+
+
+/* top bar css  */
+.top-bar{
+    background-color: #ec143c;
+    color: white;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+    z-index: 999;
+    transition: all 0.5s;
+    height: 40px;
+    z-index: 999;
+}
+.top-bar a:hover{
+    color: white !important;
+}
+@media screen and (min-width:0px) and (max-width:320px){
+    .top-bar{
+        background-color: #ec143c;
+        color: white;
+        font-size: 12px;
+        font-weight: bolder;
+        padding: 5px 5px 5px 5px;
+        z-index: 999;
+        transition: all 0.5s;
+        height: 40px;
+        z-index: 999;
+    }
+}
+/* !!!!!!!!!!!!! scrolling icons !!!!!!!!!!!!!!!!!!!!!! */
+#whatsapp-icon {
+    position: fixed;
+    right: 9px; /* Adjust horizontal position as needed */
+    bottom: 90px; /* Adjust vertical position as needed */
+    width: 50px;
+    height: 50px;
+    /* background-color: #25d366;     */
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px; /* Center icon vertically */
+    font-size: 25px;
+    z-index: 100; /* Ensure icon stays above other elements */
+  }
+
+  #skype-icon{
+    position: fixed;
+    right: 9px; /* Adjust horizontal position as needed */
+    bottom: 140px; /* Adjust vertical position as needed */
+    width: 50px;
+    height: 50px;
+    /* background-color: #25d366;     */
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px; /* Center icon vertically */
+    font-size: 25px;
+    z-index: 100; /* Ensure icon stays above other elements */
+  }
+
+  /*!!!!!!!!!!!!!!!!!!!! zigzag image css !!!!!!!!!!! */
+  .image-container{
+    position: relative;
+  }
+  .zigzag-image{
+    width: 2%;
+    z-index: -1 !important;
+    position: absolute;
+  top: 60%; /* Center vertically */
+  transform: translateY(-50%);
+  animation: zigzag 20s infinite alternate ease-in-out;
+}
+
+@keyframes zigzag {
+  0% { transform: translateX(0); }
+  15% { transform: translateX(20px); } /* Adjust offset for zig-zag */
+  25% { transform: translateX(400px); }
+  35% { transform: translateX(10px); }
+  45% { transform: translateX(500px); }
+  55% { transform: translateX(30px); }
+  35% { transform: translateX(550px); }
+  75% { transform: translateX(50px); } /* Adjust offset for zag-zig */
+  85% { transform: translateX(600px); } 
+  95% { transform: translateX(60px); } 
+  100% { transform: translateX(700px); } 
+}
+
+.asteroid {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    overflow: hidden;
+    margin: 0;
+    z-index: 99 !important;
+    background-image: url('/static/images/assets/38.png'); /* Replace with your image path */
+    background-size: cover;
+    position: absolute;
+    animation: fly 10s linear infinite;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(10vw, 20vh) rotate(90deg);
+    }
+    35% {
+        transform: translate(50vw, 10vh) rotate(180deg);
+    }
+    50% {
+        transform: translate(30vw, 10vh) rotate(180deg);
+    }
+    65% {
+        transform: translate(60vw, 40vh) rotate(270deg);
+    }
+    75% {
+        transform: translate(80vw, 10vh) rotate(270deg);
+    }
+    85% {
+        transform: translate(90vw, 10vh) rotate(270deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
 }

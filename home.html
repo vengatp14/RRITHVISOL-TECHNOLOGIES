@@ -27,12 +27,21 @@
     <!-- Favicon -->
     <!-- <link rel="icon" type="/static/image/png" sizes="56x56" href="/static/images/fav-icon/icon.png"> -->
     <!-- Main style sheet -->
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" media="all">
     <!-- responsive style sheet -->
-    <link rel="stylesheet" type="text/css" href="/static/css/responsive.css" media="all">
-
-
-
+    <link rel="stylesheet" type="text/css" href="static/css/responsive" media="all">
+<!-- font awesome icon link  -->
+<link rel="stylesheet" href="./static/images/fav-icon/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css">
+<!-- swiper css link  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<!-- boostrap icon link  -->
+<!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<!-- js query cdn link  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -45,8 +54,6 @@
                 <div id="ctn-preloader" class="ctn-preloader">
                     <div class="animation-preloader">
                         <div class="icon">
-                            <!-- <img src="/static/images/logo/logo_01.png" alt="" class="m-auto d-block"
-                                width="38"> -->
                             </div>
                         <div class="txt-loading mt-2">
                             <span data-text-preloader="R" class="letters-loading">
@@ -117,7 +124,31 @@
                 </div>
             </div>
         </section>
-
+<!-- top bar starts here  -->
+  <!-- top bar section starts here -->
+  <section class="top-bar " style="padding-bottom: 3rem;">
+    <div class="container-fluid ">
+        <div class="row   ">
+      <div class="  col-lg-7 justify-content-start">
+        <div class="d-flex  align-item-center ">
+          <a href="https://maps.app.goo.gl/p7mQetb7FNf97mqJ8">  <i class="bi bi-geo-alt-fill d-none d-lg-block  "></i> </a> <p class="ms-1 mt-1 me-1 d-none d-lg-block ">Hosur , India</p>
+          <a href="tel:+917845833637">  <i class="bi bi-telephone-fill ms-1"></i></a>  <p class="ms-1 mt-1">+91 7845833637</p>
+          <a href="mailto:karthick@rithvisol.com">  <i class="bi bi-envelope ms-3"></i> </a>    <p class="ms-2 mt-1 me-1"> karthick@rithvisol.com</p>
+        </div>
+      </div>
+      <div class="  col-lg-5 d-none d-lg-block ">
+        <div class="d-flex justify-content-end align-item-center ">
+            <i class="bi bi-facebook me-2"></i>
+            <i class="bi bi-instagram me-2"></i>
+            <i class="bi bi-linkedin me-2"></i>
+            <i class="bi bi-youtube me-2"></i>
+        </div>
+      </div>
+        </div>
+    </div>
+</section>
+<!-- top bar section ends here  -->
+<!-- top bar ends here  -->
 
 
         <header class="theme-main-menu sticky-menu theme-menu-four">
@@ -132,7 +163,7 @@
                         <div class="call-button d-none d-xl-block me-5">Call us <a href="tel:(+91) 1234567890">(+91)
                                 1234567890</a> </div>
 
-                        <a href="contact_us" class="send-msg-btn tran3s d-none d-lg-block">Send us Message</a>
+                        <a href="contact_us" class="send-msg-btn tran3s d-none d-lg-block">Schedule a Meeting </a>
                     </div>
                     <!-- /.right-widget -->
 
@@ -155,13 +186,14 @@
 
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="about_us" role="button" data-bs-toggle="dropdown-item"
+                                    <a class="nav-link" href="about_us.html" role="button" data-bs-toggle="dropdown-item"
                                         data-bs-auto-close="outside" aria-expanded="false">About us</a>
 
                                 </li>
+                                
                                 <li class="nav-item  dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        data-bs-auto-close="outside" aria-expanded="false">Projects</a>
+                                        data-bs-auto-close="outside" aria-expanded="false">Services</a>
                                     <ul class="dropdown-menu">
                                         <li><a href="solaraid" class="dropdown-item"><span>Solar Aid</span></a></li>
                                         <li><a href="assest" class="dropdown-item"><span>Digitilaztion of
@@ -171,9 +203,14 @@
 
                                     </ul>
                                 </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="about_us.html" role="button" data-bs-toggle="dropdown-item"
+                                        data-bs-auto-close="outside" aria-expanded="false">Blog</a>
+
+                                </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact_us" role="button">Contact us</a>
+                                    <a class="nav-link" href="contact_us.html" role="button">Contact us</a>
                                 </li>
                             </ul>
                             <!-- Mobile Content -->
@@ -215,21 +252,24 @@
                 <div class="row">
                     <div class="col-xxl-6 col-md-7">
                         <h1 class="hero-heading">Welcome To <span>RRITHVISOL TECHNOLOGIES.</span></h1>
-                        <p class="text-lg mb-50 pt-40 pe-xl-5 md-pt-30 md-mb-40">Fueling Tomorrow By Creating Unleashing
-                            Possibilities</p>
+                        <p class="text-lg mb-50 pt-40 pe-xl-5 md-pt-30 md-mb-40">Welcome to Rithvisol, the leading software IT company in the US. We specialize in delivering innovative and reliable technology solutions tailored to your unique business needs. From custom software development and cloud computing to cybersecurity and AI integration.</p>
 
                     </div>
                 </div>
             </div>
             <!-- /.container -->
             <div class="illustration-holder">
-                <img src="/static/images/assets/ils_13.svg" alt="" class="main-illustration ms-auto">
-                <img src="/static/images/assets/ils_13_1.svg" alt="" class="shapes shape-one">
+                <img src="/static/images/assets/hero-img.png" alt="" class="main-illustration ms-auto d-none d-md-block">
+                <!-- <img src="/static/images/assets/hero-rot.png" alt="" class="shapes shape-one"> -->
                 <img src="/static/images/assets/ils_13_2.svg" alt="" class="shapes shape-two" data-aos="fade-down">
                 <img src="/static/images/assets/ils_13_2.svg" alt="" class="shapes shape-three" data-aos="fade-down">
             </div>
             <!-- /.illustration-holder -->
             <div class="shapes oval-one"></div>
+            <!-- zig-zag images  -->
+            <div class="asteroid">
+                
+            </div>
         </div>
         <!-- /.hero-banner-five -->
 
@@ -261,10 +301,10 @@
                     <!-- /.item -->
                     <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
                         <div class="block-style-twelve mt-30 active h-100">
-                            <div class="icon d-flex align-items-end"><img src="/static/images/icon/icon_32.svg" alt="">
+                            <div class="icon d-flex align-items-end"><img src="/static/images/icon/Web Application.svg" alt="">
                             </div>
-                            <h5><a href="service-details-V1.html">Hybrid web,android,IOS application</a></h5>
-                            <p>Convert data noise to intelligent insights for competitive differentiation qulaity check.
+                            <h5><a href="service-details-V1.html">Website and Web application Development</a></h5>
+                            <p>Craft exceptional websites & web apps that drive results and engage your audience.
                             </p>
                         </div>
                         <!-- /.block-style-twelve -->
@@ -272,21 +312,20 @@
                     <!-- /.item -->
                     <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-left">
                         <div class="block-style-twelve mt-30 active h-100">
-                            <div class="icon d-flex align-items-end"><img src="/static/images/icon/icon_33.svg" alt="">
+                            <div class="icon d-flex align-items-end"><img src="/static/images/icon/AI.svg" alt="">
                             </div>
-                            <h5><a href="service-details-V1.html">Digital media marketing</a></h5>
-                            <p>Convert data noise intelligent insights for competitive differentiation qulaity check
-                                equlity.</p>
+                            <h5><a href="service-details-V1.html">AI Development & Chatbot</a></h5>
+                            <p>Build intelligent chatbots and AI solutions that automate tasks and enhance customer experiences.</p>
                         </div>
                         <!-- /.block-style-twelve -->
                     </div>
                     <!-- /.item -->
                     <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
                         <div class="block-style-twelve mt-30 active h-100">
-                            <div class="icon d-flex align-items-end"><img src="/static/images/icon/icon_32.svg" alt="">
+                            <div class="icon d-flex align-items-end"><img src="/static/images/icon/Custom Software.svg" alt="">
                             </div>
-                            <h5><a href="service-details-V1.html">Hybrid web,android,IOS application</a></h5>
-                            <p>Convert data noise to intelligent insights for competitive differentiation qulaity check.
+                            <h5><a href="service-details-V1.html">Custom Software Development </a></h5>
+                            <p>We design, develop, and deploy custom software that meets your unique business needs.
                             </p>
                         </div>
                         <!-- /.block-style-twelve -->
@@ -294,33 +333,30 @@
                     <!-- /.item -->
                     <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-left">
                         <div class="block-style-twelve mt-30 active h-100">
-                            <div class="icon d-flex align-items-end"><img src="/static/images/icon/icon_33.svg" alt="">
+                            <div class="icon d-flex align-items-end"><img src="/static/images/icon/Mobile Development.svg" alt="">
                             </div>
-                            <h5><a href="service-details-V1.html">Digital media marketing</a></h5>
-                            <p>Convert data noise intelligent insights for competitive differentiation qulaity check
-                                equlity.</p>
+                            <h5><a href="service-details-V1.html">Mobile Application Development</a>  </h5>
+                            <p>We develop native & cross-platform mobile apps to elevate your brand on the go.</p>
                         </div>
                         <!-- /.block-style-twelve -->
                     </div>
                     <!-- /.item -->
                     <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-left">
                         <div class="block-style-twelve mt-30 active h-100">
-                            <div class="icon d-flex align-items-end"><img src="/static/images/icon/icon_33.svg" alt="">
+                            <div class="icon d-flex align-items-end"><img src="/static/images/icon/Blockchain.svg" alt="">
                             </div>
-                            <h5><a href="service-details-V1.html">Digital media marketing</a></h5>
-                            <p>Convert data noise intelligent insights for competitive differentiation qulaity check
-                                equlity.</p>
+                            <h5><a href="service-details-V1.html">Blockchain Application Development </a></h5>
+                            <p>We design and build decentralized apps leveraging blockchain technology for enhanced security and trust.</p>
                         </div>
                         <!-- /.block-style-twelve -->
                     </div>
                     <!-- /.item -->
                     <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-left">
                         <div class="block-style-twelve mt-30 active h-100">
-                            <div class="icon d-flex align-items-end"><img src="/static/images/icon/icon_33.svg" alt="">
+                            <div class="icon d-flex align-items-end"><img src="/static/images/icon/AR_VR.svg" alt="">
                             </div>
-                            <h5><a href="service-details-V1.html">Digital media marketing</a></h5>
-                            <p>Convert data noise intelligent insights for competitive differentiation qulaity check
-                                equlity.</p>
+                            <h5><a href="service-details-V1.html">AR & VR Development </a></h5>
+                            <p>Craft immersive AR & VR experiences that engage users and push the boundaries of innovation.</p>
                         </div>
                         <!-- /.block-style-twelve -->
                     </div>
@@ -364,7 +400,7 @@
             </div>
             <!-- /.container -->
             <div class="illustration-holder" data-aos="fade-right">
-                <img src="/static/images/assets/ils_14.svg" alt="" class="w-100 main-illustration">
+                <img src="/static/images/assets/hero-img-2.png" alt="" class="w-100 main-illustration d-none d-md-block">
                 <img src="/static/images/assets/ils_14_1.svg" alt="" class="shapes shape-one" data-aos="fade-down">
                 <img src="/static/images/assets/ils_14_2.svg" alt="" class="shapes shape-two" data-aos="fade-down"
                     data-aos-delay="100">
@@ -381,7 +417,202 @@
             <div class="shapes oval-three"></div>
         </div>
         <!-- /.fancy-feature-eighteen -->
+<!-- our approch section starts here  -->
+<section class="our-appr py-5">
+    <div class="container">
+        
+        <div class="row">
+          
+            <div class="col-lg-5">
+                <div class="ou-title">Our Apprach</div>
+                <h2 class="main-title">Our Augmented Reality App Development <span> Services </span> Process </h2>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="" style="margin-top: 3rem;">
+                <p class="">Our top-notch augmented reality app development services process is complex and requires meticulous planning, design, and execution. We meticulously plan and execute each step, from ideation to deployment, with precision.
+                    
+                    </p></div>
+            </div>
+        </div>
+        <div class="row justify-content-center pt-30">
+            <!-- /.item -->
+            <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="block-style-twelve mt-30 active h-100">
+                    <div class="icon d-flex align-items-end">
+                        <span>01</span>
+                        <img class="img-fluid ms-1" src="/static/images/icon/Analysis.svg" alt="">
+                    </div>
+                    <h5><a  href="service-details-V1.html">Requirements Analysis</a></h5>
+                    <p>Our business analysts study your project requirements and determine the scope that needs to be done to avoid miscommunication.
 
+
+                    </p>
+                </div>
+                <!-- /.block-style-twelve -->
+            </div>
+            <!-- /.item -->
+            <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-left">
+                <div class="block-style-twelve mt-30 active h-100">
+                    <div class="icon d-flex align-items-end">
+                        <span>02</span>
+                        <img src="/static/images/icon/Design and planing.svg" alt="">
+                    </div>
+                    <h5><a href="service-details-V1.html">Design & Planning</a></h5>
+                    <p>Based on your business requirements, we outline product specifications and design basic wireframes that lead to a clickable prototype.
+
+                    </p>
+                </div>
+                <!-- /.block-style-twelve -->
+            </div>
+            <!-- /.item -->
+            <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="block-style-twelve mt-30 active h-100">
+                    <div class="icon d-flex align-items-end">
+                        <span>03</span>
+                        <img src="/static/images/icon/Development.svg" alt="">
+                    </div>
+                    <h5><a href="service-details-V1.html"> Development </a></h5>
+                    <p>Our team starts developing your AR application, based on agile methodology, with every sprint being approved on the client's side
+                    </p>
+                </div>
+                <!-- /.block-style-twelve -->
+            </div>
+            <div class="row d-flex justify-content-center">
+            <!-- /.item -->
+            <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-left">
+                <div class="block-style-twelve mt-30 active h-100">
+                    <div class="icon d-flex align-items-end">
+                        <span>04</span>
+                        <img src="/static/images/icon/Testing.svg" alt="">
+                    </div>
+                    <h5><a href="service-details-V1.html">Testing</a>  </h5>
+                    <p>A quality software product can never be released without rigorous testing, so we carefully test your AR app from all angles before releasing it.</p>
+                </div>
+                <!-- /.block-style-twelve -->
+            </div>
+            <!-- /.item -->
+            <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-left">
+                <div class="block-style-twelve mt-30 active h-100">
+                    <div class="icon d-flex align-items-end">
+                        <span>05</span>
+                        <img src="/static/images/icon/Support.svg" alt="">
+                    </div>
+                    <h5><a href="service-details-V1.html">Support </a></h5>
+                    <p>In addition to regular updates, bug fixes, and usability improvements, we are ready to help when scaling, integration, or other issues arise.</p>
+                </div>
+                <!-- /.block-style-twelve -->
+            </div>
+            <!-- /.item -->
+         
+        </div>
+            <!-- /.item -->
+        </div>
+    </div>
+
+
+</section>
+<!-- our approch section ends here  -->
+
+
+
+<!-- industries we serve section starts here  -->
+<section class="ind-ser py-5">
+    <h1 class="text-center">Industries We Serve </h1>
+    <div class="container">
+        <p>"Our comprehensive services span across various industries, including technology, healthcare, finance, e-commerce, education, and more. We deliver customized solutions to empower your business and drive success in your sector".</p>
+        <div class="row" style="margin-top: 2rem;">
+            <div class="col-lg-3">
+                <div class="d-flex justify-content-start ind-crd mt-3 mt-lg-0 ">
+                
+                    <img class="img-fluid w-25" src="static/images/icon/ind_1.png" alt="">
+                    <p class="mb-0 mt-3 ms-1">Fintech</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="d-flex justify-content-start ind-crd mt-3 mt-lg-0">
+                
+                    <img class="img-fluid w-25" src="static/images/icon/ind_2.png" alt="">
+                    <p class="mb-0 mt-3 ms-1">Education Tech</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="d-flex justify-content-start ind-crd mt-3 mt-lg-0">
+                
+                    <img class="img-fluid w-25" src="static/images/icon/ind_3.svg" alt="">
+                    <p class="mb-0 mt-3 ms-1">Health care</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="d-flex justify-content-start ind-crd mt-3 mt-lg-0">
+                
+                    <img class="img-fluid w-25" src="static/images/icon/ind-3.svg" alt="">
+                    <p class="mb-0 mt-3 ms-1">Telecom</p>
+                </div>
+            </div>
+        </div>
+        <div class="row " style="margin-top: 2rem;">
+            <div class="col-lg-3">
+                <div class="d-flex justify-content-start ind-crd mt-3 mt-lg-0">
+                
+                    <img class="img-fluid w-25" src="static/images/icon/ind_5.png" alt="">
+                    <p class="mb-0 mt-3 ms-1">Logistics</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="d-flex justify-content-start ind-crd mt-3 mt-lg-0">
+                
+                    <img class="img-fluid w-25" src="static/images/icon/ind_6.png" alt="">
+                    <p class="mb-0 mt-3 ms-1"> E-commerence </p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="d-flex justify-content-start ind-crd mt-3 mt-lg-0">
+                
+                    <img class="img-fluid w-25" src="static/images/icon/ind_7.png" alt="">
+                    <p class="mb-0 mt-3 ms-1">Food and Beverage </p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="d-flex justify-content-start ind-crd mt-3 mt-lg-0">
+                
+                    <img class="img-fluid w-25" src="static/images/icon/ind_8.png" alt="">
+                    <p class="mb-0 mt-3 ms-1">Pharmarcy </p>
+                </div>
+            </div>
+        </div>
+        <div class="row " style="margin-top: 2rem;">
+            <div class="col-lg-3">
+                <div class="d-flex justify-content-start ind-crd mt-3 mt-lg-0">
+                
+                    <img class="img-fluid w-25" src="static/images/icon/ind_9.png" alt="">
+                    <p class="mb-0 mt-3 ms-1">Sports </p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="d-flex justify-content-start ind-crd mt-3 mt-lg-0">
+                
+                    <img class="img-fluid w-25" src="static/images/icon/ind_10.jpg" alt="">
+                    <p class="mb-0 mt-3 ms-1">Contruction  Building </p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="d-flex justify-content-start ind-crd mt-3 mt-lg-0">
+                
+                    <img class="img-fluid w-25" src="static/images/icon/ind_11.png" alt="">
+                    <p class="mb-0 mt-3 ms-1">Fitness & Lifestyle </p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="d-flex justify-content-start ind-crd mt-3 mt-lg-0">
+                
+                    <img class="img-fluid w-25" src="static/images/icon/ind_12.png" alt="">
+                    <p class="mb-0 mt-3 ms-1">Warehouse</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- industries we serve section ends here  -->
 
 
         <!-- 
@@ -425,7 +656,7 @@
             </div>
             <!-- /.container -->
             <div class="illustration-holder" data-aos="fade-left">
-                <img src="/static/images/assets/ils_15.svg" alt="" class="w-100 main-illustration">
+                <img src="/static/images/assets/hero-img-3.png" alt="" class="w-100 main-illustration d-none d-md-block">
                 <img src="/static/images/assets/ils_15_1.svg" alt="" class="shapes shape-one">
                 <img src="/static/images/assets/ils_15_2.svg" alt="" class="shapes shape-two">
                 <img src="/static/images/assets/ils_15_3.svg" alt="" class="shapes shape-three">
@@ -509,63 +740,496 @@
 				Blog Section Three
 			=====================================================
 			-->
+<!-- testmonial section starts here  -->
+        <section class="py-5 swi-rev d-none d-lg-block">
+            <div class="container">
+                <h2>Success Stories: Hear What Our Clients Have to Say</h2>
+                <p>RITHVISOL TECHNOLOGIES Reviews</p>
+            <swiper-container class="mySwiper py-5" pagination="true" pagination-clickable="true" space-between="30"
+    slides-per-view="3" loop="auto" autoplay-delay="2500" style="height: 350px; ">
+    <swiper-slide>
+        <div class="card bg-transparent border-0 crd-rev  ">
+            <div class="card-head">
+                <div class="d-flex align-content-center">
+                <p class="mb-5">5.0</p>
+                <div class="ms-2">
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+            </div>
+            </div>
+           <div class="card-body text-start p-0">
+             <p class="rev-p"> “Their team is really great to work with.”</p>
+             <span class="rev-s">Co-Founder of Veterinary Group </span>
+           </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide>
+        <div class="card bg-transparent border-0 crd-rev ">
+            <div class="card-head">
+                <div class="d-flex align-content-center">
+                <p class="mb-5">5.0</p>
+                <div class="ms-2">
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+            </div>
+            </div>
+           <div class="card-body text-start p-0">
+             <p class="rev-p"> “Their team is really great to work with.”</p>
+             <span class="rev-s">Co-Founder of Veterinary Group </span>
+           </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide>
+        <div class="card bg-transparent border-0 crd-rev ">
+            <div class="card-head">
+                <div class="d-flex align-content-center">
+                <p class="mb-5">5.0</p>
+                <div class="ms-2">
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+            </div>
+            </div>
+           <div class="card-body text-start p-0">
+             <p class="rev-p"> “Their team is really great to work with.”</p>
+             <span class="rev-s">Co-Founder of Veterinary Group </span>
+           </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide>  <div class="card bg-transparent border-0 crd-rev ">
+        <div class="card-head">
+            <div class="d-flex align-content-center">
+            <p class="mb-5">5.0</p>
+            <div class="ms-2">
+            <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+            <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+            <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+            <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+            <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+        </div>
+        </div>
+       <div class="card-body text-start p-0">
+         <p class="rev-p"> “Their team is really great to work with.”</p>
+         <span class="rev-s">Co-Founder of Veterinary Group </span>
+       </div>
+    </div></swiper-slide>
+    <swiper-slide>
+        <div class="card bg-transparent border-0 crd-rev ">
+            <div class="card-head">
+                <div class="d-flex align-content-center">
+                <p class="mb-5">5.0</p>
+                <div class="ms-2">
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+            </div>
+            </div>
+           <div class="card-body text-start p-0">
+             <p class="rev-p"> “Their team is really great to work with.”</p>
+             <span class="rev-s">Co-Founder of Veterinary Group </span>
+           </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide>
+        <div class="card bg-transparent border-0 crd-rev ">
+            <div class="card-head">
+                <div class="d-flex align-content-center">
+                <p class="mb-5">5.0</p>
+                <div class="ms-2">
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+            </div>
+            </div>
+           <div class="card-body text-start p-0">
+             <p class="rev-p"> “Their team is really great to work with.”</p>
+             <span class="rev-s">Co-Founder of Veterinary Group </span>
+           </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide>
+        <div class="card bg-transparent border-0 crd-rev ">
+            <div class="card-head">
+                <div class="d-flex align-content-center">
+                <p class="mb-5">5.0</p>
+                <div class="ms-2">
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+            </div>
+            </div>
+           <div class="card-body text-start p-0">
+             <p class="rev-p"> “Their team is really great to work with.”</p>
+             <span class="rev-s">Co-Founder of Veterinary Group </span>
+           </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide>
+        <div class="card bg-transparent border-0 crd-rev ">
+            <div class="card-head">
+                <div class="d-flex align-content-center">
+                <p class="mb-5">5.0</p>
+                <div class="ms-2">
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+            </div>
+            </div>
+           <div class="card-body text-start p-0">
+             <p class="rev-p"> “Their team is really great to work with.”</p>
+             <span class="rev-s">Co-Founder of Veterinary Group </span>
+           </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide>
+        <div class="card bg-transparent border-0 crd-rev ">
+            <div class="card-head">
+                <div class="d-flex align-content-center">
+                <p class="mb-5">5.0</p>
+                <div class="ms-2">
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+                <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+            </div>
+            </div>
+           <div class="card-body text-start p-0">
+             <p class="rev-p"> “Their team is really great to work with.”</p>
+             <span class="rev-s">Co-Founder of Veterinary Group </span>
+           </div>
+        </div>
+    </swiper-slide>
+  </swiper-container>
+</div>
+</section>
 
+<!-- testmonial ends here  -->
+<!-- testmonial section starts here  -->
+<section class="py-5 swi-rev d-block d-lg-none">
+    <div class="container">
+        <h2>Success Stories: Hear What Our Clients Have to Say</h2>
+        <p>RITHVISOL TECHNOLOGIES Reviews</p>
+    <swiper-container class="mySwiper py-5" pagination="true" pagination-clickable="true" space-between="30"
+slides-per-view="1" loop="auto" autoplay-delay="2500" style="height: 350px; ">
+<swiper-slide>
+<div class="card bg-transparent border-0 crd-rev  ">
+    <div class="card-head">
+        <div class="d-flex align-content-center">
+        <p class="mb-5">5.0</p>
+        <div class="ms-2">
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+    </div>
+    </div>
+   <div class="card-body text-start p-0">
+     <p class="rev-p"> “Their team is really great to work with.”</p>
+     <span class="rev-s">Co-Founder of Veterinary Group </span>
+   </div>
+</div>
+</swiper-slide>
+<swiper-slide>
+<div class="card bg-transparent border-0 crd-rev ">
+    <div class="card-head">
+        <div class="d-flex align-content-center">
+        <p class="mb-5">5.0</p>
+        <div class="ms-2">
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+    </div>
+    </div>
+   <div class="card-body text-start p-0">
+     <p class="rev-p"> “Their team is really great to work with.”</p>
+     <span class="rev-s">Co-Founder of Veterinary Group </span>
+   </div>
+</div>
+</swiper-slide>
+<swiper-slide>
+<div class="card bg-transparent border-0 crd-rev ">
+    <div class="card-head">
+        <div class="d-flex align-content-center">
+        <p class="mb-5">5.0</p>
+        <div class="ms-2">
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+    </div>
+    </div>
+   <div class="card-body text-start p-0">
+     <p class="rev-p"> “Their team is really great to work with.”</p>
+     <span class="rev-s">Co-Founder of Veterinary Group </span>
+   </div>
+</div>
+</swiper-slide>
+<swiper-slide>  <div class="card bg-transparent border-0 crd-rev ">
+<div class="card-head">
+    <div class="d-flex align-content-center">
+    <p class="mb-5">5.0</p>
+    <div class="ms-2">
+    <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+    <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+    <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+    <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+    <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+</div>
+</div>
+<div class="card-body text-start p-0">
+ <p class="rev-p"> “Their team is really great to work with.”</p>
+ <span class="rev-s">Co-Founder of Veterinary Group </span>
+</div>
+</div></swiper-slide>
+<swiper-slide>
+<div class="card bg-transparent border-0 crd-rev ">
+    <div class="card-head">
+        <div class="d-flex align-content-center">
+        <p class="mb-5">5.0</p>
+        <div class="ms-2">
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+    </div>
+    </div>
+   <div class="card-body text-start p-0">
+     <p class="rev-p"> “Their team is really great to work with.”</p>
+     <span class="rev-s">Co-Founder of Veterinary Group </span>
+   </div>
+</div>
+</swiper-slide>
+<swiper-slide>
+<div class="card bg-transparent border-0 crd-rev ">
+    <div class="card-head">
+        <div class="d-flex align-content-center">
+        <p class="mb-5">5.0</p>
+        <div class="ms-2">
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+    </div>
+    </div>
+   <div class="card-body text-start p-0">
+     <p class="rev-p"> “Their team is really great to work with.”</p>
+     <span class="rev-s">Co-Founder of Veterinary Group </span>
+   </div>
+</div>
+</swiper-slide>
+<swiper-slide>
+<div class="card bg-transparent border-0 crd-rev ">
+    <div class="card-head">
+        <div class="d-flex align-content-center">
+        <p class="mb-5">5.0</p>
+        <div class="ms-2">
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+    </div>
+    </div>
+   <div class="card-body text-start p-0">
+     <p class="rev-p"> “Their team is really great to work with.”</p>
+     <span class="rev-s">Co-Founder of Veterinary Group </span>
+   </div>
+</div>
+</swiper-slide>
+<swiper-slide>
+<div class="card bg-transparent border-0 crd-rev ">
+    <div class="card-head">
+        <div class="d-flex align-content-center">
+        <p class="mb-5">5.0</p>
+        <div class="ms-2">
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+    </div>
+    </div>
+   <div class="card-body text-start p-0">
+     <p class="rev-p"> “Their team is really great to work with.”</p>
+     <span class="rev-s">Co-Founder of Veterinary Group </span>
+   </div>
+</div>
+</swiper-slide>
+<swiper-slide>
+<div class="card bg-transparent border-0 crd-rev ">
+    <div class="card-head">
+        <div class="d-flex align-content-center">
+        <p class="mb-5">5.0</p>
+        <div class="ms-2">
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(246, 233, 159);"></i></div>
+    </div>
+    </div>
+   <div class="card-body text-start p-0">
+     <p class="rev-p"> “Their team is really great to work with.”</p>
+     <span class="rev-s">Co-Founder of Veterinary Group </span>
+   </div>
+</div>
+</swiper-slide>
+</swiper-container>
+</div>
+</section>
 
-
-
-
-
+<!-- testmonial ends here  -->
         <!--
             =====================================================
                 Footer
             =====================================================
-            -->
-        <div class="footer-style-four theme-basic-footer">
-            <div class="container">
-                <div class="inner-wrapper">
-                    <div class="subscribe-area">
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="title-style-four sm-pb-20">
-                                    <h4 class="main-title">Join Our <span>Newsletter</span> & Get updated.</h4>
-                                </div>
-                                <!-- /.title-style-four -->
-                            </div>
-                            <div class="col-md-6">
-                                <div class="subscribe-form">
-                                    <form action="/subcribe" method="POST">
-                                        <input type="email" name="email_" placeholder="Enter your email">
-                                        <button class="ripple-btn tran3s">Subscribe</button>
-                                    </form>
-                                    <p>We only send interesting and relevant emails.</p>
-                                </div>
-                                <!-- /.subscribe-form -->
-                            </div>
-                        </div>
+          -->
+        <!-- schdule a meeting section starts here  --> 
+        <section class="mb-4">
+            <div class="container ">
+                <div class="bg-sch ">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 class="sch-tittle">Let’s create your incredible   <span>Digital</span> product together.</h4>
                     </div>
-                    <!-- /.subscribe-area -->
-
-
-                    <div class="bottom-footer">
-                        <div class="d-lg-flex justify-content-between align-items-center">
-                            <ul class="order-lg-1 pb-15 d-flex justify-content-center footer-nav style-none">
-                            </ul>
-                            <p class="copyright text-center order-lg-0 pb-15">©2024 by RITHVISOL TECHNOLOGIES Proudly
-                                created by software development team</p>
-                        </div>
+                    <div class="col-lg-6 ">
+                        <button  class="sch-cal">Schedule a Call</button>
                     </div>
                 </div>
-                <!-- /.inner-wrapper -->
             </div>
+            </div>
+        </section>
+        <!-- schdule a meeting section ends here  -->
+  <!-- footer starts here -->
+  <footer class="foot-sec">
+    <section class="bg-dark foot">
+        <div class="container">
+<div class="row ">
+<div class="col-lg-3 col-md-6">
+    <div class="ser-fot ">
+        <h6 class="text-uppercase " > Service</h6>
+        <p>Ui and Ux Development</p>
+        <p>Blockchain Development</p>
+        <p>App Development </p>
+        <p>Web Design</p>
+        <p>3D web designing </p>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6">
+    <div class="ser-fot ">
+        <h6 class="text-uppercase " > technologies</h6>
+        <p>React js</p>
+        <p>Node js </p>
+        <p>Angular js </p>
+        <p>Express js </p>
+        <p>HTML & CSS</p>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6">
+    <div class="ser-fot ">
+        <h6 class="text-uppercase " > industries</h6>
+        <p>Fintech </p>
+        <p>Healthcare</p>
+        <p>Entertainment  </p>
+        <p>Logicstics</p>
+        <p>Retail and E-Commerence</p>
+    </div>
+</div>
+<div class="col-lg-3 col-md-6">
+    <div class="ser-fot ">
+        <h6 class="text-uppercase " > Company</h6>
+        <p>Home </p>
+        <p>About Us </p>
+        <p>Industries </p>
+        <p>Services</p>
+        <p>Contact us </p>
+    </div>
+</div>
+</div>
+<div class="row mt-5 ">
+<div class="col-md-4 copy-right-sec">
+ 
+  <div class="socials-a text-center">
+    <ul class="list-inline">
+      <li class="list-inline-item">
+        <a class="text-decoration-none text-white " href="#">
+          <i class="bi bi-facebook" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="text-decoration-none text-white " href="#">
+          <i class="bi bi-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="text-decoration-none text-white " href="#">
+          <i class="bi bi-instagram" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="text-decoration-none text-white " href="#">
+          <i class="bi bi-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+ 
+</div>
+<div class="col-md-4 copy-right-sec">
+    <h4 class="text-white fw-bold">RITHVISOL TECHNOLOGIES</h4>
+</div>
+<div class="col-md-4">
+<div class="text-center">
+    <img class="img-fluid " src="./static/images/assets/sky-removebg-preview.png" alt=""></div>
+    <div class="copyright-footer text-center">
+      
+        <p class="copyright color-text-a mb-0">
+          &copy; Copyright
+          <span class="color-a ">It Solution</span> All Rights Reserved.
+        </p>
+      </div>
+      <div class="credits text-white text-center">
+       
+      &copy;   Designed by <a class="text-decoration-none text-white " href="https://nexusdigitalia.com/">nexusdigitalia</a>
+      </div>
+</div>
+</div>
         </div>
-        <!-- /.footer-style-four -->
-
-
+    </section>
+</footer>
+<!-- scrolling social media icons  -->
+<div class="whats-scorll" id="whatsapp-icon">
+    <img class="img-fluid" src="./static/images/assets/whats-app.png" alt="">
+</div>
+<div id="skype-icon">
+    <img class="img-fluid" src="./static/images/assets/skype.png" alt="">
+</div>
         <button class="scroll-top">
             <i class="bi bi-arrow-up-short"></i>
         </button>
-
-
 
 
         <!-- Optional JavaScript _____________________________  -->
@@ -592,9 +1256,105 @@
         <script src="/static/js/theme.js"></script>
     </div>
     <!-- /.main-page-wrapper -->
+<style>
+     .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
 
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+</style>
+<style>
+    #follow {
+  position: absolute;
+  text-align: center;
+}
+</style>
+<!-- swiper js  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script>
+   var swiper = new Swiper('.swiper-container', {
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    }
+  }
+});
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+   <style>
+   
 
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <script>
+    $(document).mousemove(function(e) {
+  $("#follow").css({
+    left: e.pageX,
+    top: e.pageY
+  });
+});
+  </script>
 </body>
 
 </html>
