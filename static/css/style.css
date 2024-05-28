@@ -7061,7 +7061,7 @@ body .btn-eight:hover {
 /* !!!!!!!!!!!!! scrolling icons !!!!!!!!!!!!!!!!!!!!!! */
 #whatsapp-icon {
     position: fixed;
-    right: -1px; /* Adjust horizontal position as needed */
+    right: -3px; /* Adjust horizontal position as needed */
     bottom: 55px; /* Adjust vertical position as needed */
     width: 50px;
     height: 50px;
@@ -7224,4 +7224,128 @@ body .btn-eight:hover {
     color: var(--prime-three);
     /* text-decoration: underline; */
     text-decoration-thickness: 5px;
+}
+/* !!!  nav and tab css !!!!!! */
+
+.why-2-choose     .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white!important;
+    background-color: #ec143c !important;
+    width: 75%;
+}
+.why-2-choose    .tab-bg{
+ background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px 4px rgb(36, 166, 186);
+}
+.why-2-choose    .tab-bg:hover{
+    transition: all ease-in-out;
+    animation: bounce 1s ease-in-out  alternate;
+   
+}
+@keyframes bounce {
+    0%, 100%, 20%, 50%, 80% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+ .why-2-choose     .ico-bg{
+    background-color: #06A3DA;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* !!!!!!!!!!!!  process section css !!!!!!!!!!!!!!!!!!!!! */
+.pro-sec .icon img{
+    /* background-color: #06A3DA;
+    background-position: 2%; */
+    background: radial-gradient(circle, #06A3DA 51%, white 13%);
+    padding: 15px;
+    background-size: cover;
+  
+
+}
+.pro-crd p{
+    line-height: 30px !important;
+}
+
+.pro-sec     .pro-crd:hover{
+background-color: #CAF4FF;
+border-radius: 10px;
+padding: 10px;
+box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.5); /* White with 50% opacity */
+transition: box-shadow .3s ease;
+/* transform: scale(1.1); */
+       }
+
+
+       /* !!!!!!!!!! ethics css !!!!!!!!!!!!! */
+
+       .ethi-sec .ethi-crd{
+        background-color: #F8F9D7;
+        padding: 18px;
+        border-radius: 20px;
+        box-shadow: 2px  2px  2px  2px rgba(0, 0, 0, 0.05);
+        position: relative;
+        padding-top: 70px;
+       }
+
+ .ethi-sec .ethi-crd .ethi-icon img{
+    background-color: white;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 5px;
+    position: absolute;
+    bottom: 195px;
+    left: 32px;
+ } 
+ 
+ .ethi-sec .ethi-crd p{
+    line-height: 27px;
+ }
+ .ethi-sec .ethi-crd h5{
+    font-size: 30px;
+ }
+ /* !!!!!!!!!!!!! carreer section css !!!!!!!!!! */
+
+ .car-ban .car-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--prime-three);
+    margin-bottom: 2px;
+  }
+  .car-ban .heading{
+    font-family: 'gorditamedium';
+    font-size: 40px;
+    line-height: 1.17em;
+    font-weight: bold;
+  }
+  .car-ban .heading span {
+    color: #e84462;
+    /* text-decoration: underline; */
+    text-decoration-thickness: 5px;
+}
+.car-ban .jon-tem{
+    background-color: #e84462 ;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+}
+.car-ban .btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+.car-ban .jon-tem a{
+    text-decoration: none !important;
+    color: white !important;
 }
