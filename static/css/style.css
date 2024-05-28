@@ -7232,6 +7232,13 @@ body .btn-eight:hover {
     background-color: #ec143c !important;
     width: 75%;
 }
+@media screen and (min-width:0px) and (max-width:640px){
+    .why-2-choose     .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: white!important;
+        background-color: #ec143c !important;
+        width: 100%;
+    }   
+}
 .why-2-choose    .tab-bg{
  background-color: rgb(255, 255, 255);
     padding: 20px;
@@ -7293,6 +7300,71 @@ transition: box-shadow .3s ease;
         box-shadow: 2px  2px  2px  2px rgba(0, 0, 0, 0.05);
         position: relative;
         padding-top: 70px;
+       }
+
+       @media screen and (min-width:0px) and (max-width:640px){
+        .ethi-sec .ethi-crd{
+            background-color: #F8F9D7;
+            padding: 18px;
+            border-radius: 20px;
+            box-shadow: 2px  2px  2px  2px rgba(0, 0, 0, 0.05);
+            position: relative;
+            padding-top: 70px;
+            margin-top: 3rem;
+           }
+           .ethi-sec .ethi-crd .ethi-icon img{
+            background-color: white;
+            background-size: cover;
+            border-radius: 15px;
+            padding: 5px;
+            position: static !important;
+            margin-bottom: 5px;
+            /* bottom: 290px !important;
+            left: 32px !important; */
+         } 
+         
+       .ethi-sec .ethi-crd{
+        background-color: #F8F9D7;
+        padding: 18px;
+        border-radius: 20px;
+        box-shadow: 2px  2px  2px  2px rgba(0, 0, 0, 0.05);
+        position: relative;
+        padding-top: 30px;
+       }
+       }
+       @media screen and (min-width:640px) and (max-width:768px){
+        .ethi-sec .ethi-crd{
+            background-color: #F8F9D7;
+            padding: 18px;
+            border-radius: 20px;
+            box-shadow: 2px  2px  2px  2px rgba(0, 0, 0, 0.05);
+            position: relative;
+            padding-top: 70px;
+            margin-top: 3rem;
+           }
+           .ethi-sec .ethi-crd .ethi-icon img{
+            background-color: white;
+            background-size: cover;
+            border-radius: 15px;
+            padding: 5px;
+            position: static !important;
+            margin-bottom: 9px;
+            /* bottom: 290px !important;
+            left: 32px !important; */
+         }
+       }
+
+       @media screen and (min-width:768px) and (max-width:1024px){
+        .ethi-sec .ethi-crd .ethi-icon img{
+            background-color: white;
+            background-size: cover;
+            border-radius: 15px;
+            padding: 5px;
+            position: static !important;
+            margin-bottom: 9px;
+            /* bottom: 290px !important;
+            left: 32px !important; */
+         }
        }
 
  .ethi-sec .ethi-crd .ethi-icon img{
