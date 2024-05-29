@@ -90,8 +90,16 @@
 .navbar .navbar-nav .nav-item.active .nav-link,
 .navbar .navbar-nav .nav-item:hover .nav-link {
     color: var(--prime-one);
+    
 }
+.navbar .navbar-nav .nav-link.active {
+    text-decoration: underline 3px #ec143c !important;  /* Add underline for active links */
+    /* border-bottom: solid 3px #ec143c ; */
+    padding-bottom: 3px;
 
+  } 
+   
+  
 .navbar .dropdown-menu .dropdown-item {
     font-size: 17px;
     padding: 0 15px;
@@ -296,6 +304,7 @@
     .theme-menu-three .navbar .dropdown-menu .dropdown-item:hover {
         background: #fff;
         color: var(--prime-one);
+      
     }
     .theme-menu-three .navbar .dropdown-submenu:hover>.dropdown-toggle::after {
         color: var(--prime-one);

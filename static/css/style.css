@@ -1201,6 +1201,7 @@ body .btn-eight:hover {
 .theme-menu-four .navbar .dropdown-menu .dropdown-item.active,
 .theme-menu-four .navbar .dropdown-menu .dropdown-item:hover {
     background: var(--prime-three);
+    text-decoration: underline 5px #ec143c
 }
 
 .theme-menu-four .navbar .dropdown-toggle::after,
