@@ -352,7 +352,7 @@ h6 {
 .scroll-top {
     width: 35px;
     height: 35px;
-    line-height: 35px;
+    line-height: 20px;
     position: fixed;
     bottom: 20px;
     right: 5px;
@@ -4587,7 +4587,7 @@ body .btn-eight:hover {
 
 .hero-banner-five .hero-heading span {
     color: var(--prime-three);
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-decoration-thickness: 5px;
 }
 
@@ -4752,12 +4752,21 @@ body .btn-eight:hover {
 .block-style-twelve:hover img {
   filter: grayscale(0%) invert(100%) brightness(100%) !important;
 }
-.block-style-twelve:hover{
+ .fancy-feature-seventeen   .block-style-twelve:hover{
     background-color:  #f15a76 ;
     color: white  ;
-    /* transform: scale(1.0);
-     */
-   
+    transform: scale(1.080);
+}
+.our-appr   .block-style-twelve:hover{
+    background-color:  #f15a76 ;
+    color: white  ;
+    /* transform: scale(1.080); */
+}
+
+
+.our-appr .block-style-twelve:hover > span{
+    transform: none !important  ;
+    /* box-shadow: 0px 30px 60px rgba(0, 19, 87, 0.04); */
 }
 
 @keyframes bounce {
@@ -7052,8 +7061,8 @@ body .btn-eight:hover {
 /* !!!!!!!!!!!!! scrolling icons !!!!!!!!!!!!!!!!!!!!!! */
 #whatsapp-icon {
     position: fixed;
-    right: 9px; /* Adjust horizontal position as needed */
-    bottom: 90px; /* Adjust vertical position as needed */
+    right: -3px; /* Adjust horizontal position as needed */
+    bottom: 55px; /* Adjust vertical position as needed */
     width: 50px;
     height: 50px;
     /* background-color: #25d366;     */
@@ -7067,8 +7076,8 @@ body .btn-eight:hover {
 
   #skype-icon{
     position: fixed;
-    right: 9px; /* Adjust horizontal position as needed */
-    bottom: 140px; /* Adjust vertical position as needed */
+    right: 0px; /* Adjust horizontal position as needed */
+    bottom: 110px; /* Adjust vertical position as needed */
     width: 50px;
     height: 50px;
     /* background-color: #25d366;     */
@@ -7108,15 +7117,15 @@ body .btn-eight:hover {
 }
 
 .asteroid {
-    width: 50px; /* Adjust size as needed */
-    height: 50px;
+    width: 49px; /* Adjust size as needed */
+    height: 46px;
     overflow: hidden;
     margin: 0;
-    z-index: 99 !important;
+    z-index: -1 !important;
     background-image: url('/static/images/assets/38.png'); /* Replace with your image path */
     background-size: cover;
     position: absolute;
-    animation: fly 10s linear infinite;
+    animation: fly 40s linear infinite;
 }
 
 @keyframes fly {
@@ -7144,4 +7153,271 @@ body .btn-eight:hover {
     100% {
         transform: translate(0, 0) rotate(360deg);
     }
+}
+.asteroid-2 {
+    width: 49px; /* Adjust size as needed */
+    height: 46px;
+    overflow: hidden;
+    margin: 0;
+    z-index: -1 !important;
+    background-image: url('/static/images/assets/39.png'); /* Replace with your image path */
+    background-size: cover;
+    position: absolute;
+    animation: fly 40s linear infinite;
+}
+.asteroid-3 {
+    width: 49px; /* Adjust size as needed */
+    height: 46px;
+    overflow: hidden;
+    margin: 0;
+    z-index: -1 !important;
+    background-image: url('/static/images/assets/28.png'); /* Replace with your image path */
+    background-size: cover;
+    position: absolute;
+    top: 10%;
+
+    animation: fly_2 40s linear infinite;
+}
+@keyframes fly_2 {
+    0% {
+      transform: translate(100vw, 0) rotate(0deg); /* Start from right edge */
+    }
+    25% {
+      transform: translate(90vw, 20vh) rotate(90deg);
+    }
+    35% {
+      transform: translate(50vw, 10vh) rotate(180deg);
+    }
+    50% {
+      transform: translate(70vw, 10vh) rotate(180deg); /* Adjust for midpoint */
+    }
+    65% {
+      transform: translate(40vw, 40vh) rotate(270deg);
+    }
+    75% {
+      transform: translate(20vw, 10vh) rotate(270deg);
+    }
+    85% {
+      transform: translate(10vw, 10vh) rotate(270deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg); /* End at left edge */
+    }
+  }
+
+  /* !!!!!!!!!! about us css !!!!!!!!!!!!!!!!! */
+
+  .abt-ban .abt-title{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--prime-three);
+    margin-bottom: 2px;
+  }
+  
+  .abt-ban .hero-heading{
+    font-family: 'gorditamedium';
+    font-size: 50px;
+    line-height: 1.17em;
+  }
+  .abt-ban .hero-heading span {
+    color: var(--prime-three);
+    /* text-decoration: underline; */
+    text-decoration-thickness: 5px;
+}
+/* !!!  nav and tab css !!!!!! */
+
+.why-2-choose     .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white!important;
+    background-color: #ec143c !important;
+    width: 75%;
+}
+@media screen and (min-width:0px) and (max-width:640px){
+    .why-2-choose     .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: white!important;
+        background-color: #ec143c !important;
+        width: 100%;
+    }   
+}
+.why-2-choose    .tab-bg{
+ background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px 4px rgb(36, 166, 186);
+}
+.why-2-choose    .tab-bg:hover{
+    transition: all ease-in-out;
+    animation: bounce 1s ease-in-out  alternate;
+   
+}
+@keyframes bounce {
+    0%, 100%, 20%, 50%, 80% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+ .why-2-choose     .ico-bg{
+    background-color: #06A3DA;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* !!!!!!!!!!!!  process section css !!!!!!!!!!!!!!!!!!!!! */
+.pro-sec .icon img{
+    /* background-color: #06A3DA;
+    background-position: 2%; */
+    background: radial-gradient(circle, #06A3DA 51%, white 13%);
+    padding: 15px;
+    background-size: cover;
+  
+
+}
+.pro-crd p{
+    line-height: 30px !important;
+}
+
+.pro-sec     .pro-crd:hover{
+background-color: #CAF4FF;
+border-radius: 10px;
+padding: 10px;
+box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.5); /* White with 50% opacity */
+transition: box-shadow .3s ease;
+/* transform: scale(1.1); */
+       }
+
+
+       /* !!!!!!!!!! ethics css !!!!!!!!!!!!! */
+
+       .ethi-sec .ethi-crd{
+        background-color: #F8F9D7;
+        padding: 18px;
+        border-radius: 20px;
+        box-shadow: 2px  2px  2px  2px rgba(0, 0, 0, 0.05);
+        position: relative;
+        padding-top: 70px;
+       }
+
+       @media screen and (min-width:0px) and (max-width:640px){
+        .ethi-sec .ethi-crd{
+            background-color: #F8F9D7;
+            padding: 18px;
+            border-radius: 20px;
+            box-shadow: 2px  2px  2px  2px rgba(0, 0, 0, 0.05);
+            position: relative;
+            padding-top: 70px;
+            margin-top: 3rem;
+           }
+           .ethi-sec .ethi-crd .ethi-icon img{
+            background-color: white;
+            background-size: cover;
+            border-radius: 15px;
+            padding: 5px;
+            position: static !important;
+            margin-bottom: 5px;
+            /* bottom: 290px !important;
+            left: 32px !important; */
+         } 
+         
+       .ethi-sec .ethi-crd{
+        background-color: #F8F9D7;
+        padding: 18px;
+        border-radius: 20px;
+        box-shadow: 2px  2px  2px  2px rgba(0, 0, 0, 0.05);
+        position: relative;
+        padding-top: 30px;
+       }
+       }
+       @media screen and (min-width:640px) and (max-width:768px){
+        .ethi-sec .ethi-crd{
+            background-color: #F8F9D7;
+            padding: 18px;
+            border-radius: 20px;
+            box-shadow: 2px  2px  2px  2px rgba(0, 0, 0, 0.05);
+            position: relative;
+            padding-top: 70px;
+            margin-top: 3rem;
+           }
+           .ethi-sec .ethi-crd .ethi-icon img{
+            background-color: white;
+            background-size: cover;
+            border-radius: 15px;
+            padding: 5px;
+            position: static !important;
+            margin-bottom: 9px;
+            /* bottom: 290px !important;
+            left: 32px !important; */
+         }
+       }
+
+       @media screen and (min-width:768px) and (max-width:1024px){
+        .ethi-sec .ethi-crd .ethi-icon img{
+            background-color: white;
+            background-size: cover;
+            border-radius: 15px;
+            padding: 5px;
+            position: static !important;
+            margin-bottom: 9px;
+            /* bottom: 290px !important;
+            left: 32px !important; */
+         }
+       }
+
+ .ethi-sec .ethi-crd .ethi-icon img{
+    background-color: white;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 5px;
+    position: absolute;
+    bottom: 195px;
+    left: 32px;
+ } 
+ 
+ .ethi-sec .ethi-crd p{
+    line-height: 27px;
+ }
+ .ethi-sec .ethi-crd h5{
+    font-size: 30px;
+ }
+ /* !!!!!!!!!!!!! carreer section css !!!!!!!!!! */
+
+ .car-ban .car-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--prime-three);
+    margin-bottom: 2px;
+  }
+  .car-ban .heading{
+    font-family: 'gorditamedium';
+    font-size: 40px;
+    line-height: 1.17em;
+    font-weight: bold;
+  }
+  .car-ban .heading span {
+    color: #e84462;
+    /* text-decoration: underline; */
+    text-decoration-thickness: 5px;
+}
+.car-ban .jon-tem{
+    background-color: #e84462 ;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+}
+.car-ban .btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+.car-ban .jon-tem a{
+    text-decoration: none !important;
+    color: white !important;
 }
