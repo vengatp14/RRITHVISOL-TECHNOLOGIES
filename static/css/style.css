@@ -7501,9 +7501,78 @@ transition: box-shadow .3s ease;
     text-decoration-thickness: 4px;
 }
 
-.mar-img img{
-    width:10%;
+.scr-bg{
+    background-color: #EEF7FF;
+    padding: 15px;
+    border-radius: 10px; 
 }
-.mar-img p{
-  align-self: center;
+
+  .img-scroll {
+    display: flex; /* Wrap images and captions in a flexbox */
+    width: 100%; /* Container adjusts to image width */
+    overflow: hidden;
+   
+    animation: scroll-images 10s linear infinite  ; /* Reverse for right-to-left */
+  }
+
+  .img-scroll img,
+.img-scroll p {
+  flex: 0 0 auto; /* Allow images and captions to shrink/grow */
+}
+.img-scroll p {
+   margin-bottom: 0px !important;
+  }
+.img-scroll:hover {
+    animation-play-state: paused; /* Pause animation on hover */
+  }
+ 
+  @keyframes scroll-images {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100%)); /* Move by 100% container width */
+    }
+  }
+  
+  .scr-bg_2{
+    background-color: #EEF7FF;
+    padding: 15px;
+    border-radius: 10px; 
+    margin-top: 3rem;
+}
+
+  .img-scroll_2 {
+    display: flex; /* Wrap images and captions in a flexbox */
+    width: 100%; /* Container adjusts to image width */
+    overflow: hidden;
+   
+    animation: scroll-images_2 10s linear infinite reverse  ; /* Reverse for right-to-left */
+  }
+
+  .img-scroll_2 img,
+  .img-scroll_2 p {
+  flex: 0 0 auto; /* Allow images and captions to shrink/grow */
+}
+.img-scroll_2 p {
+   margin-bottom: 0px !important;
+  }
+  .img-scroll_2:hover {
+    animation-play-state: paused; /* Pause animation on hover */
+  }
+ 
+  @keyframes scroll-images_2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100%)); /* Move by 100% container width */
+    }
+  }
+  /* !!!!!!!!! our proces development section css !!!!!!!!!!!!!!!!!! */
+
+  .ou-pro-dev  .block-style-twelve:hover{
+    background-color:  #f15a76 ;
+    color: white  ;
+    /* transform: scale(1.080); */
 }
