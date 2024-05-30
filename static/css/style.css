@@ -7062,8 +7062,8 @@ body .btn-eight:hover {
 /* !!!!!!!!!!!!! scrolling icons !!!!!!!!!!!!!!!!!!!!!! */
 #whatsapp-icon {
     position: fixed;
-    right: -3px; /* Adjust horizontal position as needed */
-    bottom: 55px; /* Adjust vertical position as needed */
+    right: -14px; /* Adjust horizontal position as needed */
+    bottom: 48px; /* Adjust vertical position as needed */
     width: 50px;
     height: 50px;
     /* background-color: #25d366;     */
@@ -7077,8 +7077,8 @@ body .btn-eight:hover {
 
   #skype-icon{
     position: fixed;
-    right: 0px; /* Adjust horizontal position as needed */
-    bottom: 110px; /* Adjust vertical position as needed */
+    right: -7px; /* Adjust horizontal position as needed */
+    bottom: 101px; /* Adjust vertical position as needed */
     width: 50px;
     height: 50px;
     /* background-color: #25d366;     */
@@ -7421,4 +7421,89 @@ transition: box-shadow .3s ease;
 .car-ban .jon-tem a{
     text-decoration: none !important;
     color: white !important;
+}
+
+
+/* !!!!!!!!!!!!!!!!!!! services page - Mobile app development page css starts here */
+/*!!!!!!!!!!!!!!!! hero section css starts !!!!!!!! */
+.hero-sec-ser .main-heading span{
+
+    color: var(--prime-three);
+    /* text-decoration: underline; */
+    text-decoration-thickness: 5px;
+}
+
+
+
+/* !!!!!!!!!!!!!!!!! What We do section css starts !!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.wht-v-do    .title-wht{
+    display: inline-block;
+    line-height: 28px;
+    border-radius: 15px;
+    background: rgba(145, 59, 255, 0.07);
+    padding: 0 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--prime-three);
+    margin-bottom: 20px; 
+}
+.wht-v-do .main-title{
+    font-family: 'gorditamedium';
+    font-size: 50px;
+    line-height: 1.4em;
+    letter-spacing: -1px;
+    margin: 0;
+}
+.wht-v-do .main-title span {
+    color: var(--prime-three);
+    text-decoration-thickness: 4px;
+}
+.wht-v-do .mob-app-crd img{
+    width: 15%;
+    margin-bottom: 8px;
+}
+.wht-v-do .mob-app-crd p{
+    line-height: 29px;
+}
+.wht-v-do .mob-app-crd {
+   padding: 35px;
+}
+.wht-v-do .mob-app-crd:hover {
+  background-color: #EEF7FF;
+ }
+
+ /* !!!!!!!! 3rd party api section css starts !!!!!!!!!!!!!!!!! */
+
+ .trd-par-api{
+    background-color: #CDE8E5;
+    padding: 10px;
+    box-shadow: 3px 3px 3px 3px #CDE8E5 , black;
+    border-radius: 15px;
+ }
+ /* !!!!!!!!!!!!!!!!! our technologies section css !!!!!!!!!!!!!!!!!!!!!!! */
+
+ .our-tech    .title{
+    display: inline-block;
+    line-height: 28px;
+    border-radius: 15px;
+    background: rgba(145, 59, 255, 0.07);
+    padding: 0 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--prime-three);
+    margin-bottom: 20px; 
+}
+.our-tech .main-title span {
+    color: var(--prime-three);
+    text-decoration-thickness: 4px;
+}
+
+.mar-img img{
+    width:10%;
+}
+.mar-img p{
+  align-self: center;
 }

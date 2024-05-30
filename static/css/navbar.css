@@ -93,9 +93,9 @@
     
 }
 .navbar .navbar-nav .nav-link.active {
-    text-decoration: underline 3px #ec143c !important;  /* Add underline for active links */
+    text-decoration: underline 5px #ec143c !important;  /* Add underline for active links */
     /* border-bottom: solid 3px #ec143c ; */
-    padding-bottom: 3px;
+    /* padding-bottom: 3px; */
 
   } 
    
