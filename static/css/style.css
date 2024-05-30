@@ -7576,3 +7576,75 @@ transition: box-shadow .3s ease;
     color: white  ;
     /* transform: scale(1.080); */
 }
+/* !!!!!!!!!!!! get in touch with us css !!!!!!!!!!!!!!!!! */
+
+ .get-form form {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+ .get-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+ .get-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+ .get-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+ .get-form input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    resize: vertical; /* Allow resizing for textarea */
+  }
+  
+ .get-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+ .get-form button[type="submit"]:hover {
+    background-color: #45A049;
+  }
+  /* !!!!!!!!!!!!!!!!!!!!!!!! websites and webapps page css starts !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+  .web-app .mob-app-crd img {
+    width: 15%;
+    margin-bottom: 8px;
+}
+.web-app .mob-app-crd:hover {
+    background-color: #EEF7FF;
+    padding: 10px;
+}
+.web-app .mob-app-crd {
+    padding: 35px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white!important;
+    background-color: #FF5580 !important;
+}
+
+
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: black !important;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
