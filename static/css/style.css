@@ -7621,3 +7621,30 @@ transition: box-shadow .3s ease;
  .get-form button[type="submit"]:hover {
     background-color: #45A049;
   }
+  /* !!!!!!!!!!!!!!!!!!!!!!!! websites and webapps page css starts !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+  .web-app .mob-app-crd img {
+    width: 15%;
+    margin-bottom: 8px;
+}
+.web-app .mob-app-crd:hover {
+    background-color: #EEF7FF;
+    padding: 10px;
+}
+.web-app .mob-app-crd {
+    padding: 35px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white!important;
+    background-color: #FF5580 !important;
+}
+
+
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: black !important;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
