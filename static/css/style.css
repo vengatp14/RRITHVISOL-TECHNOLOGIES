@@ -68,7 +68,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: red;
+    background: red;41
     border-radius: 0;
 }
 
@@ -604,7 +604,7 @@ body .btn-one {
     letter-spacing: 0.6px;
     padding: 0 45px;
     position: relative;
-    background: var(--prime-one);
+    background: var(--prime-three);
     z-index: 1;
     transition: all 0.3s ease-in-out;
 }
@@ -4753,12 +4753,12 @@ body .btn-eight:hover {
 .block-style-twelve:hover img {
   filter: grayscale(0%) invert(100%) brightness(100%) !important;
 }
- .fancy-feature-seventeen   .block-style-twelve:hover{
-    background-color:  #f15a76 ;
+ .hme      .block-style-twelve:hover{
+    background-color:  #f15a76 !important ;
     color: white  ;
     transform: scale(1.080);
 }
-.our-appr   .block-style-twelve:hover{
+    .our-appr   .block-style-twelve:hover{
     background-color:  #f15a76 ;
     color: white  ;
     /* transform: scale(1.080); */
@@ -6988,6 +6988,9 @@ body .btn-eight:hover {
 .foot{
     padding: 70px;
 }
+.ser-fot a:hover{
+    color: white;
+}
 
 .ser-fot{
     color:grey;
@@ -7230,7 +7233,7 @@ body .btn-eight:hover {
 
 .why-2-choose     .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: white!important;
-    background-color: #ec143c !important;
+    background-color: #FF5580 !important;
     width: 75%;
 }
 @media screen and (min-width:0px) and (max-width:640px){
@@ -7244,7 +7247,7 @@ body .btn-eight:hover {
  background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 2px 2px 3px 4px rgb(36, 166, 186);
+    box-shadow: 2px 2px 3px 4px #CAF4FF;
 }
 .why-2-choose    .tab-bg:hover{
     transition: all ease-in-out;
@@ -7263,7 +7266,7 @@ body .btn-eight:hover {
     }
   }
  .why-2-choose     .ico-bg{
-    background-color: #06A3DA;
+    background-color: #68D2E8;
     padding: 5px;
     border-radius: 10px;
 }
@@ -7272,12 +7275,17 @@ body .btn-eight:hover {
 .pro-sec .icon img{
     /* background-color: #06A3DA;
     background-position: 2%; */
-    background: radial-gradient(circle, #06A3DA 51%, white 13%);
+    /* background: radial-gradient(circle, #5AB2FF 51%, #CAF4FF 13%); */
     padding: 15px;
     background-size: cover;
   
 
 }
+ .pro-crd:hover img{
+    background: radial-gradient(circle, #5AB2FF 51%, #CAF4FF 13%);
+ }
+
+
 .pro-crd p{
     line-height: 30px !important;
 }
@@ -7730,12 +7738,12 @@ transition: box-shadow .3s ease;
 .ex-cu-sof   .block-style-twelve:hover img {
   filter: grayscale(0%) invert(100%) brightness(100%) !important;
 }
- .fancy-feature-seventeen   .block-style-twelve:hover{
+ .ex-cu-sof     .block-style-twelve:hover{
     background-color:  white ;
     color: white  ;
     transform: scale(1.080);
 }
- ..ex-cu-sof   .our-appr   .block-style-twelve:hover{
+    .our-appr   .block-style-twelve:hover{
     background-color:  #f15a76 ;
     color: white  ;
     /* transform: scale(1.080); */
