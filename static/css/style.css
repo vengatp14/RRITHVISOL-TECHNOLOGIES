@@ -5385,7 +5385,7 @@ body .btn-eight:hover {
 /*^^^^^^^^^^^^^^^^^^^^^ Theme Inner Banner ^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 .theme-inner-banner {
-    background: #F6FCFF;
+    background-image: url(/static/images/assets/con-ban.png);
     position: relative;
     z-index: 1;
     padding: 205px 0 115px;
@@ -7482,6 +7482,16 @@ transition: box-shadow .3s ease;
     box-shadow: 3px 3px 3px 3px #CDE8E5 , black;
     border-radius: 15px;
  }
+
+ @media screen and (min-width:0px) and (max-width:768px){
+    .trd-par-api{
+        background-color: #CDE8E5;
+        padding: 10px;
+        box-shadow: 3px 3px 3px 3px #CDE8E5 , black;
+        border-radius: 15px;
+        margin-top: 3rem;
+     }
+ }
  /* !!!!!!!!!!!!!!!!! our technologies section css !!!!!!!!!!!!!!!!!!!!!!! */
 
  .our-tech    .title{
@@ -7509,10 +7519,10 @@ transition: box-shadow .3s ease;
 
   .img-scroll {
     display: flex; /* Wrap images and captions in a flexbox */
-    width: 100%; /* Container adjusts to image width */
+    width: 2000px; /* Container adjusts to image width */
     overflow: hidden;
    justify-content: space-around;
-    animation: scroll-images 10s linear infinite  ; /* Reverse for right-to-left */
+    animation: scroll-images 15s linear infinite  ; /* Reverse for right-to-left */
   }
 
   .img-scroll img,
@@ -7534,6 +7544,32 @@ transition: box-shadow .3s ease;
       transform: translateX(calc(-100%)); /* Move by 100% container width */
     }
   }
+  @media screen and (min-width:0px) and (max-width:640px){
+    .img-scroll {
+        display: flex; /* Wrap images and captions in a flexbox */
+        width: 900px; /* Container adjusts to image width */
+        overflow: hidden;
+       justify-content: space-evenly;
+        animation: scroll-images 10s linear infinite  ; /* Reverse for right-to-left */
+      }
+      .img-scroll p {
+        margin-bottom: 0px !important;
+        font-size: 15px !important;
+       }
+  }
+  @media screen and (min-width:640px) and (max-width:1440px){
+    .img-scroll {
+        display: flex; /* Wrap images and captions in a flexbox */
+        width: 1500px; /* Container adjusts to image width */
+        overflow: hidden;
+       justify-content: space-evenly;
+        animation: scroll-images 10s linear infinite  ; /* Reverse for right-to-left */
+      }
+      .img-scroll p {
+        margin-bottom: 0px !important;
+        font-size: 18px !important;
+       }
+  }
   
   .scr-bg_2{
     background-color: #EEF7FF;
@@ -7544,11 +7580,38 @@ transition: box-shadow .3s ease;
 
   .img-scroll_2 {
     display: flex; /* Wrap images and captions in a flexbox */
-    width: 100%; /* Container adjusts to image width */
+    width: 2000px; /* Container adjusts to image width */
     overflow: hidden;
     justify-content: space-around;
-    animation: scroll-images_2 10s linear infinite reverse  ; /* Reverse for right-to-left */
+    animation: scroll-images_2 15s linear infinite reverse  ; /* Reverse for right-to-left */
   }
+  @media screen and (min-width:0px) and (max-width:640px){
+    .img-scroll_2 {
+        display: flex; /* Wrap images and captions in a flexbox */
+        width: 900px; /* Container adjusts to image width */
+        overflow: hidden;
+        justify-content: space-around;
+        animation: scroll-images_2 10s linear infinite reverse  ; /* Reverse for right-to-left */
+      }
+      .img-scroll_2 p {
+        margin-bottom: 0px !important;
+        font-size: 15px !important;
+       }
+  }
+  @media screen and (min-width:640px) and (max-width:1440px){
+    .img-scroll_2 {
+        display: flex; /* Wrap images and captions in a flexbox */
+        width: 1500px; /* Container adjusts to image width */
+        overflow: hidden;
+        justify-content: space-around;
+        animation: scroll-images_2 10s linear infinite reverse  ; /* Reverse for right-to-left */
+      }
+      .img-scroll_2 p {
+        margin-bottom: 0px !important;
+        font-size: 18px !important;
+       }
+  }
+  
 
   .img-scroll_2 img,
   .img-scroll_2 p {
@@ -7601,10 +7664,10 @@ transition: box-shadow .3s ease;
   }
   
  .get-form input, textarea {
-    width: 100%;
+    width: 65%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 7px;
     box-sizing: border-box;
     resize: vertical; /* Allow resizing for textarea */
   }
