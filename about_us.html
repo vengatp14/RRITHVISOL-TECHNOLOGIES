@@ -123,23 +123,31 @@
             </section>
     <!-- top bar starts here  -->
       <!-- top bar section starts here -->
-      <section class="top-bar " style="padding-bottom: 3rem;">
-        <div class="container-fluid ">
-            <div class="row   ">
-          <div class="  col-lg-7 justify-content-start">
-            <div class="d-flex  align-item-center ">
-              <a class="mt-1"  href="https://maps.app.goo.gl/p7mQetb7FNf97mqJ8"><p class="ms-1 mt-1 me-1  "><i class="bi bi-geo-alt-fill me-2  "></i>Hosur , India</p></a>
-              <a style="color: white;" class="mt-1" href="tel:+917845833637">    <p class="ms-1 mt-1"><i class="bi bi-telephone-fill ms-1 me-2"></i> +91 7845833637</p></a>
-              <a class="mt-1" href="mailto:karthick@rithvisol.com">       <p class="ms-2 mt-1 me-1"><i class="bi bi-envelope ms-3 me-2"></i> karthick@rithvisol.com</p> </a>
+     
+      <section class="new-top-bar">
+        <div class="container-fluid fixed-top_1 nav-bou">
+            <div class="container topbar bg-p ">
+              <div class="d-flex justify-content-center">
+                <div class="top-info ps-2">
+        
+                  <small class="me-3 fw-bold"><i class="fas fa-map-marker-alt me-2 text-white"></i> <a href="https://maps.app.goo.gl/p7mQetb7FNf97mqJ8"
+                      class="text-white">Hosur, India</a></small>
+                  <small class="me-3 d-block fw-bold"><i class="fas fa-phone-square-alt me-2 text-white"></i><a href="callto:+91 7845833637"
+                      class="text-white">+91 7845833637</a></small>
+                  <small class="me-3 d-none d-md-block fw-bold"><i class="fas fa-envelope me-2 text-white"></i><a href="mailto:karthick@rithvisol.com"
+                      class="text-white">karthick@rithvisol.com</a></small>
+        
+        
+                </div>
+              
+                
+              </div>
+            
             </div>
-          </div>
-          <div class="  col-lg-5 d-none d-lg-block ">
-          
-          </div>
             </div>
-        </div>
-    </section>
-    <!-- top bar section ends here  -->
+        </section>
+    
+        <!-- top bar section ends here  -->
     <!-- top bar ends here  -->
     
     <header class="theme-main-menu sticky-menu theme-menu-four">
@@ -720,59 +728,59 @@
             <button class="scroll-top">
                 <i class="bi bi-arrow-up-short"></i>
             </button>
-    <!-- modal form  -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-          
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              
-                <div class="form-style-one">
-                    <h3 class="form-title pb-40 lg-pb-20">Contact Us.</h3>
-                    <img class="img-fluid " src="/static/images/assets/form-img.png" alt="">
-                    <form id="get-form" style="margin-top: 2rem;"  data-toggle="validator">
-                        <div class="messages"></div>
-                        <div class="row controls">
-                            <div class="col-12">
-                                <div class="input-group-meta form-group mb-30">
-                                    <label>Name*</label>
-                                    <input id="recipient-name" type="text" placeholder="Jeeva" name="name" required="required" data-error="Name is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-    
-                            <div class="col-12">
-                                <div class="input-group-meta form-group mb-30">
-                                    <label>Phone Number*</label>
-                                    <input id="phone-number" type="phonenumber" placeholder="" name="number" required="required" data-error="Valid email is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="input-group-meta form-group mb-30">
-                                    <label>Email*</label>
-                                    <input type="email" placeholder="contact@ai-being.com" name="email" required="required" data-error="Valid email is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="input-group-meta form-group mb-30">
-                                    <textarea placeholder="Your message*" name="message" required="required" data-error="Please,leave us a message."></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-12"><button onclick="sendMessage()" class="btn-eight ripple-btn">Send Message</button></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-           
-          </div>
+<!-- modal form  -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+      
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          
+            <div class="form-style-one">
+                <h3 class="form-title pb-40 lg-pb-20">Contact Us.</h3>
+                <img class="img-fluid " src="/static/images/assets/form-img.png" alt="">
+                <form id="get-form" style="margin-top: 2rem;"  data-toggle="validator">
+                    <div class="messages"></div>
+                    <div class="row controls">
+                        <div class="col-12">
+                            <div class="input-group-meta form-group mb-30">
+                                <label>Name*</label>
+                                <input id="recipient-name" type="text" placeholder="Jeeva" name="name" required="required" data-error="Name is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="input-group-meta form-group mb-30">
+                                <label>Phone Number*</label>
+                                <input id="phone-number" type="phonenumber" placeholder="" name="number" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group-meta form-group mb-30">
+                                <label>Email*</label>
+                                <input type="email" placeholder="contact@gmail.com" name="email" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group-meta form-group mb-30">
+                                <textarea placeholder="Your message*" name="message" required="required" data-error="Please,leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-12"><button onclick="sendMessage()" class="btn-eight ripple-btn">Send Message</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+       
       </div>
+    </div>
+  </div>
 
 
 

@@ -1132,8 +1132,8 @@ body .btn-eight:hover {
     border-radius: 50%;
     width: 220px;
     height: 220px;
-    left: -50px;
-    top: -70px;
+    /* left: -50px;
+    top: -70px; */
     background: #FFFFFF;
     box-shadow: 6px 73px 62px rgba(0, 12, 119, 0.03);
     z-index: -1;
@@ -8056,4 +8056,97 @@ transition: box-shadow .3s ease;
           left: -175px;
         }
       } */
+    /* !!!!!!!!! new top bar css !!!!!!!!!!!!!!!!!!!!!! */
+    .new-top-bar  .fixed-top_1 {
+        transition: 0.5s;
+        background: var(--bs-white);
+        border: 0;
+    }
+    .new-top-bar     .topbar {
+        padding: 17px 17px 17px 17px ;
+        border-radius: 230px 100px;
+        background-color: #e84462;
+        width: 79%;
+       }
     
+     .new-top-bar      .topbar .top-info{
+        font-size: 18px ;
+        line-height: 0;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+    }
+    
+     .new-top-bar      .topbar .top-link  {
+        font-size: 18px;
+        line-height: 0;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .new-top-bar     .topbar .top-link a {
+        letter-spacing: 1px;
+    }
+    
+    .new-top-bar   .topbar .top-link a small:hover {
+        color: var(--bs-dark) !important;
+        font-weight: bolder;
+        background-color: white;
+        transition: 0.5s;
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
+    @media screen and (min-width:0px) and (max-width:475px){
+        .new-top-bar     .topbar {
+        padding: 17px 17px 17px 17px ;
+        border-radius: 230px 100px;
+        background-color: #e84462;
+        width: 100%;
+       }
+        .new-top-bar .topbar .top-info small{
+        font-size: 12px !important;
+        font-weight: bolder;
+        line-height: 0;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+    }  
+    }
+    @media screen and (min-width:640px) and (max-width:768px){
+        .new-top-bar .topbar .top-info small{
+        font-size: 15px !important;
+        font-weight: bolder;
+        line-height: 0;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .new-top-bar   .topbar .top-link {
+      font-size: 10px;
+      font-weight: bolder;
+      line-height: 0;
+      letter-spacing: 1px;
+      display: flex;
+     
+    }
+    }
+    @media (min-width:768px) and (max-width:1024px){
+        .new-top-bar .topbar .top-info {
+        font-size: 18px;
+        font-weight: bolder;
+        line-height: 0;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .new-top-bar   .topbar .top-link {
+      font-size: 10px;
+      font-weight: bolder;
+      line-height: 0;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+    }
+    }
