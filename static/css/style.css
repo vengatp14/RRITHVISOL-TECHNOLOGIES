@@ -454,6 +454,17 @@ h6 {
     line-height: 1.34em;
     letter-spacing: -1px;
 }
+@media screen and (min-width:0px) and (max-width:640px){
+    .title-style-one .main-title {
+        font-family: 'gorditamedium';
+        font-size: 38px;
+        line-height: 1.34em;
+        letter-spacing: -1px;
+    }
+    .fancy-feature-two{
+        margin-left: 20px;
+    }
+}
 
 .title-style-one.white-vr .main-title {
     color: #fff;
@@ -495,11 +506,14 @@ h6 {
 @media screen and (min-width:0px) and (max-width:475px){
     .title-style-three .main-title {
         font-family: 'gorditamedium';
-        font-size: 40px;
+        font-size: 37px;
         line-height: 1.31em;
         letter-spacing: -1px;
         margin: 0;
     } 
+    .title-style-three{
+        margin-left: 20px;
+    }
 }
 
 .title-style-three .main-title span {
@@ -4582,8 +4596,13 @@ body .btn-eight:hover {
 @media screen and (min-width:0px) and (max-width:640px){
     .hero-banner-five .hero-heading {
         font-family: 'gorditamedium';
-        font-size: 35px;
+        font-size: 25px;
         line-height: 1.17em;
+        margin-left: 15px;
+    }
+    .text-lg {
+        font-size: 17px;
+        margin-left: 10px;
     }
 }
 
@@ -4808,7 +4827,7 @@ body .btn-eight:hover {
         font-size: 150px;
         font-weight: bold;
         top: 143px;
-        left: 90px;
+        left: 65Ipx;
         opacity: 0.1;
         z-index: 99;
         -webkit-text-stroke-width: 1px;
@@ -4880,7 +4899,14 @@ body .btn-eight:hover {
     overflow: hidden;
     z-index: 5;
 }
-
+@media screen and (min-width:0px) and (max-width:640px){
+    .fancy-feature-eighteen {
+        background: linear-gradient(180deg, rgba(248, 253, 255, 0) 0%, rgba(241, 252, 255, 0.51782) 48.22%, #F6FDFF 100%);
+        overflow: hidden;
+        z-index: 5;
+        margin-left: 20px;
+    }
+}
 .fancy-feature-eighteen .oval-one {
     width: 10px;
     height: 10px;
@@ -6955,6 +6981,18 @@ body .btn-eight:hover {
     letter-spacing: -1px;
     margin: 0;
 }
+@media screen and (min-width:0px) and (max-width:640px){
+    .our-appr .main-title{
+        font-family: 'gorditamedium';
+        font-size: 38px;
+        line-height: 1.4em;
+        letter-spacing: -1px;
+        margin: 0;
+    } 
+    .our-appr{
+        margin-left: 20px;
+    }
+}
 .our-appr .main-title span {
     color: var(--prime-three);
     text-decoration: underline;
@@ -6971,7 +7009,11 @@ body .btn-eight:hover {
 .ind-ser .ind-crd:hover{
     background-color: white;
 }
-
+@media  screen and (min-width:0px) and (max-width:640px){
+    .ind-ser{
+        margin-left: 20px;
+    }
+}
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!testmonial section css !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .swi-rev .rev-p{
@@ -6984,6 +7026,12 @@ body .btn-eight:hover {
     background-color: white;
     padding: 30px;
     box-shadow: 5px 5px 5px 5px rgba(53, 3, 3, 0.37);
+ }
+
+ @media screen and (min-width:0px) and (max-width:640px) {
+    .swi-rev {
+        margin-left: 20px;
+    }
  }
  /* footer css  */
 
@@ -7227,6 +7275,16 @@ body .btn-eight:hover {
     font-size: 50px;
     line-height: 1.17em;
   }
+  @media screen and (min-width:0px) and (max-width:640px){
+    .abt-ban .hero-heading{
+        font-family: 'gorditamedium';
+        font-size: 40px;
+        line-height: 1.17em;
+      }
+      .abt-ban{
+        margin-left: 20px;
+      }
+  }
   .abt-ban .hero-heading span {
     color: var(--prime-three);
     /* text-decoration: underline; */
@@ -7244,7 +7302,10 @@ body .btn-eight:hover {
         color: white!important;
         background-color: #ec143c !important;
         width: 100%;
-    }   
+    }  
+    .why-2-choose{
+        margin-left: 10px;
+    } 
 }
 .why-2-choose    .tab-bg{
  background-color: rgb(255, 255, 255);
@@ -7322,7 +7383,7 @@ transition: box-shadow .3s ease;
             box-shadow: 2px  2px  2px  2px rgba(0, 0, 0, 0.05);
             position: relative;
             padding-top: 70px;
-            margin-top: 3rem;
+          
            }
            .ethi-sec .ethi-crd .ethi-icon img{
             background-color: white;
@@ -7338,11 +7399,13 @@ transition: box-shadow .3s ease;
        .ethi-sec .ethi-crd{
         background-color: #F8F9D7;
         padding: 18px;
+        margin-top: 10px;
         border-radius: 20px;
         box-shadow: 2px  2px  2px  2px rgba(0, 0, 0, 0.05);
         position: relative;
         padding-top: 30px;
        }
+
        }
        @media screen and (min-width:640px) and (max-width:768px){
         .ethi-sec .ethi-crd{
