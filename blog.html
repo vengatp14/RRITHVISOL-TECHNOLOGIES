@@ -315,7 +315,7 @@
 
 
        <!-- blog section starts -->
-       <!-- <div class="container py-5">
+ <div class="container py-5 blog-crd-sec">
         <div id="row_1" class="row d-flex justify-content-center ">
             <div class="col-lg-3 _show">
                 <div class="card border-0 " style="width: 18rem;">
@@ -350,7 +350,7 @@
               </div>
         </div>
     </div>
-        <div class="row">
+        <div class="row d-flex justify-content-center ">
         <div class="col-lg-3 hidden">
             <div class="card border-0   " style="width: 18rem;">
                 <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
@@ -383,11 +383,17 @@
           </div>
         </div>
     </div>
-      
-    <button id="load_btn" class="btn btn-danger load-more">load more </button>
-    </div> -->
+      <div class="text-center" style="margin-top: 50px;">
+        <button id="load_btn" class="btn btn-danger load-more ">load more </button>
+      </div>
+ 
+    </div> 
     <!-- blog section ends  -->
-
+<style>
+.blog-crd-sec .hidden{
+    display: none;
+}
+</style>
     
         <!--
 			=====================================================
@@ -606,27 +612,12 @@
     </div>
     <!-- /.main-page-wrapper -->
       <script>
-    const cards = document.querySelectorAll('._show');
-    const loadMoreButton = document.querySelector('.load-more');
-    let visibleCards = 3;
-
-    function showMoreCards() {
-      const cardsToShow = Math.min(visibleCards + 3, cards.length); // Limit to 3 or remaining cards
-
-      for (let i = visibleCards; i < cardsToShow; i++) {
-        cards[i].classList.remove('hidden');
-      }
-
-      visibleCards = cardsToShow; // Update visibleCards to the number shown
-
-      if (visibleCards === cards.length) {
-        loadMoreButton.textContent = 'No More Cards';
-        loadMoreButton.disabled = true;
-      }
-    }
-
-    loadMoreButton.addEventListener('click', showMoreCards);
-      </script>
+$(document).ready(function () {
+    $("#load_btn").on("click", function () {
+        $(".hidden:hidden").slice(0, 3).slideDown(); // Show the next 3 hidden elements
+    });
+});
+  </script>
   
 
 </body>
