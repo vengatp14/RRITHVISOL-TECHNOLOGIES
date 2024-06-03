@@ -21,15 +21,17 @@
     <meta name="msapplication-navbutton-color" content="#913BFF">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#913BFF">
-    <title>AI BEING</title>
+    <title>Blog - Rithvisol Techonlogy</title>
     <!-- Favicon -->
-    <link rel="icon" type="/static/image/png" sizes="56x56" href="/static/images/fav-icon/icon.png">
+    <!-- <link rel="icon" type="/static/image/png" sizes="56x56" href="/static/images/fav-icon/icon.png"> -->
     <!-- Main style sheet -->
     <link rel="stylesheet" type="text/css" href="/static/css/style.css" media="all">
     <!-- responsive style sheet -->
     <link rel="stylesheet" type="text/css" href="/static/css/responsive.css" media="all">
-
-
+<!-- font awesome icon link  -->
+<link rel="stylesheet" href="./static/images/fav-icon/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css">
+<!-- jquery cdn link  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Fix Internet Explorer ______________________________________-->
     <!--[if lt IE 9]>
             <script src="/static/http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -165,114 +167,116 @@
                 Theme Main Menu
             ============================================== 
             -->
-        <header class="theme-main-menu sticky-menu theme-menu-four">
-            <div class="inner-content">
-                <div class="d-flex align-items-center">
-                    <div class="logo order-lg-0"><a href="home" class="d-block"><img src="/static/images/logo/logo.png" alt="" width="90"></a></div>
-
-                    <div class="right-widget d-flex align-items-center ms-auto order-lg-3">
-                        <div class="call-button d-none d-xl-block me-5">Call us <a href="tel:(+91) 9566377015">(+91) 9566377015</a> <a href="tel:(+91) 9566377015" class="call">(+44) 7436938665</a></div>
-                        <!--    <button class="menu-search-btn tran3s" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="bi bi-search"></i></button> -->
-                        <a href="contact_us" class="send-msg-btn tran3s d-none d-lg-block">Send us Message</a>
-                    </div>
-                    <!-- /.right-widget -->
-
-                    <nav class="navbar navbar-expand-lg order-lg-2">
-                        <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <header class="theme-main-menu sticky-menu theme-menu-four">
+                <div class="inner-content">
+                    <div class="d-flex align-items-center">
+                        <div class="logo order-lg-0">
+                            <!-- <a href="home" class="d-block"><img src="/static/images/logo/logo.png"
+                                    alt="" width="90"></a> -->
+                                </div>
+        
+                        <div class="right-widget d-flex align-items-center ms-auto order-lg-3">
+                            <div class="call-button d-none d-xl-block me-5">Call us <a href="tel:+917845833637">(+91)
+                                7845833637</a> </div>
+        
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="send-msg-btn tran3s d-none d-lg-block">Schedule a Meeting </a>
+                        </div>
+                        <!-- /.right-widget -->
+        
+                        <nav class="navbar navbar-expand-lg order-lg-2">
+                            <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
                                 <span></span>
                             </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="d-block d-lg-none">
-                                    <div class="logo"><a href="home"><img src="/static/images/logo/logo_01.png" alt="" width="130"></a></div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link" href="home" role="button" data-bs-toggle="dropdown-item" data-bs-auto-close="outside" aria-expanded="false">Home</a>
-                                        <!-- <a class="nav-link dropdown-toggle" href="home" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Home</a> -->
-                                        <!-- <ul class="dropdown-menu">
-                                            <li><a href="home" class="dropdown-item"><span>User Analysis</span></a></li>
-                                            <li><a href="index-2.html" class="dropdown-item"><span>Artificial Intelligence</span></a></li>
-                                            <li><a href="index-3.html" class="dropdown-item"><span>Data Science</span></a></li>
-                                            <li><a href="index-4.html" class="dropdown-item"><span>Chatboot</span></a></li>
-                                            <li><a href="index-5.html" class="dropdown-item"><span>Machine Learning</span></a></li>
-                                        </ul> -->
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="d-block d-lg-none">
+                                        <div class="logo"><a href="home"><img src="/static/images/logo/logo_01.png" alt=""
+                                                    width="130"></a></div>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link" href="about_us" role="button" data-bs-toggle="dropdown-item" data-bs-auto-close="outside" aria-expanded="false">About us</a>
-                                        <!--       <ul class="dropdown-menu">
-                                            <li class="dropdown-submenu dropdown">
-                                                <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" href="about-us1.html"><span>About Us  </span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="about-us1.html" class="dropdown-item"><span>About Us </span></a></li>
-                                                
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown-submenu dropdown">
-                                                <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" href="#"><span>Services</span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="service-V1.html" class="dropdown-item"><span>Service One</span></a></li>
-                                                    <li><a href="service-V2.html" class="dropdown-item"><span>Service Two</span></a></li>
-                                                    <li><a href="service-details-V1.html" class="dropdown-item"><span>Service Details</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown-submenu dropdown">
-                                                <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" href="#"><span>Our Team</span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="team.html" class="dropdown-item"><span>Team Member</span></a></li>
-                                                    <li><a href="team-details.html" class="dropdown-item"><span>Team Details</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown-submenu dropdown">
-                                                <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" href="#"><span>Other Pages</span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="faq.html" class="dropdown-item"><span>Faq</span></a></li>
-                                                    <li><a href="signin.html" class="dropdown-item"><span>Signin</span></a></li>
-                                                    <li><a href="sign-up.html" class="dropdown-item"><span>Signup</span></a></li>
-                                                    <li><a href="404.html" class="dropdown-item"><span>404 Error</span></a></li>
-                                                </ul>
-                                            </li>
-                                           <li><a href="pricing.html" class="dropdown-item"><span>Our Pricing</span></a></li>
-                                        </ul> -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="home.html" role="button" data-bs-toggle="dropdown-item"
+                                            data-bs-auto-close="outside" aria-expanded="false">Home</a>
+        
                                     </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link  " href="about_us.html" role="button" data-bs-toggle="dropdown-item"
+                                            data-bs-auto-close="outside" aria-expanded="false">About us</a>
+        
+                                    </li>
+                                    
                                     <li class="nav-item  dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Projects</a>
+                                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                            data-bs-auto-close="outside" aria-expanded="false">Services</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="solaraid" class="dropdown-item"><span>Solar Aid</span></a></li>
-                                            <li><a href="assest" class="dropdown-item"><span>Digitilaztion of assest</span></a></li>
-                                            <li><a href="inventory" class="dropdown-item"><span>Factory Inventory and Billing</span></a></li>
-                                            <!--  <li><a href="portfolio-details-V1.html" class="dropdown-item"><span>ERPs</span></a></li>
-                                            <li><a href="portfolio-details-V1.html" class="dropdown-item"><span>Factory Management </span></a></li>
-                                            <li><a href="" class="dropdown-item"><span>Admin Dashboards</span></a></li> -->
-
+                                            <li><a href="mobile_app_dev.html" class="dropdown-item"><span>Mobile App Development</span></a></li>
+                                            <li><a href="#" class="dropdown-item"><span>Website and Web Application Development</span></a></li>
+                                            <li><a href="#" class="dropdown-item"><span>AI Development and Chatbot</span></a></li>
+                                            <li><a href="#" class="dropdown-item"><span>Blockchain  Application Development</span></a></li>
+                                            <li><a href="#" class="dropdown-item"><span>Custom Software Development</span></a></li>
+                                            <li><a href="#" class="dropdown-item"><span>AR & VR Development</span></a></li>
+                                          
+        
                                         </ul>
                                     </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact_us" role="button">Contact us</a>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link active" href="blog.html" role="button" data-bs-toggle="dropdown-item"
+                                            data-bs-auto-close="outside" aria-expanded="false">Blog</a>
+        
                                     </li>
-                            </ul>
-                            <!-- Mobile Content -->
-                            <div class="mobile-content d-block d-lg-none">
-                                <div class="d-flex flex-column align-items-center justify-content-center mt-70">
-                                    <div class="call-button">Call us <a href="tel:(+91) 9566377015" class="call">(+91) 9566377015</a> <a href="tel:(+91) 9566377015" class="call">(+44) 7436938665</a></div>
-                                    <a href="contact_us" class="send-msg-btn tran3s mb-10">Contact us</a>
+        
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact_us.html" role="button">Contact us</a>
+                                    </li>
+                                </ul>
+                                <!-- Mobile Content -->
+                                <div class="mobile-content d-block d-lg-none">
+                                    <div class="d-flex flex-column align-items-center justify-content-center mt-70">
+                                        <div class="call-button">Call us <a href="tel:(+91) 1234567890" class="call">(+91)
+                                                1234567890</a> <a href="tel:(+91) 1234567890" class="call">(+44)
+                                                1234567890</a></div>
+                                        <a href="contact_us" class="send-msg-btn tran3s mb-10">Contact us</a>
+                                    </div>
                                 </div>
+                                <!-- /.mobile-content -->
                             </div>
-                            <!-- /.mobile-content -->
-                        </div>
-                    </nav>
+                        </nav>
+                    </div>
                 </div>
-            </div>
-            <!-- /.inner-content -->
-        </header>
-        <!-- /.theme-main-menu -->
-        <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
-        <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" rel="stylesheet" />
-
-
-
-        <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+                <!-- /.inner-content -->
+            </header>
+            <div class="content-slider side-link  ">
+                <div class="popings" style=" position: fixed; top:-30px;background-color: #e84462;">
+                  <a class="soc-lin" href="https://www.facebook.com/profile.php?id=61559212570222"><b style="color:white; ">Facebook</b><span
+                      style="padding: 5px; color: white;"><i class="bi bi-facebook"></i></span></a>
+                </div>
+                <div class="popings" style="position: fixed; top: 10px; background-color:#e84462;">
+                  <a class="soc-lin" href="https://www.instagram.com/ucleanmadurai/"><b style="color:white;">Instagram</b><span style="padding: 6px; color: white; "><i
+                        class="bi bi-instagram"></i></span></a>
+                </div>
+                <div class="popings" style="  top:49px;background-color:#e84462;">
+                  <a class="soc-lin" href="https://www.youtube.com/channel/UCUbQanbter-h7UNVN0LhsWA"><b style="color:white;">Youtube</b><span
+                      style="padding: 5px; color: white;"><i class="bi bi-youtube"></i></span></a>
+                </div>
+                <div class="popings" style="top:89px;background-color:#e84462;">
+                  <a class="soc-lin" href=""><b style="color:white;">Linkedin</b><span style="padding: 5px; color: white;"><i
+                        class="bi bi-linkedin"></i><span></a>
+                </div>
+               
+                <div class="popings" style="top:130px;background-color:#e84462;">
+                  <a class="soc-lin" href=""><b style="color:white;">Call Us</b><span style="padding: 6px; color: white; "><i
+                        class="bi bi-phone"></i></span></a>
+                </div>
+              </div>
+            <!-- /.theme-main-menu -->
+            <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+            <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" rel="stylesheet" />
+        
+        
+        
+            <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
 
 
 
@@ -293,121 +297,104 @@
         </div>
         <!-- /.theme-inner-banner -->
 
+       <!-- hero section starts   -->
+       <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Software Development Insights</h2>
+                </div>
+                <div class="col-lg-6">
+                    <p>
+                        Our diverse and sector-focused experience has created opportunities for businesses around the world. Take advantage of the full potential of the technical specialists who have shared their opinions in these blogs.</p>
+                </div>
+            </div>
+        </div>
+       </section>
+       <!-- hero section ends  -->
 
 
+       <!-- blog section starts -->
+       <!-- <div class="container py-5">
+        <div id="row_1" class="row d-flex justify-content-center ">
+            <div class="col-lg-3 _show">
+                <div class="card border-0 " style="width: 18rem;">
+                    <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+                  
+                      <a href="#" class="btn btn-primary">Continue Reading</a>
+                    </div>
+                  </div>
+            </div>
 
+            <div class="col-lg-3 _show">
+                <div class="card border-0 " style="width: 18rem;">
+                    <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+                  
+                      <a href="#" class="btn btn-primary">Continue Reading</a>
+                    </div>
+                  </div>
+            
+        </div>
+        <div class="col-lg-3 _show">
+            <div class="card border-0 " style="width: 18rem;">
+                <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+              
+                  <a href="#" class="btn btn-primary">Continue Reading</a>
+                </div>
+              </div>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-lg-3 hidden">
+            <div class="card border-0   " style="width: 18rem;">
+                <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+              
+                  <a href="#" class="btn btn-primary">Continue Reading</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 hidden" >
+            <div class="card border-0  " style="width: 18rem;">
+                <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+              
+                  <a href="#" class="btn btn-primary">Continue Reading</a>
+                </div>
+              </div>
+        
+            </div>
+            <div class="col-lg-3 hidden" >
+        <div class="card border-0  " style="width: 18rem;">
+            <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+          
+              <a href="#" class="btn btn-primary">Continue Reading</a>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+    <button id="load_btn" class="btn btn-danger load-more">load more </button>
+    </div> -->
+    <!-- blog section ends  -->
+
+    
         <!--
 			=====================================================
 				Portfolio Details One
 			=====================================================
 			-->
-        <div class="pr-details-one mt-120 lg-mt-90 mb-170 lg-mb-100">
-            <div class="container">
-                <div class="wrapper ps-xxl-4 pe-xxl-4 ms-xxl-5 me-xxl-5">
-                    <div class="row gx-xxl-5">
-                        <div class="col-lg-6">
-                            <div class="title-style-five">
-                                <div class="upper-title">Inventory,Billing,Customer management</div>
-                                <h2 class="main-title">Hybrid Web Application for Billing and inventory</h2>
-                            </div>
-                            <div class="text-wrapper pt-30 md-pt-20">
-                                <p>Welcome to our cloud-based web application for factory inventory, customer relationship management, and billing! Our platform is designed to streamline and simplify your business operations, allowing you to focus on what
-                                    you do best - providing top-quality products and services to your customers.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="project-info ps-xl-5">
-                                <div class="row gx-xxl-5">
-                                    <div class="col-sm-6 mb-25">
-                                        <div class="pt-title">DATe</div>
-                                        <div class="pt-text">July, 2022</div>
-                                    </div>
-                                    <div class="col-sm-6 mb-25">
-                                        <div class="pt-title">Client</div>
-                                        <div class="pt-text">Lakshmi Trading Company</div>
-                                    </div>
-                                    <div class="col-sm-6 mb-25">
-                                        <div class="pt-title">Project Type</div>
-                                        <div class="pt-text">Hybrid Web App,Cloud,</div>
-                                    </div>
-                                    <div class="col-sm-6 mb-25">
-                                        <div class="pt-title">Duration</div>
-                                        <div class="pt-text">4 Months</div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- /.project-info -->
-                        </div>
-                    </div>
-                    <div class="portfolio-block-two mt-40 mb-80 lg-mt-20 lg-mb-40">
-                        <div class="img-meta">
-                            <img src="/static/images/gallery/img_24.png" alt="" class="w-100">
-                            <div class="hover-state tran3s"><a class="fancybox video-icon tran3s d-flex align-items-center justify-content-center" data-fancybox="" href="/static/images/gallery/img_24.png"><i class="bi bi-plus"></i></a></div>
-                        </div>
-                    </div>
-                    <!-- /.portfolio-block-two -->
-
-                    <h3 class="sub-title">Working Process</h3>
-                    <div class="row gx-xxl-5">
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="block-style-sixteen d-flex mt-30 md-mt-20">
-                                <div class="numb tran3s">1</div>
-                                <div class="text">
-                                    <h6>Research</h6>
-                                    <p>Collect data and ger ready for research.</p>
-                                </div>
-                            </div>
-                            <!-- /.block-style-sixteen -->
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="block-style-sixteen d-flex mt-30 md-mt-20">
-                                <div class="numb tran3s">2</div>
-                                <div class="text">
-                                    <h6>Identify Problem</h6>
-                                    <p>Then we find the problem with our ai.</p>
-                                </div>
-                            </div>
-                            <!-- /.block-style-sixteen -->
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="block-style-sixteen d-flex mt-30 md-mt-20">
-                                <div class="numb tran3s">3</div>
-                                <div class="text">
-                                    <h6>Resolve Problem</h6>
-                                    <p>Now it’s time to fix the issue by advance ai</p>
-                                </div>
-                            </div>
-                            <!-- /.block-style-sixteen -->
-                        </div>
-                    </div>
-                    <div class="mt-80 pt-80 pb-40 mb-60 lg-mt-50 lg-pt-50 lg-pb-20 lg-mb-40 border-top border-bottom">
-                        <div class="row gx-xxl-5">
-                            <div class="col-lg-6">
-                                <h3 class="sub-title">The Challange</h3>
-                                <p>The challenge faced by many businesses today is the need for a comprehensive, all-in-one solution that can manage inventory, customer relationships, and billing. Many businesses struggle with managing these critical areas
-                                    separately, which can lead to inefficiencies, errors, and a lack of visibility into the overall health of the business.</p>
-                            </div>
-                            <div class="col-xl-5 col-lg-6 ms-auto">
-                                <h3 class="sub-title">Our Goal</h3>
-                                <ul class="style-none list-item">
-                                    <li>Our goal is to provide a cloud-based web application that can help businesses streamline and simplify their operations, by integrating inventory management, customer relationship management, and billing into one easy-to-use
-                                        platform.</li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="sub-title">Result</h3>
-                    <p>By using our cloud-based web application, businesses can achieve several benefits. They can save time and money by eliminating the need for separate software systems and manual processes. They can also improve the accuracy and efficiency
-                        of their operations, by automating many of the tasks associated with inventory management, customer relationship management, and billing. This can result in improved customer satisfaction, increased sales, and better financial
-                        performance overall. With our secure and reliable platform, businesses can have peace of mind, knowing that their data is safe and secure. Ultimately, our cloud-based web application can help businesses achieve greater success
-                        and profitability, by providing them with the tools they need to manage their operations more effectively.</p>
-                </div>
-                <!-- /.wrapper -->
-            </div>
-        </div>
-        <!-- /.pr-details-one -->
+       
 
 
 
@@ -416,25 +403,7 @@
 				Fancy Short Banner One
 			============================================== 
 			-->
-        <div class="fancy-short-banner-one position-relative bottom-transform">
-            <div class="container">
-                <div class="bg-wrapper">
-                    <div class="row align-items-center gx-xxl-5">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <div class="sub-title">Work Inquiry</div>
-                            <h3 class="pe-xxl-5 md-pb-20">Having Any Query! Book an appointment.</h3>
-                        </div>
-                        <div class="col-lg-6 text-center text-lg-end">
-                            <a href="contact_us" class="msg-btn tran3s">Send Us Message</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.bg-wrapper -->
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /.fancy-short-banner-one -->
-        <br>
+      
 
 
 
@@ -446,52 +415,168 @@
                 Footer
             =====================================================
             -->
-        <div class="footer-style-four theme-basic-footer">
-            <div class="container">
-                <div class="inner-wrapper">
-                    <div class="subscribe-area">
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="title-style-four sm-pb-20">
-                                    <h4 class="main-title">Join Our <span>Newsletter</span> & Get updated.</h4>
-                                </div>
-                                <!-- /.title-style-four -->
-                            </div>
-                            <div class="col-md-6">
-                                <div class="subscribe-form">
-                                    <form action="/subcribe" method="POST">
-                                        <input type="email" name="email_" placeholder="Enter your email">
-                                        <button class="ripple-btn tran3s">Subscribe</button>
-                                    </form>
-                                    <p>We only send interesting and relevant emails.</p>
-                                </div>
-                                <!-- /.subscribe-form -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.subscribe-area -->
-
-
-                    <div class="bottom-footer">
-                        <div class="d-lg-flex justify-content-between align-items-center">
-                            <ul class="order-lg-1 pb-15 d-flex justify-content-center footer-nav style-none">
-                                <!-- <li><a href="faq.html">Privacy &amp; Terms.</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="contact_us">Contact Us</a></li> -->
-                            </ul>
-                            <p class="copyright text-center order-lg-0 pb-15">©2019 by AI BEING Proudly created by software development team</p>
-                        </div>
-                    </div>
+            <!-- footer starts here -->
+            <footer class="foot-sec">
+                <section class="bg-dark foot">
+                    <div class="container">
+            <div class="row ">
+            <div class="col-lg-3 col-md-6">
+                <div class="ser-fot ">
+                    <h6 class="text-uppercase " > Service</h6>
+                   <a href="mobile_app_dev.html"> <p>Mobile App Development</p></a>
+                   <a href="blockchain_dev.html"> <p>Blockchain Development</p></a>
+                  <a href="websites_&_webapps.html">  <p>Websites  Development </p></a>
+                    <a href="custom_software_dev.html"></a><p>Custom Software Development </p>
+                   <a href="Ai_chatbot.html"> <p>AI chatbot Development </p></a>
+                   <a href="Ai_chatbot.html"> <p>VR & AR Development </p></a>
                 </div>
-                <!-- /.inner-wrapper -->
             </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="ser-fot ">
+                    <h6 class="text-uppercase " > technologies</h6>
+                    <p>React js</p>
+                    <p>Node js </p>
+                    <p>Angular js </p>
+                    <p>Express js </p>
+                    <p>HTML & CSS</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="ser-fot ">
+                    <h6 class="text-uppercase " > industries</h6>
+                    <p>Fintech </p>
+                    <p>Healthcare</p>
+                    <p>Entertainment  </p>
+                    <p>Logicstics</p>
+                    <p>Retail and E-Commerence</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="ser-fot d-block ">
+                    <h6 class="text-uppercase " > Company</h6>
+                   <a href="home.html"><p>Home </p></a> <br>
+                   <a href="about_us.html"> <p>About Us </p></a><br>
+                   <a href="#"> <p>Blog </p></a><br>
+                   <a href="mobile_app_dev.html"> <p>Services</p></a><br>
+                   <a href="contact_us.html"> <p>Contact us </p> </a>
+                </div>
+            </div>
+            </div>
+            <div class="row mt-5 ">
+            <div class="col-md-4 copy-right-sec">
+             
+              <div class="socials-a text-center">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a class="text-decoration-none text-white " href="#">
+                      <i class="bi bi-facebook" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-decoration-none text-white " href="#">
+                      <i class="bi bi-twitter" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-decoration-none text-white " href="#">
+                      <i class="bi bi-instagram" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-decoration-none text-white " href="#">
+                      <i class="bi bi-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+             
+            </div>
+            <div class="col-md-4 copy-right-sec">
+                <h4 class="text-white fw-bold">RITHVISOL TECHNOLOGIES</h4>
+            </div>
+            <div class="col-md-4">
+            <div class="text-center">
+                <img class="img-fluid " src="./static/images/assets/sky-removebg-preview.png" alt=""></div>
+                <div class="copyright-footer text-center">
+                  
+                    <p class="copyright color-text-a mb-0">
+                      &copy; Copyright
+                      <span class="color-a ">It Solution</span> All Rights Reserved.
+                    </p>
+                  </div>
+                  <div class="credits text-white text-center">
+                   
+                  &copy;   Designed by <a class="text-decoration-none text-white " href="https://nexusdigitalia.com/">nexusdigitalia</a>
+                  </div>
+            </div>
+            </div>
+                    </div>
+                </section>
+            </footer>
+        <!-- scrolling social media icons  -->
+        <div class="whats-scorll" id="whatsapp-icon" >
+            <img style="width: 60%;" class="img-fluid" src="./static/images/assets/whats app.webp" alt="">
+            <!-- <i class="fa-brands fa-square-whatsapp"></i> -->
         </div>
-        <!-- /.footer-style-four -->
-
-
-        <button class="scroll-top">
-                <i class="bi bi-arrow-up-short"></i>
-            </button>
+        <div id="skype-icon">
+            <img style="width: 80%;" class="img-fluid" src="./static/images/assets/skype.png" alt="">
+        </div>
+                <button class="scroll-top">
+                    <i class="bi bi-arrow-up-short"></i>
+                </button>
+    <!-- modal form  -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+          
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+                <div class="form-style-one">
+                    <h3 class="form-title pb-40 lg-pb-20">Contact Us.</h3>
+                    <img class="img-fluid " src="/static/images/assets/form-img.png" alt="">
+                    <form id="get-form" style="margin-top: 2rem;"  data-toggle="validator">
+                        <div class="messages"></div>
+                        <div class="row controls">
+                            <div class="col-12">
+                                <div class="input-group-meta form-group mb-30">
+                                    <label>Name*</label>
+                                    <input id="recipient-name" type="text" placeholder="Jeeva" name="name" required="required" data-error="Name is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+    
+                            <div class="col-12">
+                                <div class="input-group-meta form-group mb-30">
+                                    <label>Phone Number*</label>
+                                    <input id="phone-number" type="phonenumber" placeholder="" name="number" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="input-group-meta form-group mb-30">
+                                    <label>Email*</label>
+                                    <input type="email" placeholder="contact@gmail.com" name="email" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="input-group-meta form-group mb-30">
+                                    <textarea placeholder="Your message*" name="message" required="required" data-error="Please,leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-12"><button onclick="sendMessage()" class="btn-eight ripple-btn">Send Message</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
 
 
 
@@ -520,22 +605,29 @@
         <script src="/static/js/theme.js"></script>
     </div>
     <!-- /.main-page-wrapper -->
+      <script>
+    const cards = document.querySelectorAll('._show');
+    const loadMoreButton = document.querySelector('.load-more');
+    let visibleCards = 3;
 
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {},
-            Tawk_LoadStart = new Date();
-        (function() {
-            var s1 = document.createElement("script"),
-                s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/645b8451ad80445890ec27e1/1h02npo1t';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
+    function showMoreCards() {
+      const cardsToShow = Math.min(visibleCards + 3, cards.length); // Limit to 3 or remaining cards
+
+      for (let i = visibleCards; i < cardsToShow; i++) {
+        cards[i].classList.remove('hidden');
+      }
+
+      visibleCards = cardsToShow; // Update visibleCards to the number shown
+
+      if (visibleCards === cards.length) {
+        loadMoreButton.textContent = 'No More Cards';
+        loadMoreButton.disabled = true;
+      }
+    }
+
+    loadMoreButton.addEventListener('click', showMoreCards);
+      </script>
+  
 
 </body>
 

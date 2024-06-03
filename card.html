@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Cards</title>
+  <style>
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .card {
+      width: 30%;
+      margin: 10px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .card.hidden {
+      display: none;
+    }
+
+    .load-more {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: 1px solid #ddd;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card" style="width: 18rem;">
+      <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+    
+        <a href="#" class="btn btn-primary">Continue Reading</a>
+      </div>
+    </div>
+    <div class="card"style="width: 18rem;">
+      <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+    
+        <a href="#" class="btn btn-primary">Continue Reading</a>
+      </div>
+    </div>
+    <div class="card"style="width: 18rem;">
+      <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+    
+        <a href="#" class="btn btn-primary">Continue Reading</a>
+      </div>
+    </div>
+    <div class="card hidden"style="width: 18rem;">
+      <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+    
+        <a href="#" class="btn btn-primary">Continue Reading</a>
+      </div>
+    </div>
+    <div class="card hidden"style="width: 18rem;">
+      <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+    
+        <a href="#" class="btn btn-primary">Continue Reading</a>
+      </div>
+    </div>
+    <div class="card hidden"style="width: 18rem;">
+      <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+    
+        <a href="#" class="btn btn-primary">Continue Reading</a>
+      </div>
+    </div>
+    <div class="card hidden"style="width: 18rem;">
+      <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+    
+        <a href="#" class="btn btn-primary">Continue Reading</a>
+      </div>
+    </div>
+    <div class="card hidden"style="width: 18rem;">
+      <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+    
+        <a href="#" class="btn btn-primary">Continue Reading</a>
+      </div>
+    </div>
+    <div class="card hidden"style="width: 18rem;">
+      <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+    
+        <a href="#" class="btn btn-primary">Continue Reading</a>
+      </div>
+    </div>
+    <div class="card hidden"style="width: 18rem;">
+      <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
+    
+        <a href="#" class="btn btn-primary">Continue Reading</a>
+      </div>
+    </div>
+   
+  </div>
+  <button class="load-more">Load More</button>
+
+  <script>
+    const cards = document.querySelectorAll('.card');
+    const loadMoreButton = document.querySelector('.load-more');
+    let visibleCards = 3;
+
+    function showMoreCards() {
+      const cardsToShow = Math.min(visibleCards + 3, cards.length); // Limit to 3 or remaining cards
+
+      for (let i = visibleCards; i < cardsToShow; i++) {
+        cards[i].classList.remove('hidden');
+      }
+
+      visibleCards = cardsToShow; // Update visibleCards to the number shown
+
+      if (visibleCards === cards.length) {
+        loadMoreButton.textContent = 'No More Cards';
+        loadMoreButton.disabled = true;
+      }
+    }
+
+    loadMoreButton.addEventListener('click', showMoreCards);
+  </script>
+</body>
+</html>
