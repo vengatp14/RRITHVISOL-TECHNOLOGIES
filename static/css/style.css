@@ -454,6 +454,17 @@ h6 {
     line-height: 1.34em;
     letter-spacing: -1px;
 }
+@media screen and (min-width:0px) and (max-width:640px){
+    .title-style-one .main-title {
+        font-family: 'gorditamedium';
+        font-size: 38px;
+        line-height: 1.34em;
+        letter-spacing: -1px;
+    }
+    .fancy-feature-two{
+        margin-left: 20px;
+    }
+}
 
 .title-style-one.white-vr .main-title {
     color: #fff;
@@ -495,11 +506,14 @@ h6 {
 @media screen and (min-width:0px) and (max-width:475px){
     .title-style-three .main-title {
         font-family: 'gorditamedium';
-        font-size: 40px;
+        font-size: 37px;
         line-height: 1.31em;
         letter-spacing: -1px;
         margin: 0;
     } 
+    .title-style-three{
+        margin-left: 20px;
+    }
 }
 
 .title-style-three .main-title span {
@@ -1132,8 +1146,8 @@ body .btn-eight:hover {
     border-radius: 50%;
     width: 220px;
     height: 220px;
-    left: -50px;
-    top: -70px;
+    /* left: -50px;
+    top: -70px; */
     background: #FFFFFF;
     box-shadow: 6px 73px 62px rgba(0, 12, 119, 0.03);
     z-index: -1;
@@ -4569,7 +4583,7 @@ body .btn-eight:hover {
     .hero-banner-five {
         position: relative;
         z-index: 2;
-        padding: 100px 10px 100px 10px;
+        padding: 50px 10px 100px 10px;
         background: linear-gradient(0deg, rgba(248, 253, 255, 0) 0%, rgba(241, 252, 255, 0.51782) 48.22%, #F6FDFF 100%);
     }
 }
@@ -4582,8 +4596,13 @@ body .btn-eight:hover {
 @media screen and (min-width:0px) and (max-width:640px){
     .hero-banner-five .hero-heading {
         font-family: 'gorditamedium';
-        font-size: 35px;
+        font-size: 30px;
         line-height: 1.17em;
+        margin-left: 15px;
+    }
+    .text-lg {
+        font-size: 17px;
+        margin-left: 10px;
     }
 }
 
@@ -4659,6 +4678,17 @@ body .btn-eight:hover {
         left: 71%;
         top: 25%;
         width: 36.4%;
+    }
+    .hero-banner-five .hero-heading {
+        font-family: 'gorditamedium';
+        font-size: 70px;
+        line-height: 1.17em;
+    }
+    .hero-banner-five {
+        position: relative;
+        z-index: 2;
+        padding: 100px 10px 100px 10px;
+        background: linear-gradient(0deg, rgba(248, 253, 255, 0) 0%, rgba(241, 252, 255, 0.51782) 48.22%, #F6FDFF 100%);
     }
 }
 
@@ -4808,7 +4838,7 @@ body .btn-eight:hover {
         font-size: 150px;
         font-weight: bold;
         top: 143px;
-        left: 90px;
+        left: 65px;
         opacity: 0.1;
         z-index: 99;
         -webkit-text-stroke-width: 1px;
@@ -4880,7 +4910,14 @@ body .btn-eight:hover {
     overflow: hidden;
     z-index: 5;
 }
-
+@media screen and (min-width:0px) and (max-width:640px){
+    .fancy-feature-eighteen {
+        background: linear-gradient(180deg, rgba(248, 253, 255, 0) 0%, rgba(241, 252, 255, 0.51782) 48.22%, #F6FDFF 100%);
+        overflow: hidden;
+        z-index: 5;
+        margin-left: 20px;
+    }
+}
 .fancy-feature-eighteen .oval-one {
     width: 10px;
     height: 10px;
@@ -5334,10 +5371,10 @@ body .btn-eight:hover {
         font-family: 'gorditamedium';
         font-size: 18px;
         color: #fff;
-        width: 150px;
+        width: 210px;
         border-radius: 8px;
       position: relative;
-      top: 10px;
+      top: 15px;
       left: 0px !important;
         background: var(--prime-three);
     }
@@ -5347,7 +5384,7 @@ body .btn-eight:hover {
         font-family: 'gorditamedium';
         font-size: 18px;
         color: #fff;
-        width: 150px;
+        width: 210px;
         border-radius: 8px;
       position: relative;
       top: 10px;
@@ -5360,11 +5397,11 @@ body .btn-eight:hover {
         font-family: 'gorditamedium';
         font-size: 18px;
         color: #fff;
-        width: 150px;
+        width: 210px;
         border-radius: 8px;
       position: relative;
       top: 10px;
-      left: 250px !important;
+      left: 205px !important;
         background: var(--prime-three);
     }
 }
@@ -6955,6 +6992,18 @@ body .btn-eight:hover {
     letter-spacing: -1px;
     margin: 0;
 }
+@media screen and (min-width:0px) and (max-width:640px){
+    .our-appr .main-title{
+        font-family: 'gorditamedium';
+        font-size: 38px;
+        line-height: 1.4em;
+        letter-spacing: -1px;
+        margin: 0;
+    } 
+    .our-appr{
+        margin-left: 20px;
+    }
+}
 .our-appr .main-title span {
     color: var(--prime-three);
     text-decoration: underline;
@@ -6971,7 +7020,20 @@ body .btn-eight:hover {
 .ind-ser .ind-crd:hover{
     background-color: white;
 }
-
+@media  screen and (min-width:0px) and (max-width:640px){
+    .ind-ser{
+        margin-left: 20px;
+    }
+    .ind-ser h1{
+        font-size: 60px;
+    }
+}
+@media screen and (min-width:1023px) and (max-width:1440px){
+    .ind-ser p{
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!testmonial section css !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .swi-rev .rev-p{
@@ -6984,6 +7046,12 @@ body .btn-eight:hover {
     background-color: white;
     padding: 30px;
     box-shadow: 5px 5px 5px 5px rgba(53, 3, 3, 0.37);
+ }
+
+ @media screen and (min-width:0px) and (max-width:640px) {
+    .swi-rev {
+        margin-left: 20px;
+    }
  }
  /* footer css  */
 
@@ -7227,6 +7295,16 @@ body .btn-eight:hover {
     font-size: 50px;
     line-height: 1.17em;
   }
+  @media screen and (min-width:0px) and (max-width:640px){
+    .abt-ban .hero-heading{
+        font-family: 'gorditamedium';
+        font-size: 40px;
+        line-height: 1.17em;
+      }
+      .abt-ban{
+        margin-left: 20px;
+      }
+  }
   .abt-ban .hero-heading span {
     color: var(--prime-three);
     /* text-decoration: underline; */
@@ -7244,7 +7322,10 @@ body .btn-eight:hover {
         color: white!important;
         background-color: #ec143c !important;
         width: 100%;
-    }   
+    }  
+    .why-2-choose{
+        margin-left: 10px;
+    } 
 }
 .why-2-choose    .tab-bg{
  background-color: rgb(255, 255, 255);
@@ -7322,7 +7403,7 @@ transition: box-shadow .3s ease;
             box-shadow: 2px  2px  2px  2px rgba(0, 0, 0, 0.05);
             position: relative;
             padding-top: 70px;
-            margin-top: 3rem;
+          
            }
            .ethi-sec .ethi-crd .ethi-icon img{
             background-color: white;
@@ -7334,15 +7415,19 @@ transition: box-shadow .3s ease;
             /* bottom: 290px !important;
             left: 32px !important; */
          } 
-         
+       .mt-crd{
+        margin-top: 3rem;
+       }
        .ethi-sec .ethi-crd{
         background-color: #F8F9D7;
         padding: 18px;
+        margin-top: 10px;
         border-radius: 20px;
         box-shadow: 2px  2px  2px  2px rgba(0, 0, 0, 0.05);
         position: relative;
         padding-top: 30px;
        }
+
        }
        @media screen and (min-width:640px) and (max-width:768px){
         .ethi-sec .ethi-crd{
@@ -7364,6 +7449,12 @@ transition: box-shadow .3s ease;
             /* bottom: 290px !important;
             left: 32px !important; */
          }
+         .mt-crd{
+            margin-top: 3rem;
+           }
+       }
+       .mt-crd{
+        margin-top: 5rem;
        }
 
        @media screen and (min-width:768px) and (max-width:1024px){
@@ -7433,6 +7524,11 @@ transition: box-shadow .3s ease;
     text-decoration: none !important;
     color: white !important;
 }
+@media screen and (min-width:0px) and (max-width:640px){
+    .mt-5-mob{
+        margin-top: 3rem;
+    }
+}
 
 
 /* !!!!!!!!!!!!!!!!!!! services page - Mobile app development page css starts here */
@@ -7442,6 +7538,19 @@ transition: box-shadow .3s ease;
     color: var(--prime-three);
     /* text-decoration: underline; */
     text-decoration-thickness: 5px;
+}
+@media screen and (min-width:0px) and (max-width:640px){
+    .hero-sec-ser .main-heading{
+        font-size: 50px !important;
+    }
+    .hero-sec-ser{
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width:640px) and (max-width:768px) {
+    .hero-sec-ser .main-heading{
+        font-size: 60px !important;
+    }
 }
 
 
@@ -7484,6 +7593,18 @@ transition: box-shadow .3s ease;
 .wht-v-do .mob-app-crd:hover {
   background-color: #EEF7FF;
  }
+ @media screen and (min-width:0px) and (max-width:640px){
+    .wht-v-do .main-title{
+        font-family: 'gorditamedium';
+        font-size: 40px;
+        line-height: 1.4em;
+        letter-spacing: -1px;
+        margin: 0;
+    }
+    .wht-v-do{
+        margin-left: 20px;
+    }
+ }
 
  /* !!!!!!!! 3rd party api section css starts !!!!!!!!!!!!!!!!! */
 
@@ -7501,6 +7622,9 @@ transition: box-shadow .3s ease;
         box-shadow: 3px 3px 3px 3px #CDE8E5 , black;
         border-radius: 15px;
         margin-top: 3rem;
+     }
+     .api-int-sec{
+        margin-left: 20px;
      }
  }
  /* !!!!!!!!!!!!!!!!! our technologies section css !!!!!!!!!!!!!!!!!!!!!!! */
@@ -7568,6 +7692,12 @@ transition: box-shadow .3s ease;
       .img-scroll p {
         margin-bottom: 0px !important;
         font-size: 15px !important;
+       }
+       .our-tech{
+        margin-left: 20px;
+       }
+       .our-tech h2{
+       font-size: 40px;
        }
   }
   @media screen and (min-width:640px) and (max-width:1440px){
@@ -8056,4 +8186,182 @@ transition: box-shadow .3s ease;
           left: -175px;
         }
       } */
+    /* !!!!!!!!! new top bar css !!!!!!!!!!!!!!!!!!!!!! */
+    .new-top-bar  .fixed-top_1 {
+        transition: 0.5s;
+        background: var(--bs-white);
+        border: 0;
+    }
+    .new-top-bar     .topbar {
+        padding: 17px 17px 17px 17px ;
+        border-radius: 230px 100px;
+        background-color: #e84462;
+        width: 79%;
+       }
     
+     .new-top-bar      .topbar .top-info{
+        font-size: 18px ;
+        line-height: 0;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+    }
+    
+     .new-top-bar      .topbar .top-link  {
+        font-size: 18px;
+        line-height: 0;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .new-top-bar     .topbar .top-link a {
+        letter-spacing: 1px;
+    }
+    
+    .new-top-bar   .topbar .top-link a small:hover {
+        color: var(--bs-dark) !important;
+        font-weight: bolder;
+        background-color: white;
+        transition: 0.5s;
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
+    @media screen and (min-width:0px) and (max-width:475px){
+        .new-top-bar     .topbar {
+        padding: 17px 17px 17px 17px ;
+        border-radius: 230px 100px;
+        background-color: #e84462;
+        width: 100%;
+       }
+        .new-top-bar .topbar .top-info small{
+        font-size: 12px !important;
+        font-weight: bolder;
+        line-height: 0;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+    }  
+    }
+    @media screen and (min-width:640px) and (max-width:768px){
+        .new-top-bar .topbar .top-info small{
+        font-size: 15px !important;
+        font-weight: bolder;
+        line-height: 0;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .new-top-bar   .topbar .top-link {
+      font-size: 10px;
+      font-weight: bolder;
+      line-height: 0;
+      letter-spacing: 1px;
+      display: flex;
+     
+    }
+    }
+    @media (min-width:768px) and (max-width:1024px){
+        .new-top-bar .topbar .top-info {
+        font-size: 18px;
+        font-weight: bolder;
+        line-height: 0;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .new-top-bar   .topbar .top-link {
+      font-size: 10px;
+      font-weight: bolder;
+      line-height: 0;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+    }
+    }
+    /* !!!!!!!!!!!!!!!!!!!!!!!!! new tech section css !!!!!!!!!!!!!!!!!!!!!!!! */
+ 
+                
+    .slider {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 2.5rem;
+    }
+    .slider   .item {
+        animation: animate 25s linear infinite;
+    }
+    .slider    .item img
+        {
+            min-width: 130px;
+            padding: 0 30px;
+        }
+    .slider:hover .item {
+        animation-play-state: paused;
+    }
+    @keyframes animate {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(-1800px, 0, 0);
+        }
+    }
+    .slider_2 {
+      display: flex;
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 2.5rem;
+    }
+    
+    .slider_2   .item {
+      animation: animate_2 25s linear infinite;
+    }
+    
+    .slider_2    .item img {
+      min-width: 130px;
+      padding: 0 30px;
+    }
+    
+    .slider_2:hover .item {
+      animation-play-state: paused;
+    }
+    
+    @keyframes animate_2 {
+        0% {
+        transform: translate3d(-1800px, 0, 0); /* Start from the right edge */
+      }
+      100% {
+        transform: translate3d(0, 0, 0); /* Move to the left end */
+      }
+    }
+
+    /* !!!!!!!!!!!!!!!!! get in touch section css !!!!!!!!!!!!!!!!!!! */
+    .get-in-touch a:hover{
+        color:var(--prime-three) ;
+    }
+
+@media screen and (min-width:0px) and (max-width:320px){
+    .get-in-touch .detail p{
+        font-size: 14px !important;
+        font-weight: bold;
+     }
+     .get-in-touch{
+        margin-left: 20px;
+     }
+}
+@media screen and (min-width:375px) and (max-width:640px){
+    .get-in-touch .detail p{
+        font-size: 15px !important;
+        font-weight: bold;
+     }
+     .get-in-touch{
+        margin-left: 20px;
+     }
+}
+  
+    
+               

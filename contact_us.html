@@ -28,7 +28,8 @@
     <link rel="stylesheet" type="text/css" href="static/css/style.css" media="all">
     <!-- responsive style sheet -->
     <link rel="stylesheet" type="text/css" href="static/css/responsive.css" media="all">
-
+    <!-- font awesome icon link  -->
+    <link rel="stylesheet" href="./static/images/fav-icon/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css">
 
     <!-- Fix Internet Explorer ______________________________________-->
     <!--[if lt IE 9]>
@@ -120,23 +121,31 @@
             </section>
     <!-- top bar starts here  -->
       <!-- top bar section starts here -->
-      <section class="top-bar " style="padding-bottom: 3rem;">
-        <div class="container-fluid ">
-            <div class="row   ">
-          <div class="  col-lg-7 justify-content-start">
-            <div class="d-flex  align-item-center ">
-              <a class="mt-1"  href="https://maps.app.goo.gl/p7mQetb7FNf97mqJ8"><p class="ms-1 mt-1 me-1  "><i class="bi bi-geo-alt-fill me-2  "></i>Hosur , India</p></a>
-              <a style="color: white;" class="mt-1" href="tel:+917845833637">    <p class="ms-1 mt-1"><i class="bi bi-telephone-fill ms-1 me-2"></i> +91 7845833637</p></a>
-              <a class="mt-1" href="mailto:karthick@rithvisol.com">       <p class="ms-2 mt-1 me-1"><i class="bi bi-envelope ms-3 me-2"></i> karthick@rithvisol.com</p> </a>
+     
+      <section class="new-top-bar">
+        <div class="container-fluid fixed-top_1 nav-bou">
+            <div class="container topbar bg-p ">
+              <div class="d-flex justify-content-center">
+                <div class="top-info ps-2">
+        
+                  <small class="me-3 fw-bold"><i class="fas fa-map-marker-alt me-2 text-white"></i> <a href="https://maps.app.goo.gl/p7mQetb7FNf97mqJ8"
+                      class="text-white">Hosur, India</a></small>
+                  <small class="me-3 d-block fw-bold"><i class="fas fa-phone-square-alt me-2 text-white"></i><a href="callto:+917845833637"
+                      class="text-white">+91 7845833637</a></small>
+                  <small class="me-3 d-none d-md-block fw-bold"><i class="fas fa-envelope me-2 text-white"></i><a href="mailto:info@rithvisol.com"
+                      class="text-white">info@rithvisol.com</a></small>
+        
+        
+                </div>
+              
+                
+              </div>
+            
             </div>
-          </div>
-          <div class="  col-lg-5 d-none d-lg-block ">
-          
-          </div>
             </div>
-        </div>
-    </section>
-    <!-- top bar section ends here  -->
+        </section>
+    
+        <!-- top bar section ends here  -->
     <!-- top bar ends here  -->
     
     <header class="theme-main-menu sticky-menu theme-menu-four">
@@ -530,7 +539,7 @@
                         <div class="col-12">
                             <div class="input-group-meta form-group mb-30">
                                 <label>Email*</label>
-                                <input type="email" placeholder="contact@ai-being.com" name="email" required="required" data-error="Valid email is required.">
+                                <input type="email" placeholder="contact@gmail.com" name="email" required="required" data-error="Valid email is required.">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
