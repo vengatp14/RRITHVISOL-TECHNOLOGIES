@@ -42,7 +42,7 @@
 
 <body>
     <div class="main-page-wrapper">
-        <!-- ===================================================
+  <!-- ===================================================
                 Loading Transition
             ==================================================== -->
             <section>
@@ -79,6 +79,7 @@
                                 <span data-text-preloader="L" class="letters-loading">
                                     L
                                 </span>
+                                <br>
                                 <span data-text-preloader="T" class="letters-loading">
                                     T
                                 </span>
@@ -287,18 +288,11 @@
 				Theme Inner Banner
 			============================================== 
 			-->
-        <div class="theme-inner-banner">
-            <div class="container">
-                <h2 class="intro-title text-center">Project Details</h2>
-
-            </div>
-            <img src="/static/images/shape/shape_38.svg" alt="" class="shapes shape-one">
-            <img src="/static/images/shape/shape_39.svg" alt="" class="shapes shape-two">
-        </div>
+     
         <!-- /.theme-inner-banner -->
 
        <!-- hero section starts   -->
-       <section>
+       <section class="blog-ban">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -315,10 +309,10 @@
 
 
        <!-- blog section starts -->
-       <!-- <div class="container py-5">
-        <div id="row_1" class="row d-flex justify-content-center ">
-            <div class="col-lg-3 _show">
-                <div class="card border-0 " style="width: 18rem;">
+ <div class="container py-5 blog-crd-sec text-center">
+        <div id="row_1" class="row d-flex justify-content-lg-around justify-content-center ">
+            <div class="col-lg-3 col-md-6 _show">
+                <div class="card border-0 blog-crd " >
                     <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
@@ -328,8 +322,8 @@
                   </div>
             </div>
 
-            <div class="col-lg-3 _show">
-                <div class="card border-0 " style="width: 18rem;">
+            <div class="col-lg-3 col-md-6  _show">
+                <div class="card border-0  blog-crd" >
                     <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
@@ -339,8 +333,8 @@
                   </div>
             
         </div>
-        <div class="col-lg-3 _show">
-            <div class="card border-0 " style="width: 18rem;">
+        <div class="col-lg-3 col-md-6  _show">
+            <div class="card border-0  blog-crd" >
                 <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
@@ -350,9 +344,9 @@
               </div>
         </div>
     </div>
-        <div class="row">
-        <div class="col-lg-3 hidden">
-            <div class="card border-0   " style="width: 18rem;">
+        <div class="row d-flex justify-content-lg-around justify-content-center mt-lg-5 mt-0">
+        <div class="col-lg-3 col-md-6 hidden">
+            <div class="card border-0   " >
                 <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
@@ -361,8 +355,8 @@
                 </div>
               </div>
         </div>
-        <div class="col-lg-3 hidden" >
-            <div class="card border-0  " style="width: 18rem;">
+        <div class="col-lg-3 col-md-6 hidden" >
+            <div class="card border-0  " >
                 <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
@@ -372,8 +366,8 @@
               </div>
         
             </div>
-            <div class="col-lg-3 hidden" >
-        <div class="card border-0  " style="width: 18rem;">
+            <div class="col-lg-3 col-md-6 hidden" >
+        <div class="card border-0  " >
             <img src="./static/images/assets/blog.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
@@ -383,11 +377,17 @@
           </div>
         </div>
     </div>
-      
-    <button id="load_btn" class="btn btn-danger load-more">load more </button>
-    </div> -->
+      <div class="text-center" style="margin-top: 50px;">
+        <button id="load_btn" class="btn btn-danger load-more ">load more </button>
+      </div>
+ 
+    </div> 
     <!-- blog section ends  -->
-
+<style>
+.blog-crd-sec .hidden{
+    display: none;
+}
+</style>
     
         <!--
 			=====================================================
@@ -606,27 +606,12 @@
     </div>
     <!-- /.main-page-wrapper -->
       <script>
-    const cards = document.querySelectorAll('._show');
-    const loadMoreButton = document.querySelector('.load-more');
-    let visibleCards = 3;
-
-    function showMoreCards() {
-      const cardsToShow = Math.min(visibleCards + 3, cards.length); // Limit to 3 or remaining cards
-
-      for (let i = visibleCards; i < cardsToShow; i++) {
-        cards[i].classList.remove('hidden');
-      }
-
-      visibleCards = cardsToShow; // Update visibleCards to the number shown
-
-      if (visibleCards === cards.length) {
-        loadMoreButton.textContent = 'No More Cards';
-        loadMoreButton.disabled = true;
-      }
-    }
-
-    loadMoreButton.addEventListener('click', showMoreCards);
-      </script>
+$(document).ready(function () {
+    $("#load_btn").on("click", function () {
+        $(".hidden:hidden").slice(0, 3).slideDown(); // Show the next 3 hidden elements
+    });
+});
+  </script>
   
 
 </body>
