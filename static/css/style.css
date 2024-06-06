@@ -7090,7 +7090,15 @@ body .btn-eight:hover {
 }
 .fot-ban{
     background-color: #d8415d;
-    padding: 20px;
+    padding: 30px;
+    padding-top: 50px;
+  
+}
+.fot-ban p{
+    line-height: 30px;
+}
+.ser-fot{
+    line-height: 30px;
 }
 /* .logo_img{
     background-color: white;
