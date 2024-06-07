@@ -159,9 +159,24 @@
     line-height: 30px;
     position: absolute;
 }
+.ctn-preloader .animation-preloader .icon{
+    display: inline-block;
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
 
 .ctn-preloader .animation-preloader .txt-loading .letters-loading {
-    font-family: 'gorditabold';
+    font-family: "Nunito", sans-serif;
     letter-spacing: 12px;
     display: inline-block;
     color: rgb(145 59 255 / 15%);
@@ -569,14 +584,14 @@ h6 {
     color: white;
 }
 .bg-sch .sch-tittle span {
-    color: var(--prime-three);
-    text-decoration: underline;
+    color: black;
+    /* text-decoration: underline; */
     text-decoration-thickness: 4px;
 }
 
 .bg-sch{
     padding: 50px;
-    background-color: darkslategray;
+    background-color: var(--prime-three);
     border-radius: 15px;
 }
 
@@ -5386,7 +5401,7 @@ body .btn-eight:hover {
     top: 21px;
     left: 350px;
     border-radius: 8px;
-    background: var(--prime-three);
+    background: black;
     padding: 10px;
 }
 @media screen and (min-width:0px) and (max-width:640px){
@@ -7151,13 +7166,13 @@ body .btn-eight:hover {
 @media screen and (min-width:1440px) and (max-width:2560px){
     .fot-ban{
         position: relative !important;
-        bottom: 27px !important;
+        bottom: 30px !important;
         right: 40px;
         height: 400px;
     }
     .foot{
         padding: 30px;
-        height: 404px;
+        height: 400px;
     }
 }
 
@@ -7388,7 +7403,7 @@ body .btn-eight:hover {
  background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 2px 2px 3px 4px #CAF4FF;
+    box-shadow: 2px 2px 3px 4px #ea4c89;
 }
 .why-2-choose    .tab-bg:hover{
     transition: all ease-in-out;
@@ -7407,7 +7422,7 @@ body .btn-eight:hover {
     }
   }
  .why-2-choose     .ico-bg{
-    background-color: #68D2E8;
+    /* background-color: #FF71CD; */
     padding: 5px;
     border-radius: 10px;
 }
@@ -7848,6 +7863,11 @@ transition: box-shadow .3s ease;
     background-color:  #f15a76 ;
     color: white  ;
     /* transform: scale(1.080); */
+}
+.ou-pro-dev  .block-style-twelve:hover p{
+
+    color: white  ;
+
 }
 /* !!!!!!!!!!!! get in touch with us css !!!!!!!!!!!!!!!!! */
 

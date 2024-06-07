@@ -25,7 +25,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#913BFF">
     <title>RITHVISOL TECHNOLOGIES</title>
     <!-- Favicon -->
-    <link rel="icon" type="/static/image/png" sizes="56x56" href="/static/images/assets/pre-loader.png">
+    <link rel="icon" type="/static/image/png" sizes="56x56" href="/static/images/assets/favi-icon.png">
     <!-- Main style sheet -->
     <link rel="stylesheet" type="text/css" href="static/css/style.css" media="all">
     <!-- responsive style sheet -->
@@ -213,9 +213,9 @@
                             <div class="logo"><a href="home"><img src="/static/images/logo/logo_01.png" alt=""
                                         width="130"></a></div>
                         </li>
+                       
                         <li class="nav-item dropdown">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active" href="home.html" role="button" data-bs-toggle="dropdown-item"
+                            <a class="nav-link active " href="home.html" role="button" data-bs-toggle="dropdown-item"
                                 data-bs-auto-close="outside" aria-expanded="false">Home</a>
 
                         </li>
@@ -329,12 +329,12 @@
     </div>
   </div>
 <!-- /.theme-main-menu -->
-<script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
-<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" rel="stylesheet" />
+<!-- <script src="//code.jquery.com/jquery-2.1.0.min.js"></script> -->
+<!-- <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" rel="stylesheet" /> -->
 
 
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script> -->
 
 <!--!!!!!!!!!!!!!! nav bar ends here !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
@@ -351,7 +351,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-6 col-md-7">
-                        <h1 class="hero-heading">Welcome To <span>RITHVISOL TECHNOLOGIES.</span></h1>
+                        <h1 class="hero-heading"> <span>Rithvisol.</span>| Best Software Development Company in US, India</h1>
                         <p class="text-lg mb-50 pt-40 pe-xl-5 md-pt-30 md-mb-40">Welcome to Rithvisol, the leading software IT company in the US. We specialize in delivering innovative and reliable technology solutions tailored to your unique business needs. From custom software development and cloud computing to cybersecurity and AI integration.</p>
 
                     </div>
@@ -1064,57 +1064,44 @@
   });
   </script>
 
+
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const form = document.getElementById('get-form');
+    function validateForm() {
+        const name = document.getElementById('recipient-name').value;
+        const phone = document.getElementById('phone').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
 
-        form.addEventListener('submit', (event) => {
-            event.preventDefault(); // Prevent default form submission
+        let errorMessages = [];
 
-            // Get form data
-            const name = document.getElementById('recipient-name').value;
-            const phone = document.getElementById('phone').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            // Simple validation example (can be enhanced)
-            if (name === '' || email === '') {
-                alert('Please enter your name and email address.');
-                return;
-            }
-
-            // Validate phone number (remove non-numeric characters)
-            const cleanedPhone = phone.replace(/\D/g, '');
-
-            // Check if the phone number is exactly 10 digits
-            if (cleanedPhone.length !== 10) {
-                alert('Please enter a valid 10-digit phone number.');
-                return;
-            }
-
-            // If validation passes, proceed to send the WhatsApp message
-            sendMessage(name, cleanedPhone);
-
-            // After processing, you can optionally clear the form or show a success message
-            form.reset();
-        });
-    });
-
-    function sendMessage(name, phoneNumber) {
-        // Get the form data if not provided
-        if (!name) {
-            name = document.getElementById('recipient-name').value;
-        }
-        if (!phoneNumber) {
-            phoneNumber = document.getElementById('phone').value.replace(/\D/g, '');
+        // Validate form data
+        if (name === '') {
+            errorMessages.push('Please enter your name.');
         }
 
-        // Validate phone number (should not be necessary but kept for safety)
-        if (phoneNumber.length !== 10) {
-            alert('Please enter a valid 10-digit phone number.');
+        if (email === '') {
+            errorMessages.push('Please enter your email address.');
+        }
+
+        // Validate phone number (remove non-numeric characters)
+        const cleanedPhone = phone.replace(/\D/g, '');
+
+        // Check if the phone number is exactly 10 digits
+        if (cleanedPhone.length !== 10) {
+            errorMessages.push('Please enter a valid 10-digit phone number.');
+        }
+
+        // Check if there are any errors
+        if (errorMessages.length > 0) {
+            alert(errorMessages.join('\n'));
             return;
         }
 
+        // If validation passes, proceed to send the WhatsApp message
+        sendMessage(name, cleanedPhone);
+    }
+
+    function sendMessage(name, phoneNumber) {
         // Construct the WhatsApp message link
         const message = "Hello " + name + "! This is a pre-filled message.";
         const whatsappLink = "https://wa.me/917845833637?text=" + encodeURIComponent(message);
@@ -1123,6 +1110,7 @@
         window.open(whatsappLink, '_blank');
     }
 </script>
+
     
 
  

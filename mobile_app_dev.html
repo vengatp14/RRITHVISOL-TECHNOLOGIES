@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Aritifical Intelligent, AI, Data Science, Analytics, Data, sass, software company, web application, mobile development">
-    <meta name="description" content="AI-Being  - AI Mobile and Web application - service based company, multipurpose and business and those who offer business-related services.">
-    <meta property="og:site_name" content="AI-BEING">
-    <meta property="og:url" content="https://ai-being.com/">
+    <meta name="description" content="Rithvisol Technology  - AI Mobile and Web application - service based company, multipurpose and business and those who offer business-related services.">
+    <meta property="og:site_name" content="Rithvisol Technology">
+    <meta property="og:url" content="https://Rithvisol Technology.com/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="AI-BEING">
+    <meta property="og:title" content="Rithvisol Technology">
     <meta name='og:image' content='/static/images/logo/logo.png'>
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,8 +22,8 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#913BFF">
     <title>Service - Mobile App Development</title>
-    <!-- Favicon -->
-    <!-- <link rel="icon" type="/static/image/png" sizes="56x56" href="/static/images/fav-icon/icon.png"> -->
+        <!-- Favicon -->
+        <link rel="icon" type="/static/image/png" sizes="56x56" href="/static/images/assets/favi-icon.png">
     <!-- Main style sheet -->
     <link rel="stylesheet" type="text/css" href="/static/css/style.css" media="all">
     <!-- responsive style sheet -->
@@ -54,7 +54,8 @@
                 <div id="preloader">
                     <div id="ctn-preloader" class="ctn-preloader">
                         <div class="animation-preloader">
-                            <div class="icon">
+                            <div class="icon d-flex justify-content-center">
+                                <img style="width: 10%;" class=" letters-loading" src="./static/images/assets/pre-loader.png" alt="">
                                 </div>
                             <div class="txt-loading mt-2">
                                 <span data-text-preloader="R" class="letters-loading">
@@ -1483,8 +1484,8 @@ slides-per-view="1" loop="auto" autoplay-delay="2500" style="height: 350px; ">
             <i class="bi bi-arrow-up-short"></i>
         </button>
 <!-- modal form  -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-xl">
       <div class="modal-content">
         <div class="modal-header">
       
@@ -1492,44 +1493,52 @@ slides-per-view="1" loop="auto" autoplay-delay="2500" style="height: 350px; ">
         </div>
         <div class="modal-body">
           
-            <div class="form-style-one">
-                <h3 class="form-title pb-40 lg-pb-20">Contact Us.</h3>
-                <img class="img-fluid " src="/static/images/assets/form-img.png" alt="">
-                <form id="get-form" style="margin-top: 2rem;"  data-toggle="validator">
-                    <div class="messages"></div>
-                    <div class="row controls">
-                        <div class="col-12">
-                            <div class="input-group-meta form-group mb-30">
-                                <label>Name*</label>
-                                <input id="recipient-name" type="text" placeholder="Jeeva" name="name" required="required" data-error="Name is required.">
-                                <div class="help-block with-errors"></div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="form-title pb-40 lg-pb-20">Contact Us.</h3>
+                    <img class="img-fluid " src="/static/images/assets/form-img.png" alt=""> 
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-style-one">
+                     
+                        <form id="get-form" style="margin-top: 2rem;"  data-toggle="validator">
+                            <div class="messages"></div>
+                            <div class="row controls">
+                                <div class="col-12">
+                                    <div class="input-group-meta form-group mb-30">
+                                        <label>Name*</label>
+                                        <input id="recipient-name" type="text" placeholder="" name="name" required="required" data-error="Name is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-12">
+                                    <div class="input-group-meta form-group mb-30">
+                                        <label>Phone Number*</label>
+                                        <input id="phone" type="phonenumber" placeholder="" name="number" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-group-meta form-group mb-30">
+                                        <label>Email*</label>
+                                        <input type="email" id="email" placeholder="contact@gmail.com" name="email" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-group-meta form-group mb-30">
+                                        <textarea placeholder="Your message*" id="message" name="message" required="required" data-error="Please,leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button onclick="sendMessage()" class="btn-eight ripple-btn">Send Message</button></div>
                             </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="input-group-meta form-group mb-30">
-                                <label>Phone Number*</label>
-                                <input id="phone-number" type="phonenumber" placeholder="" name="number" required="required" data-error="Valid email is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="input-group-meta form-group mb-30">
-                                <label>Email*</label>
-                                <input type="email" placeholder="contact@gmail.com" name="email" required="required" data-error="Valid email is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="input-group-meta form-group mb-30">
-                                <textarea placeholder="Your message*" name="message" required="required" data-error="Please,leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-12"><button onclick="sendMessage()" class="btn-eight ripple-btn">Send Message</button></div>
+                        </form>
                     </div>
-                </form>
-            </div>
+                </div>
+             </div>
         </div>
        
       </div>
@@ -1575,59 +1584,65 @@ slides-per-view="1" loop="auto" autoplay-delay="2500" style="height: 350px; ">
       },
     });
   </script>
-  <script>
-    const form = document.getElementById('get-form');
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('get-form');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault(); // Prevent default form submission
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent default form submission
 
-  // Get form data
-  const name = document.getElementById('name').value;
-  const phone = document.getElementById('phone').value;
-  const email = document.getElementById('email').value;
-  const address = document.getElementById('address').value;
-  const message = document.getElementById('message').value;
+            // Get form data
+            const name = document.getElementById('recipient-name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
 
-  // Simple validation example (can be enhanced)
-  if (name === '' || email === '') {
-    alert('Please enter your name and email address.');
-    return;
-  }
-
-  // You can process the form data here (e.g., send to server using AJAX)
-  console.log('Form submitted:', {
-    name,
-    phone,
-    email,
-    address,
-    message,
-  });
-
-  // After processing, you can optionally clear the form or show a success message
-  form.reset();
-});
-function sendMessage() {
-            // Get values from the form
-            var name = document.getElementById('recipient-name').value;
-            var phoneNumber = document.getElementById('phone-number').value;
+            // Simple validation example (can be enhanced)
+            if (name === '' || email === '') {
+                alert('Please enter your name and email address.');
+                return;
+            }
 
             // Validate phone number (remove non-numeric characters)
-            phoneNumber = phoneNumber.replace(/\D/g, '');
+            const cleanedPhone = phone.replace(/\D/g, '');
 
-            // Check if the phone number is not empty
-            if (phoneNumber.length > 0) {
-                // Construct the WhatsApp message link
-                var message = "Hello " + name + "! This is a pre-filled message.";
-                var  whatsappLink = "https://wa.me/" + +917845833637 + "?text=" + encodeURIComponent(message);
-
-                // Open the WhatsApp link in a new tab/window
-                window.open(whatsappLink, '_blank');
-            } else {
-                alert("Please enter a valid phone number.");
+            // Check if the phone number is exactly 10 digits
+            if (cleanedPhone.length !== 10) {
+                alert('Please enter a valid 10-digit phone number.');
+                return;
             }
+
+            // If validation passes, proceed to send the WhatsApp message
+            sendMessage(name, cleanedPhone);
+
+            // After processing, you can optionally clear the form or show a success message
+            form.reset();
+        });
+    });
+
+    function sendMessage(name, phoneNumber) {
+        // Get the form data if not provided
+        if (!name) {
+            name = document.getElementById('recipient-name').value;
+        }
+        if (!phoneNumber) {
+            phoneNumber = document.getElementById('phone').value.replace(/\D/g, '');
         }
 
-  </script>
+        // Validate phone number (should not be necessary but kept for safety)
+        if (phoneNumber.length !== 10) {
+            alert('Please enter a valid 10-digit phone number.');
+            return;
+        }
+
+        // Construct the WhatsApp message link
+        const message = "Hello " + name + "! This is a pre-filled message.";
+        const whatsappLink = "https://wa.me/917845833637?text=" + encodeURIComponent(message);
+
+        // Open the WhatsApp link in a new tab/window
+        window.open(whatsappLink, '_blank');
+    }
+</script>
   <script>
    $(document).ready(function(){
     $('#slider1').slick({
