@@ -7058,10 +7058,10 @@ body .btn-eight:hover {
         margin-left: 20px;
     }
  }
- /* footer css  */
+ /*!!!!!!!!!!!!!!!!!!!!!!! footer css !!!!!!!!!!!!!!!!!!!!!  */
 
 .foot{
-    padding: 70px;
+    padding: 30px;
 }
 .ser-fot a:hover{
     color: white;
@@ -7088,6 +7088,22 @@ body .btn-eight:hover {
 .foot-sec .copy-right-sec{
     margin-top: 150px;
 }
+.fot-ban{
+    background-color: #d8415d;
+    padding: 30px;
+    padding-top: 50px;
+  
+}
+.fot-ban p{
+    line-height: 30px;
+}
+.ser-fot{
+    line-height: 30px;
+}
+/* .logo_img{
+    background-color: white;
+    background-size: cover;
+} */
 @media screen and (min-width:0px) and (max-width:475px){
     .foot-sec .copy-right-sec{
         margin-top: 30px;
@@ -7473,6 +7489,16 @@ transition: box-shadow .3s ease;
             /* bottom: 290px !important;
             left: 32px !important; */
          }
+       }
+       @media screen and (min-width:1024px) and (max-width:1440px){
+        .ethi-sec .ethi-crd{
+            background-color: #F8F9D7;
+            padding: 18px;
+            border-radius: 20px;
+            box-shadow: 2px  2px  2px  2px rgba(0, 0, 0, 0.05);
+            position: relative;
+            padding-top: 35px;
+           }
        }
 
  .ethi-sec .ethi-crd .ethi-icon img{
@@ -8459,5 +8485,171 @@ transition: box-shadow .3s ease;
         width: 360px;
       }
   }
-    
-               
+    /* !!!!!!!!!!!!!!!!!about us page process_2 section css !!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+ .pro_2_sec   .pro-title-sec .title-pro {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--prime-three);
+        margin-bottom: 2px;
+        margin-left: 8px;
+    }
+ .pro_2_sec  .pro-title-sec .main_title {
+        font-family: 'gorditamedium';
+        font-size: 50px;
+        line-height: 1.34em;
+        letter-spacing: -1px;
+    }
+    .pro_2_sec .ma-para{
+        margin-top: 62px;
+    }
+   /* !!!! number section css!!!!!!!!!!!!! */
+  
+    .txt-num-container span:hover{
+        background-color:#5AB2FF ;
+        color: white;
+ }
+ .txt-num-container .container-txt{
+    margin-top: 25px;
+ }
+ .txt-num-container .container-txt p{
+    line-height: 30px;
+ }
+ .txt-num-container .num_txt{
+       background-color: #E1F7F5 ;
+       display: flex;
+       border-radius: 50%;
+           padding: 20px 45px 15px 30px   !important;
+           height: 80px !important;
+           text-align: center;
+           width: 36px !important;
+           font-size: 32px;
+           font-weight: bold;
+           margin-right: 30px;
+           position: relative;
+           right: 30px;
+    }
+
+
+
+
+    @media screen and (min-width:768px) and (max-width:1024px){
+        .txt-num-container    .num_txt{
+            background-color: #E1F7F5 ;
+            display: flex;
+            border-radius: 50%;
+                padding: 20px 45px 15px 30px   !important;
+                height: 80px !important;
+                text-align: center;
+                width: 36px !important;
+                font-size: 32px;
+                font-weight: bold;
+                margin-right: 30px;
+                position: relative !important;
+                right: 0px !important;
+              
+         }
+         .txt-num-container_left span{
+            background-color: #E1F7F5 ;
+            display: flex;
+            border-radius: 50%;
+                padding: 20px 45px 15px 30px   !important;
+                height: 80px !important;
+                text-align: center;
+                width: 36px !important;
+                font-size: 32px;
+                font-weight: bold;
+                margin-right: 30px;
+                position: relative;
+                left: 0px !important;
+                top: 10px !important;
+         }
+        }
+ 
+ .txt-num-container .container-txt{
+    margin-top: 25px;
+ }
+ .txt-num-container .container-txt p{
+    line-height: 30px;
+ }
+ /* right side css */
+ /* left side */
+ .txt-num-container_left span{
+    background-color: #E1F7F5 ;
+    display: flex;
+    border-radius: 50%;
+        padding: 20px 45px 15px 30px   !important;
+        height: 80px !important;
+        text-align: center;
+        width: 36px !important;
+        font-size: 32px;
+        font-weight: bold;
+        margin-right: 30px;
+        position: relative;
+        left: 635px;
+        bottom: 15px !important;
+ }
+ .txt-num-container_left span:hover{
+     background-color:#5AB2FF ;
+     color: white;
+}
+.txt-num-container_left .container-txt_left{
+ margin-top: 25px;
+}
+.txt-num-container_left .container-txt_left p{
+ line-height: 30px;
+}
+    @media screen and (min-width:0px) and (max-width:640px){
+        .pro_2_sec{
+            margin-left: 20px;
+        }
+        .pro_2_sec p{
+            margin-top: 8px;
+            line-height: 30px;
+        }
+        .pro_2_sec  .pro-title-sec .main_title {
+            font-family: 'gorditamedium';
+            font-size: 30px;
+            line-height: 1.34em;
+            letter-spacing: -1px;
+        }
+        .txt-num-container .txt_heading{
+            text-align: start;
+        }
+      
+         .txt-num-container .container-txt{
+            margin-top: 15px;
+         }
+         .txt-num-container .num_txt{
+            background-color: #E1F7F5 ;
+            display: flex;
+            border-radius: 50%;
+                padding: 20px 45px 15px 30px   !important;
+                height: 80px !important;
+                text-align: center;
+                width: 36px !important;
+                font-size: 32px;
+                font-weight: bold;
+                margin-right: 30px;
+                position: relative;
+                right: 75px;
+         }
+         .txt-num-container_left span{
+            background-color: #E1F7F5 ;
+            display: flex;
+            border-radius: 50%;
+                padding: 20px 45px 15px 30px   !important;
+                height: 80px !important;
+                text-align: center;
+                width: 36px !important;
+                font-size: 32px;
+                font-weight: bold;
+                margin-right: 30px;
+                position: relative;
+                left: -80px !important;
+                top: 15px !important;
+         }
+    }
+  
