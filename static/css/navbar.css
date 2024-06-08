@@ -93,11 +93,14 @@
     
 }
 .navbar .navbar-nav .nav-link.active {
-    text-decoration: underline 2px #ec143c !important;  /* Add underline for active links */
+    font-weight: bold;
+    color: #ec143c;
+    /* Add underline for active links */
     /* border-bottom: solid 3px #ec143c ; */
     /* padding-bottom: 3px; */
 
   } 
+ 
    
   
 .navbar .dropdown-menu .dropdown-item {
@@ -254,6 +257,9 @@
     .ser-dropdown-fot a:hover{
         color: #ec143c !important;
     }
+    .navbar .navbar-nav .nav-link:hover{
+        text-decoration: none !important;
+      }
 }
 
 /*(min-width: 992px)*/

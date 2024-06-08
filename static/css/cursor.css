@@ -1,0 +1,25 @@
+/* styles.css */
+body {
+    cursor: inherit; /* Hide the default cursor */
+  }
+  
+  .custom-cursor {
+    border-radius: 50%;
+    border: 2px solid red;
+    padding: 10px;
+    position: absolute;
+  
+    transform: translate(-50%, -50%) scale(1.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .custom-cursor::after {
+    content: '';
+    width: 5px; 
+    height: 5px; 
+    background-color: red;
+    border-radius: 50%;
+  }
+  

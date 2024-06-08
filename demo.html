@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Custom Cursor</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="custom-cursor" id="customCursor"></div>
+  <script src="scripts.js"></script>
+</body>
+<style>
+/* styles.css *//* styles.css */
+body {
+  cursor: none; /* Hide the default cursor */
+}
+
+.custom-cursor {
+  border-radius: 50%;
+  border: 2px solid #e84462;
+  padding: 10px;
+  position: absolute;
+  pointer-events: none; /* Prevent cursor from triggering events */
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.1s ease, background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-cursor::after {
+  content: '';
+  width: 5px; /* Adjust size as needed */
+  height: 5px; /* Adjust size as needed */
+  background-color: #e84462;
+  border-radius: 50%;
+  transition: transform 0.1s ease;
+}
+
+.custom-cursor.hover {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.custom-cursor.hover::after {
+  transform: scale(1.5);
+}
+
+
+</style>
+<script>
+// scripts.js
+document.addEventListener('mousemove', (event) => {
+  const cursor = document.getElementById('customCursor');
+  cursor.style.left = `${event.clientX}px`;
+  cursor.style.top = `${event.clientY}px`;
+});
+// scripts.js
+document.addEventListener('mousemove', (event) => {
+  const cursor = document.getElementById('customCursor');
+  cursor.style.left = `${event.clientX}px`;
+  cursor.style.top = `${event.clientY}px`;
+});
+
+document.querySelectorAll('a, button').forEach(element => {
+  element.addEventListener('mouseover', () => {
+    const cursor = document.getElementById('customCursor');
+    cursor.classList.add('hover');
+  });
+  element.addEventListener('mouseout', () => {
+    const cursor = document.getElementById('customCursor');
+    cursor.classList.remove('hover');
+  });
+});
+
+</script>
+</html>
