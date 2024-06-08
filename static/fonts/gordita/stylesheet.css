@@ -6,7 +6,7 @@
 }
 
 @font-face {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     src: url('gordita-medium-webfont.woff2') format('woff2'), url('gordita-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;

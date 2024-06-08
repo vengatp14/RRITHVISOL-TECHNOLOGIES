@@ -317,13 +317,13 @@ h4 {
 .h5,
 h5 {
     font-size: 24px;
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
 }
 
 .h6,
 h6 {
     font-size: 20px;
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
 }
 
 ::-webkit-input-placeholder {
@@ -437,7 +437,7 @@ h6 {
 }
 
 .title-style-one .sc-title-three {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     display: inline-block;
     line-height: 30px;
     border-radius: 20px;
@@ -468,7 +468,7 @@ h6 {
 }
 
 .title-style-one .sc-title-five {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     display: inline-block;
     line-height: 28px;
     border-radius: 5px;
@@ -482,14 +482,14 @@ h6 {
 }
 
 .title-style-one .main-title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 58px;
     line-height: 1.34em;
     letter-spacing: -1px;
 }
 @media screen and (min-width:0px) and (max-width:640px){
     .title-style-one .main-title {
-        font-family: 'gorditamedium';
+         font-family: "Nunito", sans-serif;
         font-size: 38px;
         line-height: 1.34em;
         letter-spacing: -1px;
@@ -516,7 +516,7 @@ h6 {
 }
 
 .title-style-two .main-title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 72px;
     line-height: 1.15em;
     color: #fff;
@@ -530,7 +530,7 @@ h6 {
 }
 
 .title-style-three .main-title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 60px;
     line-height: 1.31em;
     letter-spacing: -1px;
@@ -538,7 +538,7 @@ h6 {
 }
 @media screen and (min-width:0px) and (max-width:475px){
     .title-style-three .main-title {
-        font-family: 'gorditamedium';
+         font-family: "Nunito", sans-serif;
         font-size: 37px;
         line-height: 1.31em;
         letter-spacing: -1px;
@@ -547,6 +547,24 @@ h6 {
     .title-style-three{
         margin-left: 20px;
     }
+    
+.bg-sch{
+    padding: 50px;
+    background-color: var(--prime-three);
+    border-radius: 15px;
+    margin-top: 50px;
+}
+}
+@media screen and (min-width:640px) and (max-width:768px){
+    .bg-sch{
+        padding: 50px;
+        background-color: var(--prime-three);
+        border-radius: 15px;
+        margin-top: 50px;
+    }
+    .bg-sch button{
+        background-color: black !important;
+    } 
 }
 
 .title-style-three .main-title span {
@@ -569,14 +587,14 @@ h6 {
 }
 
 .title-style-four .main-title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 50px;
     line-height: 1.4em;
     letter-spacing: -1px;
     margin: 0;
 }
 .bg-sch .sch-tittle {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 35px;
     line-height: 1.4em;
     letter-spacing: -1px;
@@ -594,6 +612,31 @@ h6 {
     background-color: var(--prime-three);
     border-radius: 15px;
 }
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .bg-sch .sch-tittle span {
+        color: black;
+        /* text-decoration: underline; */
+        text-decoration-thickness: 4px;
+    }
+    
+    .bg-sch{
+        padding: 50px;
+        background-color: var(--prime-three);
+        border-radius: 15px;
+    }
+    /* .bg-sch  button {
+         font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        color: #fff;
+        width: 200px;
+        position: relative;
+        top: 21px;
+        left: 350px;
+        border-radius: 8px;
+        background: black;
+        padding: 10px;
+    } */
+}
 
 
 .title-style-four .main-title span {
@@ -603,7 +646,7 @@ h6 {
 }
 
 .title-style-five .main-title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 45px;
     line-height: 1.22em;
     letter-spacing: -1px;
@@ -643,7 +686,7 @@ h6 {
 }
 
 body .btn-one {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 18px;
     text-transform: capitalize;
     color: #fff;
@@ -713,7 +756,7 @@ body .btn-three:before {
 }
 
 body .btn-three a {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     color: #0B3C6A;
     transition: all 0.3s ease-in-out;
 }
@@ -759,7 +802,7 @@ body .btn-three.color-three a i {
 }
 
 body .btn-four {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 18px;
     text-transform: capitalize;
     color: #fff;
@@ -783,7 +826,7 @@ body .btn-four:hover {
 }
 
 body .btn-five {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 17px;
     text-transform: capitalize;
     color: #fff;
@@ -801,7 +844,7 @@ body .btn-five:hover {
 }
 
 body .btn-six {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 17px;
     color: #fff;
     line-height: 48px;
@@ -836,7 +879,7 @@ body .btn-six:hover:after {
 }
 
 body .btn-seven {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 17px;
     color: var(--prime-one);
     line-height: 48px;
@@ -854,7 +897,7 @@ body .btn-seven:hover {
 }
 
 body .btn-eight {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 17px;
     color: #fff;
     line-height: 48px;
@@ -941,7 +984,7 @@ body .btn-eight:hover {
 
 /*.theme-main-menu .login-btn {margin-right: 35px;}
 .theme-main-menu .login-btn span {
-  font-family: 'gorditamedium';
+   font-family: "Nunito", sans-serif;
   font-size: 18px;
   margin: 0 0 0 12px;
   transition: all 0.3s ease-in-out;
@@ -950,7 +993,7 @@ body .btn-eight:hover {
 .theme-main-menu .login-btn:hover span {text-decoration: underline;}*/
 
 .theme-main-menu .req-demo-btn {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 17px;
     line-height: 53px;
     color: var(--prime-two);
@@ -1018,7 +1061,7 @@ body .btn-eight:hover {
 }
 
 .theme-search-form form input {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     width: 100%;
     height: 100%;
     display: block;
@@ -1058,7 +1101,7 @@ body .btn-eight:hover {
 }
 
 .theme-main-menu .get-in-touch-btn {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 18px;
     width: 190px;
     line-height: 50px;
@@ -1075,7 +1118,7 @@ body .btn-eight:hover {
 }
 
 .theme-main-menu .call-button {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 17px;
 }
 
@@ -1091,7 +1134,7 @@ body .btn-eight:hover {
 }
 
 .theme-main-menu .lang-dropdown button {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     color: #6B839A;
     font-size: 16px;
     border: none;
@@ -1181,7 +1224,7 @@ body .btn-eight:hover {
     height: 220px;
     /* left: -50px;
     top: -70px; */
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
     box-shadow: 6px 73px 62px rgba(0, 12, 119, 0.03);
     z-index: -1;
 }
@@ -1191,7 +1234,7 @@ body .btn-eight:hover {
 }
 
 .theme-main-menu .send-msg-btn {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 18px;
     width: 200px;
     line-height: 55px;
@@ -1200,6 +1243,19 @@ body .btn-eight:hover {
     text-align: center;
     border-radius: 9px;
     transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .theme-main-menu .send-msg-btn {
+         font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        width: 190px;
+        line-height: 55px;
+        color: #fff;
+        background: var(--prime-three);
+        text-align: center;
+        border-radius: 9px;
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 .theme-main-menu .send-msg-btn:hover {
@@ -1301,7 +1357,7 @@ body .btn-eight:hover {
 
 .hero-banner-one .hero-heading {
     font-size: 82px;
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     line-height: 1.18em;
     margin: 42px 0 55px;
     letter-spacing: -1px;
@@ -1405,7 +1461,7 @@ body .btn-eight:hover {
 }
 
 .hero-banner-one .illustration-holder h6 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 20px;
     line-height: 1.35em;
     color: #000;
@@ -1498,7 +1554,7 @@ body .btn-eight:hover {
 }
 
 .block-style-one h5 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 24px;
     line-height: 1.66em;
     letter-spacing: 0.5px;
@@ -1515,7 +1571,7 @@ body .btn-eight:hover {
 }
 
 .block-style-two ul.list-item li {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 19px;
     line-height: 1.7em;
     color: #0B3C6A;
@@ -1544,7 +1600,7 @@ body .btn-eight:hover {
 }
 
 .block-style-two .nav-tabs button {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 17px;
     color: #000F5C;
     border: none;
@@ -1719,7 +1775,7 @@ body .btn-eight:hover {
 }
 
 .counter-block-one .main-count {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 60px;
     line-height: initial;
     color: var(--prime-one);
@@ -1855,7 +1911,7 @@ body .btn-eight:hover {
 }
 
 .block-style-three h6 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 21px;
     margin-bottom: 16px;
 }
@@ -1866,7 +1922,7 @@ body .btn-eight:hover {
 }
 
 .block-style-three .numb {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 20px;
     color: var(--prime-two);
     text-align: center;
@@ -1944,7 +2000,7 @@ body .btn-eight:hover {
 }
 
 .portfolio-block-one .title .pj-name {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 22px;
     color: var(--heading);
 }
@@ -2058,7 +2114,7 @@ body .btn-eight:hover {
 }
 
 .pricing-table-area-one .pr-table-wrapper .pack-name {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 32px;
     color: #00284E;
     letter-spacing: -1px;
@@ -2084,7 +2140,7 @@ body .btn-eight:hover {
 }
 
 .pricing-table-area-one .top-banner .price {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 48px;
     color: var(--prime-two);
     padding-right: 20px;
@@ -2096,7 +2152,7 @@ body .btn-eight:hover {
 }
 
 .pricing-table-area-one .top-banner span {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 22px;
     display: block;
     color: #00284E;
@@ -2125,7 +2181,7 @@ body .btn-eight:hover {
 }
 
 .pricing-table-area-one .trial-button span {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     color: #00284E;
     transition: all 0.3s ease-in-out;
 }
@@ -2155,7 +2211,7 @@ body .btn-eight:hover {
 }
 
 .pricing-table-area-one .msg-note a {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     text-decoration: underline;
     color: #fff;
 }
@@ -2225,7 +2281,7 @@ body .btn-eight:hover {
 
 .feedback-block-one .cost {
     font-size: 18px;
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     color: #99A9B8;
 }
 
@@ -2371,7 +2427,7 @@ body .btn-eight:hover {
 }
 
 .blog-meta-one .blog-title h5 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 25px;
     letter-spacing: -0.5px;
     color: var(--heading);
@@ -2460,7 +2516,7 @@ body .btn-eight:hover {
 }
 
 .address-block-one .text-meta .title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -2513,7 +2569,7 @@ body .btn-eight:hover {
 }
 
 .theme-basic-footer .footer-title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -2597,7 +2653,7 @@ body .btn-eight:hover {
 .theme-basic-footer .newsletter form button {
     position: absolute;
     font-size: 16px;
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     top: 8px;
     right: 8px;
     bottom: 8px;
@@ -2664,7 +2720,7 @@ body .btn-eight:hover {
 }
 
 .hero-banner-two .demo-btn {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 18px;
     color: #ec143c;
     padding: 0 35px;
@@ -2752,7 +2808,7 @@ body .btn-eight:hover {
 }
 
 .hero-banner-two .illustration-holder .card-one h6 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 20px;
     margin: 0 0 0 15px;
 }
@@ -2781,7 +2837,7 @@ body .btn-eight:hover {
 }
 
 .hero-banner-two .illustration-holder .card-two .main-count {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 24px;
     color: var(--heading);
     line-height: initial;
@@ -2894,7 +2950,7 @@ body .btn-eight:hover {
 }
 
 .block-style-four h5 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 24px;
     color: var(--heading);
     margin: 52px 0 30px;
@@ -3066,7 +3122,7 @@ body .btn-eight:hover {
 }
 
 .feedback-block-two .text-wrapper .read-btn span {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 17px;
     color: var(--heading);
 }
@@ -3084,7 +3140,7 @@ body .btn-eight:hover {
 }
 
 .block-style-five .codeconSkillbar .skill-text span {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1.4px;
@@ -3102,7 +3158,7 @@ body .btn-eight:hover {
 }
 
 .block-style-five .codeconSkillbar .skillBar .PercentText {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     width: 40px;
     background: #FFFFFF;
     box-shadow: 0px 5px 20px rgba(0, 28, 99, 0.08);
@@ -3186,7 +3242,7 @@ body .btn-eight:hover {
 }
 
 .block-style-six h6 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 20px;
     margin: 25px 0 20px;
 }
@@ -3279,7 +3335,7 @@ body .btn-eight:hover {
 }
 
 .feedback-block-three .text-wrapper .name h6 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     margin-bottom: 0;
 }
 
@@ -3374,7 +3430,7 @@ body .btn-eight:hover {
 }
 
 .accordion-style-one .accordion-button {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 20px;
     line-height: 1.62em;
     padding: 23px 20px 23px 35px;
@@ -3472,7 +3528,7 @@ body .btn-eight:hover {
 }
 
 .blog-meta-two .blog-title h5 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 25px;
     color: var(--heading);
     line-height: 1.44em;
@@ -3486,7 +3542,7 @@ body .btn-eight:hover {
 }
 
 .blog-meta-two .read-btn {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 17px;
     color: rgba(0, 15, 92, 0.4);
 }
@@ -3543,14 +3599,14 @@ body .btn-eight:hover {
 }
 
 .fancy-short-banner-one h3 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 37px;
     line-height: 1.38em;
     margin: 0 0 0;
 }
 
 .fancy-short-banner-one .msg-btn {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 18px;
     color: var(--prime-one);
     padding: 0 40px;
@@ -3719,7 +3775,7 @@ body .btn-eight:hover {
 }
 
 .block-style-seven h5 a {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 25px;
     color: var(--heading);
     margin: 30px 0 8px;
@@ -3846,7 +3902,7 @@ body .btn-eight:hover {
 }
 
 .block-style-eight .icon .num {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 17px;
     color: #fff;
     width: 45px;
@@ -3863,7 +3919,7 @@ body .btn-eight:hover {
 }
 
 .block-style-eight h5 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 25px;
     line-height: 1.4em;
     color: #fff;
@@ -3945,7 +4001,7 @@ body .btn-eight:hover {
 }
 
 .fancy-feature-twelve .illustration-holder .card-one h6 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 20px;
     margin: 0;
 }
@@ -3978,7 +4034,7 @@ body .btn-eight:hover {
 }
 
 .fancy-feature-twelve .illustration-holder .card-two .main-count {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 28px;
     color: var(--heading);
     line-height: initial;
@@ -4075,7 +4131,7 @@ body .btn-eight:hover {
 }
 
 .fancy-short-banner-two .button-group a strong {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-weight: normal;
     font-size: 19px;
     display: block;
@@ -4224,7 +4280,7 @@ body .btn-eight:hover {
 
 .hero-banner-four .hero-heading {
     font-size: 75px;
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     line-height: 1.14em;
     margin: 42px 0 45px;
     letter-spacing: -1px;
@@ -4255,7 +4311,7 @@ body .btn-eight:hover {
 }
 
 .hero-banner-four form button {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 16px;
     color: #fff;
     position: absolute;
@@ -4350,7 +4406,7 @@ body .btn-eight:hover {
 }
 
 .block-style-ten h6 a {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 21px;
     color: var(--heading);
     margin: 25px 0 18px;
@@ -4438,7 +4494,7 @@ body .btn-eight:hover {
 }
 
 .block-style-eleven .icon .num {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 17px;
     color: #fff;
     width: 45px;
@@ -4455,7 +4511,7 @@ body .btn-eight:hover {
 }
 
 .block-style-eleven h5 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 25px;
     line-height: 1.4em;
     text-align: center;
@@ -4486,7 +4542,7 @@ body .btn-eight:hover {
 }
 
 .fancy-feature-sixteen .codeconSkillbar .skill-text span {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 17px;
     color: var(--heading);
     float: none;
@@ -4503,7 +4559,7 @@ body .btn-eight:hover {
 }
 
 .fancy-feature-sixteen .codeconSkillbar .skillBar .PercentText {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     width: 40px;
     background: #FFFFFF;
     box-shadow: 0px 5px 20px rgba(0, 28, 99, 0.08);
@@ -4539,7 +4595,7 @@ body .btn-eight:hover {
 }
 
 .pricing-table-area-two .price {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 64px;
     color: var(--heading);
     line-height: initial;
@@ -4563,7 +4619,7 @@ body .btn-eight:hover {
 }
 
 .pricing-table-area-two .active .pack-name {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     color: #fff;
 }
 
@@ -4616,19 +4672,19 @@ body .btn-eight:hover {
     .hero-banner-five {
         position: relative;
         z-index: 2;
-        padding: 50px 10px 100px 10px;
+        padding: 50px 10px 50px 10px;
         background: linear-gradient(0deg, rgba(248, 253, 255, 0) 0%, rgba(241, 252, 255, 0.51782) 48.22%, #F6FDFF 100%);
     }
 }
 
 .hero-banner-five .hero-heading {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 70px;
     line-height: 1.17em;
 }
 @media screen and (min-width:0px) and (max-width:640px){
     .hero-banner-five .hero-heading {
-        font-family: 'gorditamedium';
+         font-family: "Nunito", sans-serif;
         font-size: 30px;
         line-height: 1.17em;
         margin-left: 15px;
@@ -4646,7 +4702,7 @@ body .btn-eight:hover {
 }
 
 .hero-banner-five .demo-btn {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 18px;
     color: var(--prime-three);
     line-height: 55px;
@@ -4713,7 +4769,7 @@ body .btn-eight:hover {
         width: 36.4%;
     }
     .hero-banner-five .hero-heading {
-        font-family: 'gorditamedium';
+         font-family: "Nunito", sans-serif;
         font-size: 70px;
         line-height: 1.17em;
     }
@@ -4920,7 +4976,7 @@ body .btn-eight:hover {
 }
 
 .block-style-twelve h5 a {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 25px;
     color: var(--heading);
     margin: 30px 0 8px;
@@ -5096,7 +5152,7 @@ body .btn-eight:hover {
 }
 
 .block-style-thirteen .list-item li h6 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 19px;
 }
 
@@ -5264,7 +5320,7 @@ body .btn-eight:hover {
 }
 
 .feedback-block-four .cp-info h6 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 22px;
     margin-bottom: -7px;
 }
@@ -5381,7 +5437,7 @@ body .btn-eight:hover {
 }
 
 .theme-basic-footer .subscribe-form form button {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 18px;
     color: #fff;
     width: 150px;
@@ -5393,7 +5449,7 @@ body .btn-eight:hover {
     background: var(--prime-three);
 }
 .bg-sch  button {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 18px;
     color: #fff;
     width: 200px;
@@ -5406,11 +5462,12 @@ body .btn-eight:hover {
 }
 @media screen and (min-width:0px) and (max-width:640px){
     .bg-sch  button{
-        font-family: 'gorditamedium';
+         font-family: "Nunito", sans-serif;
         font-size: 18px;
         color: #fff;
         width: 210px;
         border-radius: 8px;
+        background: black !important;
       position: relative;
       top: 15px;
       left: 0px !important;
@@ -5419,7 +5476,7 @@ body .btn-eight:hover {
 }
 @media screen and (min-width:640px) and (max-width:768px){
     .bg-sch  button{
-        font-family: 'gorditamedium';
+         font-family: "Nunito", sans-serif;
         font-size: 18px;
         color: #fff;
         width: 210px;
@@ -5430,14 +5487,16 @@ body .btn-eight:hover {
         background: var(--prime-three);
     }
 }
-@media screen and (min-width:1020px) and (max-width:1439px){
+@media screen and (min-width:1024px) and (max-width:1439px){
     .bg-sch  button{
-        font-family: 'gorditamedium';
+         font-family: "Nunito", sans-serif;
         font-size: 18px;
         color: #fff;
         width: 210px;
         border-radius: 8px;
       position: relative;
+      top: 45px !important;
+      background-color: black !important;
       top: 10px;
       left: 205px !important;
         background: var(--prime-three);
@@ -5465,7 +5524,7 @@ body .btn-eight:hover {
     background-image: url(/static/images/assets/con-ban.png);
     position: relative;
     z-index: 1;
-    padding: 205px 0 115px;
+    padding: 115px 0 165px;
     overflow: hidden;
 }
 
@@ -5486,7 +5545,7 @@ body .btn-eight:hover {
 }
 
 .theme-inner-banner .intro-title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 60px;
     letter-spacing: -0.8px;
     margin-bottom: 15px;
@@ -5646,7 +5705,7 @@ body .btn-eight:hover {
 }
 
 .team-block-one .team-info .name {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     display: block;
     font-size: 21px;
     color: var(--heading);
@@ -5673,7 +5732,7 @@ body .btn-eight:hover {
 }
 
 .team-details .main-bg .text-wrapper .name {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 33px;
     color: var(--heading);
 }
@@ -5686,7 +5745,7 @@ body .btn-eight:hover {
 }
 
 .team-details .main-bg .text-wrapper h6 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 19px;
     padding-bottom: 8px;
     text-transform: uppercase;
@@ -5812,7 +5871,7 @@ body .btn-eight:hover {
 }
 
 .fancy-short-banner-five h3 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     color: #fff;
     font-size: 44px;
     line-height: 1.25em;
@@ -5820,7 +5879,7 @@ body .btn-eight:hover {
 }
 
 .fancy-short-banner-five .msg-btn {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 18px;
     color: #fff;
     padding: 0 38px;
@@ -5874,7 +5933,7 @@ body .btn-eight:hover {
 }
 
 .service-sidebar .service-category .current-page a {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     color: var(--prime-three);
     background: rgba(145, 59, 255, 0.15);
 }
@@ -5901,7 +5960,7 @@ body .btn-eight:hover {
 }
 
 .sidebar-quote .name {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 19px;
     letter-spacing: -0.5px;
     color: #fff;
@@ -5912,7 +5971,7 @@ body .btn-eight:hover {
 }
 
 .service-sidebar .download-btn-group a {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 17px;
     line-height: 60px;
     width: 100%;
@@ -5945,7 +6004,7 @@ body .btn-eight:hover {
 }
 
 .service-details-meta .main-title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 60px;
     line-height: 1.2em;
     letter-spacing: -1px;
@@ -5963,7 +6022,7 @@ body .btn-eight:hover {
 }
 
 .service-details-meta .sub-title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -5995,7 +6054,7 @@ body .btn-eight:hover {
 }
 
 .block-style-fifteen h6 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 22px;
     margin: 0;
 }
@@ -6008,7 +6067,7 @@ body .btn-eight:hover {
 }
 
 .block-style-fifteen .text .details-btn {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 17px;
     color: var(--prime-three);
 }
@@ -6079,7 +6138,7 @@ body .btn-eight:hover {
 }
 
 .block-style-fifteen .percent_text {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     color: #000F5C;
     position: absolute;
     font-size: 20px;
@@ -6104,7 +6163,7 @@ body .btn-eight:hover {
 }
 
 .g-control-nav-one li.is-checked {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     color: var(--prime-three);
     background: rgba(145, 59, 255, 0.1);
 }
@@ -6203,7 +6262,7 @@ body .btn-eight:hover {
 }
 
 .portfolio-block-two .title .pj-name {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 22px;
     color: var(--heading);
 }
@@ -6261,7 +6320,7 @@ body .btn-eight:hover {
 }
 
 .pr-details-one .sub-title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -6273,7 +6332,7 @@ body .btn-eight:hover {
 }
 
 .pr-details-one .pt-title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     color: rgba(0, 40, 78, 0.3);
@@ -6282,7 +6341,7 @@ body .btn-eight:hover {
 }
 
 .pr-details-one .pt-text {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 18px;
     line-height: 1.55em;
     color: rgba(0, 40, 78, 0.8);
@@ -6404,7 +6463,7 @@ body .btn-eight:hover {
 }
 
 .blog-sidebar .sidebar-keyword ul li a {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 13px;
     letter-spacing: 1px;
     background: #fff;
@@ -6447,7 +6506,7 @@ body .btn-eight:hover {
 }
 
 .blog-meta-three .blog-title h4 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 33px;
     letter-spacing: -0.5px;
     color: var(--heading);
@@ -6486,7 +6545,7 @@ body .btn-eight:hover {
 }
 
 .blog-details .tags li:first-child {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     color: #00284E;
     padding-right: 5px;
 }
@@ -6502,7 +6561,7 @@ body .btn-eight:hover {
 }
 
 .blog-details .share-icon li:first-child {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     color: #00284E;
     font-size: 17px;
 }
@@ -6532,7 +6591,7 @@ body .btn-eight:hover {
 }
 
 .blog-details .blog-inner-title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 42px;
     letter-spacing: -1px;
 }
@@ -6550,7 +6609,7 @@ body .btn-eight:hover {
 }
 
 .blog-comment-area .comment .name {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 20px;
     color: var(--heading);
     letter-spacing: -1px;
@@ -6569,7 +6628,7 @@ body .btn-eight:hover {
 }
 
 .blog-comment-area .comment .reply-btn {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 13px;
     color: #fff;
     text-transform: uppercase;
@@ -6642,6 +6701,10 @@ body .btn-eight:hover {
     position: relative;
     z-index: 2;
 }
+.contact-section-one .class:hover{
+            color: var(--prime-three);
+            text-decoration: underline;
+}
 
 .contact-section-one:before {
     content: '';
@@ -6673,7 +6736,7 @@ body .btn-eight:hover {
 }
 
 .contact-section-one .address-block-two .title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 24px;
     padding: 20px 0 14px;
     margin-bottom: 0;
@@ -6717,7 +6780,7 @@ body .btn-eight:hover {
 }
 
 .form-style-one .form-title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 58px;
 }
 
@@ -6781,7 +6844,7 @@ body .btn-eight:hover {
 }
 
 .faq-section-one .faq-title {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 33px;
     margin-bottom: 30px;
 }
@@ -6802,7 +6865,7 @@ body .btn-eight:hover {
 }
 
 .error-page-content h2 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 43px;
     letter-spacing: -1px;
 }
@@ -6849,7 +6912,7 @@ body .btn-eight:hover {
 
 .user-data-page .go-back-button {
     font-size: 15px;
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     line-height: 43px;
     width: 142px;
     text-align: center;
@@ -6864,7 +6927,7 @@ body .btn-eight:hover {
 }
 
 .user-data-page .form-wrapper h2 {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 55px;
     line-height: 1.17em;
 }
@@ -7024,7 +7087,7 @@ body .btn-eight:hover {
     margin-bottom: 20px; 
 }
 .our-appr .main-title{
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 50px;
     line-height: 1.4em;
     letter-spacing: -1px;
@@ -7032,7 +7095,7 @@ body .btn-eight:hover {
 }
 @media screen and (min-width:0px) and (max-width:640px){
     .our-appr .main-title{
-        font-family: 'gorditamedium';
+         font-family: "Nunito", sans-serif;
         font-size: 38px;
         line-height: 1.4em;
         letter-spacing: -1px;
@@ -7147,6 +7210,10 @@ body .btn-eight:hover {
     .ser-fot{
         margin-top: 3rem;
     }
+    .logo_img img{
+          margin-bottom: 10px;
+        width: 75% !important;
+    }
 }
 @media screen and (min-width:640px) and (max-width:768px){
     .foot-sec .copy-right-sec{
@@ -7162,6 +7229,18 @@ body .btn-eight:hover {
         margin-top: 50px;
     }
     
+}
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .fot-ban{
+        position: relative !important;
+        bottom: 30px !important;
+        right: 40px;
+        height: 480px;
+    }
+    /* .foot{
+        padding: 30px;
+        height: 400px;
+    }   */
 }
 @media screen and (min-width:1440px) and (max-width:2560px){
     .fot-ban{
@@ -7363,13 +7442,13 @@ body .btn-eight:hover {
   }
   
   .abt-ban .hero-heading{
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 50px;
     line-height: 1.17em;
   }
   @media screen and (min-width:0px) and (max-width:640px){
     .abt-ban .hero-heading{
-        font-family: 'gorditamedium';
+         font-family: "Nunito", sans-serif;
         font-size: 40px;
         line-height: 1.17em;
       }
@@ -7578,7 +7657,7 @@ transition: box-shadow .3s ease;
     margin-bottom: 2px;
   }
   .car-ban .heading{
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 40px;
     line-height: 1.17em;
     font-weight: bold;
@@ -7652,7 +7731,7 @@ transition: box-shadow .3s ease;
     margin-bottom: 20px; 
 }
 .wht-v-do .main-title{
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 50px;
     line-height: 1.4em;
     letter-spacing: -1px;
@@ -7677,7 +7756,7 @@ transition: box-shadow .3s ease;
  }
  @media screen and (min-width:0px) and (max-width:640px){
     .wht-v-do .main-title{
-        font-family: 'gorditamedium';
+         font-family: "Nunito", sans-serif;
         font-size: 40px;
         line-height: 1.4em;
         letter-spacing: -1px;
@@ -8067,7 +8146,7 @@ transition: box-shadow .3s ease;
 }
 
 .ex-cu-sof   .block-style-twelve h5 a {
-    font-family: 'gorditamedium';
+     font-family: "Nunito", sans-serif;
     font-size: 25px;
     color: white;
     margin: 30px 0 8px;
@@ -8326,7 +8405,7 @@ transition: box-shadow .3s ease;
         width: 100%;
        }
         .new-top-bar .topbar .top-info small{
-        font-size: 12px !important;
+        font-size: 11px !important;
         font-weight: bolder;
         line-height: 0;
         letter-spacing: 1px;
@@ -8558,7 +8637,7 @@ transition: box-shadow .3s ease;
         margin-left: 8px;
     }
  .pro_2_sec  .pro-title-sec .main_title {
-        font-family: 'gorditamedium';
+         font-family: "Nunito", sans-serif;
         font-size: 50px;
         line-height: 1.34em;
         letter-spacing: -1px;
@@ -8671,7 +8750,7 @@ transition: box-shadow .3s ease;
             line-height: 30px;
         }
         .pro_2_sec  .pro-title-sec .main_title {
-            font-family: 'gorditamedium';
+             font-family: "Nunito", sans-serif;
             font-size: 30px;
             line-height: 1.34em;
             letter-spacing: -1px;
@@ -8817,6 +8896,20 @@ transition: box-shadow .3s ease;
     width: 80%;
   }
 }
+/* !!!!!!!!!!!!!!!!!!!! nav btn css !!!!!!!!!!! */
 
+.let_talk_btn{
+    border-radius: 30px;
+    padding: 10px;
+}
+.let_talk_btn:hover{
+    background-color: white;
+    color: red;
+}
 
-  
+ .get-in-touch .con_details {
+    margin-left: 20px;
+    background-color:#F3F7EC ;
+    padding: 30px;
+    border-radius: 20px;
+ }
