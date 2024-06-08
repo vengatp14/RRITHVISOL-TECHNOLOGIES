@@ -5524,7 +5524,7 @@ body .btn-eight:hover {
     background-image: url(/static/images/assets/con-ban.png);
     position: relative;
     z-index: 1;
-    padding: 205px 0 115px;
+    padding: 115px 0 165px;
     overflow: hidden;
 }
 
