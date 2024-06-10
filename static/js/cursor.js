@@ -1,23 +1,21 @@
-// scripts.js
-document.addEventListener('mousemove', (event) => {
-  const cursor = document.getElementById('customCursor');
-  cursor.style.left = `${event.clientX}px`;
-  cursor.style.top = `${event.clientY}px`;
-});
-// scripts.js
-document.addEventListener('mousemove', (event) => {
-  const cursor = document.getElementById('customCursor');
-  cursor.style.left = `${event.clientX}px`;
-  cursor.style.top = `${event.clientY}px`;
-});
+$(document).ready(function() {
+  var customCursor = $('#customCursor');
 
-document.querySelectorAll('a, button').forEach(element => {
-  element.addEventListener('mouseover', () => {
-    const cursor = document.getElementById('customCursor');
-    cursor.classList.add('hover');
+  // Update the position of the custom cursor based on mouse movement
+  $(document).mousemove(function(e) {
+      customCursor.css({
+          left: e.pageX + 'px',
+          top: e.pageY + 'px'
+      });
   });
-  element.addEventListener('mouseout', () => {
-    const cursor = document.getElementById('customCursor');
-    cursor.classList.remove('hover');
-  });
+
+  // Add hover effect on elements
+  $('*').hover(
+      function() {
+          customCursor.addClass('hover');
+      },
+      function() {
+          customCursor.removeClass('hover');
+      }
+  );
 });
