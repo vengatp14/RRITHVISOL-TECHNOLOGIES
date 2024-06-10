@@ -1,34 +1,21 @@
-const $bigBall = document.querySelector('.cursor__ball--big');
-const $smallBall = document.querySelector('.cursor__ball--small');
-const $hoverables = document.querySelectorAll('.hoverable');
+$(document).ready(function() {
+  var customCursor = $('#customCursor');
 
-// Listeners
-document.body.addEventListener('mousemove', onMouseMove);
-for (let i = 0; i < $hoverables.length; i++) {
-  $hoverables[i].addEventListener('mouseenter', onMouseHover);
-  $hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
-}
+  // Update the position of the custom cursor based on mouse movement
+  $(document).mousemove(function(e) {
+      customCursor.css({
+          left: e.pageX + 'px',
+          top: e.pageY + 'px'
+      });
+  });
 
-// Move the cursor
-function onMouseMove(e) {
-  TweenMax.to($bigBall, .4, {
-    x: e.pageX - 15,
-    y: e.pageY - 15
-  })
-  TweenMax.to($smallBall, .1, {
-    x: e.pageX - 5,
-    y: e.pageY - 7
-  })
-}
-
-// Hover an element
-function onMouseHover() {
-  TweenMax.to($bigBall, .3, {
-    scale: 4
-  })
-}
-function onMouseHoverOut() {
-  TweenMax.to($bigBall, .3, {
-    scale: 1
-  })
-}
+  // Add hover effect on elements
+  $('*').hover(
+      function() {
+          customCursor.addClass('hover');
+      },
+      function() {
+          customCursor.removeClass('hover');
+      }
+  );
+});

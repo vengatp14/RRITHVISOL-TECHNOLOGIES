@@ -35,7 +35,8 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
-
+<!-- cursor css link  -->
+<link rel="stylesheet" href="./static/js/cursor.js">
     <!-- Fix Internet Explorer ______________________________________-->
     <!--[if lt IE 9]>
             <script src="/static/http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -46,9 +47,8 @@
 
 <body>
     <div class="main-page-wrapper">
-               <!-- ===================================================
-                Loading Transition
-            ==================================================== -->
+               <!-- custom cursor  -->
+        <div class="custom-cursor" id="customCursor"></div>
   <!-- ===================================================
                 Loading Transition
             ==================================================== -->
@@ -1637,7 +1637,7 @@ slides-per-view="1" loop="auto" autoplay-delay="2500" style="height: 350px; ">
                 Footer
             =====================================================
             -->
-        <!-- footer starts here -->
+  <!-- footer starts here -->
        <!-- footer starts here -->
        <footer class="foot-sec">   
         <section class="bg-dark foot">
@@ -1669,33 +1669,33 @@ slides-per-view="1" loop="auto" autoplay-delay="2500" style="height: 350px; ">
                 <div class="col-lg-4 col-md-6">
                     <div class="ser-fot ">
                         <h6 class="text-uppercase " > industries</h6>
-                        <p>Fintech </p>
-                        <p>Healthcare</p>
-                        <p>Entertainment  </p>
-                        <p>Logicstics</p>
-                        <p>Retail and E-Commerence</p>
+                        <p class="d-flex fot_txt "> <img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt=""> Fintech </p>
+                        <p class="d-flex fot_txt "><img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt=""> Healthcare</p>
+                        <p class="d-flex fot_txt "> <img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt="">Entertainment </p>
+                        <p class="d-flex fot_txt "> <img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt="">Logicstics</p>
+                        <p class="d-flex fot_txt "><img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt="">Retail and E-Commerence</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="ser-fot ">
                         <h6 class="text-uppercase " > technologies</h6>
-                        <p>React js</p>
-                        <p>Node js </p>
-                        <p>Angular js </p>
-                        <p>Express js </p>
-                        <p>HTML & CSS</p>
+                        <p class="d-flex fot_txt "><img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt="">React js</p>
+                        <p class="d-flex fot_txt "><img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt="">Node js </p>
+                        <p class="d-flex fot_txt "><img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt="">Angular js </p>
+                        <p class="d-flex fot_txt "><img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt="">Express js </p>
+                        <p class="d-flex fot_txt "><img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt="">HTML & CSS</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                    
                     <div class="ser-fot ">
                         <h6 class="text-uppercase " > Service</h6>
-                       <a href="mobile_app_dev.html"> <p>Mobile App Development</p></a>
-                       <a href="blockchain_dev.html"> <p>Blockchain Development</p></a>
-                      <a href="websites_&_webapps.html">  <p>Websites  Development </p></a>
-                        <a href="custom_software_dev.html"></a><p>Custom Software Development </p>
-                       <a href="Ai_chatbot.html"> <p>AI chatbot Development </p></a>
-                       <a href="Ai_chatbot.html"> <p>VR & AR Development </p></a>
+                       <a href="mobile_app_dev.html"> <p class="d-flex fot_txt "><img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt="">Mobile App Development</p></a>
+                       <a href="blockchain_dev.html"> <p class="d-flex fot_txt "><img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt="">Blockchain Development</p></a>
+                      <a href="websites_&_webapps.html">  <p class="mb_0 d-flex fot_txt"><img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt="">Websites  Development </p></a>
+                        <a href="custom_software_dev.html"><p class="d-flex fot_txt " ><img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt="">Software  Development </p></a>
+                       <a href="Ai_chatbot.html"> <p class="d-flex fot_txt "><img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt="">AI chatbot Development </p></a>
+                       <a href="VR_AR.html"> <p class="d-flex fot_txt "><img style="width:7%" class="img-fluid me-1" src="./static/images/icon/arrows.svg" alt="">VR & AR Development </p></a>
                     </div>
                 </div>
                </div>
@@ -1806,6 +1806,8 @@ slides-per-view="1" loop="auto" autoplay-delay="2500" style="height: 350px; ">
         <script src="/static/vendor/validator.js"></script>
         <!-- Theme js -->
         <script src="/static/js/theme.js"></script>
+        <!-- cursor js  -->
+         <script src="./static/js/cursor.js"></script>
     </div>
     <!-- /.main-page-wrapper -->
 <!-- swiper js  -->
