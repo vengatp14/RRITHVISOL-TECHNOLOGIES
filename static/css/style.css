@@ -5495,7 +5495,7 @@ body .btn-eight:hover {
         width: 210px;
         border-radius: 8px;
       position: relative;
-      top: 45px !important;
+      top: 16px !important;
       background-color: black !important;
       top: 10px;
       left: 205px !important;
@@ -7163,6 +7163,14 @@ body .btn-eight:hover {
 .ser-fot a:hover{
     color: white;
 }
+.ser-fot .fot_txt{
+    position: relative;
+    transition: left 0.3s ease-in;
+}
+.ser-fot .fot_txt:hover{
+     transform: scale(1);
+     left: 6px;
+}
 
 .ser-fot{
     color:grey;
@@ -7252,6 +7260,11 @@ body .btn-eight:hover {
     .foot{
         padding: 30px;
         height: 400px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1439px){
+    .mb_0{
+        margin-bottom: 0px;
     }
 }
 
@@ -8647,9 +8660,12 @@ transition: box-shadow .3s ease;
     }
    /* !!!! number section css!!!!!!!!!!!!! */
   
-    .txt-num-container span:hover{
-        background-color:#5AB2FF ;
+    .txt-num-container .num_txt:hover{
+        background-color:#e26279 ;
         color: white;
+ }
+ .txt-num-container .num_txt span{
+    text-align: center !important;
  }
  .txt-num-container .container-txt{
     margin-top: 25px;
@@ -8660,8 +8676,8 @@ transition: box-shadow .3s ease;
  .txt-num-container .num_txt{
        background-color: #E1F7F5 ;
        display: flex;
-       border-radius: 50%;
-           padding: 20px 45px 15px 30px   !important;
+       border-radius: 60%;
+           padding: 20px 48px 15px 30px   !important;
            height: 80px !important;
            text-align: center;
            width: 36px !important;
@@ -8671,7 +8687,7 @@ transition: box-shadow .3s ease;
            position: relative;
            right: 30px;
     }
-
+    
 
 
 
@@ -8720,7 +8736,7 @@ transition: box-shadow .3s ease;
     background-color: #E1F7F5 ;
     display: flex;
     border-radius: 50%;
-        padding: 20px 45px 15px 30px   !important;
+        padding: 23px 47px 15px 30px   !important;
         height: 80px !important;
         text-align: center;
         width: 36px !important;
@@ -8732,7 +8748,7 @@ transition: box-shadow .3s ease;
         bottom: 15px !important;
  }
  .txt-num-container_left span:hover{
-     background-color:#5AB2FF ;
+     background-color:#e26279 ;
      color: white;
 }
 .txt-num-container_left .container-txt_left{

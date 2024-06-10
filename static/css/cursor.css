@@ -1,51 +1,33 @@
 body {
-  height: 100vh;
-  background: #010101;
-  cursor: none;
-  margin: 0;
+  cursor: none !important; /* Hide the default cursor */
+}
+
+.custom-cursor {
+  border-radius: 50%;
+  border: 2px solid #e84462;
+  padding: 10px;
+  position: absolute;
+  pointer-events: none; /* Prevent cursor from triggering events */
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.1s ease, background-color 0.3s ease;
   display: flex;
-  font-family: monospace;
-}
-body h1,
-body p,
-body a {
-  color: #fff;
-}
-body a {
-  border-bottom: 2px solid #fff;
-  padding: 10px 0;
-  margin-top: 25px;
-}
-body .cursor {
-  pointer-events: none;
-}
-body .cursor__ball {
-  position: fixed;
-  top: 0;
-  left: 0;
-  mix-blend-mode: difference;
-  z-index: 1000;
-}
-body .cursor__ball circle {
-  fill: #f7f8fa;
-}
-body .left,
-body .right {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body .right {
-  background: #fff;
+
+.custom-cursor::after {
+  content: '';
+  width: 5px; /* Adjust size as needed */
+  height: 5px; /* Adjust size as needed */
+  background-color: #e84462;
+  border-radius: 50%;
+  transition: transform 0.1s ease;
 }
-body .right a {
-  border-bottom: 2px solid #000;
+
+.custom-cursor.hover {
+  transform: translate(-50%, -50%) scale(1.5);
 }
-body .right h1,
-body .right p,
-body .right a {
-  color: #000;
+
+.custom-cursor.hover::after {
+  transform: scale(1.5);
 }
