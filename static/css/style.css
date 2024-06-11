@@ -212,6 +212,10 @@
 .ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(8):before {
     animation-delay: 1.4s;
 }
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:nth-child(9):before {
+    animation-delay: 1.6s;
+}
+
 
 .loaded .animation-preloader {
     opacity: 0;
@@ -260,7 +264,7 @@ body {
     font-family: "Nunito", sans-serif;
 
     font-weight: normal;
-    font-size: 18px;
+    font-size: 14px;
     position: relative;
     line-height: 2em;
     color: var(--text-color);
@@ -287,7 +291,7 @@ h5,
 .h6,
 h6 {
     color: var(--heading);
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.2;
     color: #091E3E;
     margin-top: 0;
@@ -296,22 +300,26 @@ h6 {
 
 .h1,
 h1 {
-    font-size: 80px;
+    font-size: 70px;
+    font-family: "Nunito", sans-serif;
 }
 
 .h2,
 h2 {
     font-size: 52px;
+    font-family: "Nunito", sans-serif;
 }
 
 .h3,
 h3 {
     font-size: 36px;
+    font-family: "Nunito", sans-serif;
 }
 
 .h4,
 h4 {
     font-size: 24px;
+    font-family: "Nunito", sans-serif;
 }
 
 .h5,
@@ -1215,6 +1223,11 @@ body .btn-eight:hover {
 .theme-menu-four .navbar {
     margin-left: 145px;
 }
+@media screen and (min-width:768px) and (max-width:1024px){
+    .theme-menu-four .navbar {
+        margin-left: 5px;
+    }
+}
 
 .theme-menu-four:before {
     content: '';
@@ -1304,8 +1317,8 @@ body .btn-eight:hover {
 .theme-menu-four .navbar .dropdown-menu .dropdown:hover>.dropdown-item,
 .theme-menu-four .navbar .dropdown-menu .dropdown-item.active,
 .theme-menu-four .navbar .dropdown-menu .dropdown-item:hover {
-    background: var(--prime-three);
-    text-decoration: underline 5px #ec143c
+    color: var(--prime-three);
+   
 }
 
 .theme-menu-four .navbar .dropdown-toggle::after,
@@ -5460,6 +5473,11 @@ body .btn-eight:hover {
     background: black;
     padding: 10px;
 }
+.bg-sch button:hover{
+    background-color: white;
+    color: var(--prime-three);
+    border: 2px solid white;
+}
 @media screen and (min-width:0px) and (max-width:640px){
     .bg-sch  button{
          font-family: "Nunito", sans-serif;
@@ -5501,6 +5519,12 @@ body .btn-eight:hover {
       left: 205px !important;
         background: var(--prime-three);
     }
+    .bg-sch button:hover {
+        background-color: white !important;
+        color: var(--prime-three);
+        border: 2px solid white;
+    }
+    
 }
 .theme-basic-footer .subscribe-form form button:hover {
     background: var(--prime-two);
@@ -7113,7 +7137,7 @@ body .btn-eight:hover {
 
 /* !!!!!!!!!!!!!!!!!!!!!!industries we serve css !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .ind-ser .ind-crd{
-    background-color: rgb(232, 236, 240);
+    background-color: #F3F7EC;
     padding: 10px;
     border-radius: 15px;
     box-shadow: 2px 3px 2px 3px rgba(53, 3, 3, 0.37);
@@ -7199,6 +7223,9 @@ body .btn-eight:hover {
     padding-top: 30px;
   
 }
+.foot-sec p{
+    font-size: 1rem;
+}
 .fot-ban p{
     line-height: 30px;
 }
@@ -7243,23 +7270,26 @@ body .btn-eight:hover {
         position: relative !important;
         bottom: 30px !important;
         right: 40px;
-        height: 480px;
+        height: 415px;
     }
-    /* .foot{
+    .foot{
         padding: 30px;
-        height: 400px;
-    }   */
+        height: 420px;
+    } 
+    .foot-sec p{
+        font-size: 1rem !important;
+    } 
 }
 @media screen and (min-width:1440px) and (max-width:2560px){
     .fot-ban{
         position: relative !important;
         bottom: 30px !important;
         right: 40px;
-        height: 400px;
+        height: 330px;
     }
     .foot{
         padding: 30px;
-        height: 400px;
+        height: 340px;
     }
 }
 @media screen and (min-width:1024px) and (max-width:1439px){
@@ -8216,6 +8246,7 @@ transition: box-shadow .3s ease;
         overflow: hidden;
         transition: 1s;
         left: -188px;
+        font-size: 17px;
       }
       .content-slider .soc-lin {
         color: transparent;
@@ -8814,115 +8845,55 @@ transition: box-shadow .3s ease;
     /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials {
-  padding: 80px 0;
-  background: url("/static/images/assets/testimonials-bg.jpg") no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
+
+.testimonial-carousel .testimonial-item {
+    padding: 0 30px 30px 30px;
 }
 
-.testimonials::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+.testimonial-carousel .owl-nav {
+    display: flex;
+    justify-content: center;
 }
 
-.testimonials .section-header {
-  margin-bottom: 40px;
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    margin: 0 12px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    background: var(--light);
+    border-radius: 60px;
+    font-size: 22px;
+    transition: .5s;
 }
 
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
-}
-
-.testimonials .testimonial-item {
-  text-align: center;
-  color: #fff;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 100px;
-  border-radius: 50%;
-  border: 6px solid rgba(255, 255, 255, 0.15);
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #fff;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #ddd;
-  margin: 0 0 15px 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 26px;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-  color: #eee;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(255, 255, 255, 0.5);
-  opacity: 1;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #106eea;
-}
-
-@media (min-width: 992px) {
-  .testimonials .testimonial-item p {
-    width: 80%;
-  }
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: #FFFFFF;
+    background: var(--primary);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 /* !!!!!!!!!!!!!!!!!!!! nav btn css !!!!!!!!!!! */
 
 .let_talk_btn{
     border-radius: 30px;
     padding: 10px;
+    width: 150px;
 }
 .let_talk_btn:hover{
     background-color: white;
     color: red;
 }
-
+@media screen and (min-width:1024px) and (max-width:1439px){
+    .let_talk_btn{
+        border-radius: 30px;
+        padding: 10px;
+        width: 150px;
+    }
+}
  .get-in-touch .con_details {
     margin-left: 20px;
     background-color:#F3F7EC ;
