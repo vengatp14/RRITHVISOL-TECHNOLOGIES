@@ -43,13 +43,24 @@
             <script src="/static/vendor/respond.js"></script>
         <![endif]-->
         <!-- cursor css link  -->
-         <link rel="stylesheet" href="./static/css/cursor.css">
+         <link rel="stylesheet" href="./static/css/cir.css">
 </head>
 
 <body>
     <div class="main-page-wrapper">
             <!-- custom cursor  -->
-            <div class="custom-cursor" id="customCursor"></div>
+            <div class="cursor">
+                <div class="cursor__ball cursor__ball--big">
+                  <svg height="30" width="30">
+                    <circle cx="15" cy="15" r="12" stroke-width="0" style="transform: translateY(-4px);"> </circle>
+                  </svg>
+                </div>
+                <div class="cursor__ball cursor__ball--small">
+                  <svg height="10" width="10">
+                    <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+                  </svg>
+                </div>
+            </div>
   <!-- ===================================================
                 Loading Transition
             ==================================================== -->
@@ -1944,7 +1955,8 @@ slides-per-view="1" loop="auto" autoplay-delay="2500" style="height: 350px; ">
         window.open(whatsappLink, '_blank');
     }
 </script>
-  
+<script src="./static/js/cir.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 
 </body>
 
