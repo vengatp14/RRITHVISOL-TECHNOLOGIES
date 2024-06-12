@@ -1,0 +1,78 @@
+
+/* body {
+  height: 100vh;
+  background:white;
+  cursor: default;
+  margin: 0;
+  display: flex;
+  font-family: monospace;
+} 
+  h1, p , a {
+    color:white;
+  }
+  
+  a {
+    border-bottom: 2px solid #fff;
+    padding: 10px 0;
+    margin-top: 25px;
+  } */
+  
+  .cursor {
+    pointer-events:none;
+  }
+    &__ball {
+      position: fixed;
+      top: 0;
+      left: 0;
+      mix-blend-mode: difference;
+      z-index: 1000;
+      
+      
+    }
+      circle {
+        fill:rgb(255, 255, 255);
+        /* transform: translateY(-4px); */
+      }
+  .left, .right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+/*   
+  .right {
+    background: #fff;
+  }
+    a {
+      border-bottom: 2px solid #000;
+    }
+    
+    h1, p, a {
+      color:black;
+    } */
+    .cursor__ball--big,
+    .cursor__ball--small {
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%,-50%);
+      transition:transform 0.1s ease-out ;
+      border-radius: 100%;
+      background-color: red;      
+    }
+    .cursor__ball--big {
+      width: 30px;
+      height: 30px;
+    }
+    
+    .cursor__ball--small {
+      width: 0px;
+      height: 0px;
+  
+    } 
+
+  .cursor__ball--small circle {
+   fill:red;
+    }
