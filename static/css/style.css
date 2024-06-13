@@ -1228,6 +1228,11 @@ body .btn-eight:hover {
         margin-left: 5px;
     }
 }
+@media screen and (min-width:1440px) and (max-width:2560px){
+    .theme-menu-four .navbar {
+        margin-left: 200px;
+    }
+} 
 
 .theme-menu-four:before {
     content: '';

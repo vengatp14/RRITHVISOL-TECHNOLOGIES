@@ -18,15 +18,15 @@ document.addEventListener('DOMContentLoaded', function () {
   
       gsap.to($bigBall, {
         duration: 0.4,
-        x: x - 15,
-        y: y - 15,
-        ease: "power2.out"
+        x: x - 2.5,
+        y: y - 1,
+        ease: "power2.out " 
       });
   
       gsap.to($smallBall, {
         duration: 0.1,
-        x: x - 19.5,
-        y: y - 34,
+        x: x - 6,
+        y: y - 14,
         ease: "power2.out"
       });
     }
@@ -35,13 +35,13 @@ document.addEventListener('DOMContentLoaded', function () {
     function onMouseHover() {
       gsap.to($bigBall, {
         duration: 0.3,
-        scale: 2,
+        scale: 1.1,
         ease: "power2.out"
       });
   
       gsap.to($smallBall, {
         duration: 0.3,
-        scale: 2,
+        scale: 1.1,
         ease: "power2.out"
       });
     }
@@ -49,13 +49,13 @@ document.addEventListener('DOMContentLoaded', function () {
     function onMouseHoverOut() {
       gsap.to($bigBall, {
         duration: 0.3,
-        scale: 1,
+        scale: 1.1,
         ease: "power2.out"
       });
   
       gsap.to($smallBall, {
         duration: 0.3,
-        scale: 1,
+        scale: 1.1,
         ease: "power2.out"
       });
     }
