@@ -136,7 +136,7 @@
 .navbar .dropdown-menu .dropdown:hover>.dropdown-item,
 .navbar .dropdown-menu .dropdown-item.active,
 .navbar .dropdown-menu .dropdown-item:hover {
-    background: var(--prime-one);
+    background: transparent;
     color: #fff;
 }
 
@@ -187,6 +187,7 @@
     background-color: #f3f3f3;
     padding: 8px;
     border-radius: 50%;
+    box-shadow: 2px  #000000;
 }
 
 /*----- For Desktop -------*/
@@ -249,8 +250,8 @@
         transform: scale(1);
     }
     .ser-dropdown-fot{
-        background-color: #D1D8C5;
-        padding: 12px;
+        background-color: #FFE6E6;
+        padding: 13px;
         text-align: center;
         
     }
@@ -361,7 +362,56 @@
         border-radius: 10px;
         display: block;
         right: 0px;
-        left: -390px;
+        left: -410px;
+        width: 100vw;
+        padding: 10px;
+        border: none;
+        top: 100%;
+        visibility: hidden;
+        transform: scale(1, 0);
+        opacity: 0;
+         min-width: 1000px;
+         height: 390px;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.12);
+        margin: 0;
+        transform-origin: 0 0;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .br_tag{
+        display: inline-block !important;
+    }
+    .nav_fot_para{
+        font-size: 15px;
+    }
+    .ser_drop_head{
+        color: #ec143c;
+        font-size: 18px;
+       margin-left: 16px;
+       font-weight: 600;
+     
+    }
+    
+    .ser_drop_head:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #ff7575;
+    margin: 5px 0 0;
+}
+}
+@media screen and (min-width:1440px) and (max-width:2560px){
+    .br_tag{
+        display: none !important;
+    }
+    .navbar .dropdown-menu {
+        z-index: 1000;
+        background-color: #fff;
+        border-radius: 10px;
+        display: block;
+        right: 0px;
+        left: -530px !important;
         width: 100vw;
         padding: 10px;
         border: none;
@@ -376,18 +426,26 @@
         transform-origin: 0 0;
         transition: all 0.3s ease-in-out;
     }
-    
-    .br_tag{
-        display: inline-block !important;
-    }
     .nav_fot_para{
-        font-size: 15px;
+        font-size: 17px;
+        color: #050748;
     }
+    .ser_drop_head{
+        color: #ec143c;
+        font-size: 18px;
+       margin-left: 16px;
+       font-weight: 600;
+     
+    }
+    
+    .ser_drop_head:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #ff7575;
+    margin: 5px 0 0;
 }
-@media screen and (min-width:1440px) and (max-width:2560px){
-    .br_tag{
-        display: none !important;
-    }
 }
 @media screen and (min-width:0px) and (max-width:768px){
     .br_tag{
