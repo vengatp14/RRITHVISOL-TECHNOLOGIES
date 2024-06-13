@@ -513,7 +513,7 @@
                     <div class="card-body">
                       <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
                   
-                      <a href="#" class="btn btn-primary">Continue Reading</a>
+                      <a href="#" class="btn btn-danger">Continue Reading</a>
                     </div>
                   </div>
             </div>
@@ -524,7 +524,7 @@
                     <div class="card-body">
                       <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
                   
-                      <a href="#" class="btn btn-primary">Continue Reading</a>
+                      <a href="#" class="btn btn-danger">Continue Reading</a>
                     </div>
                   </div>
             
@@ -535,7 +535,7 @@
                 <div class="card-body">
                   <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
               
-                  <a href="#" class="btn btn-primary">Continue Reading</a>
+                  <a href="#" class="btn btn-danger">Continue Reading</a>
                 </div>
               </div>
         </div>
@@ -547,7 +547,7 @@
                 <div class="card-body">
                   <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
               
-                  <a href="#" class="btn btn-primary">Continue Reading</a>
+                  <a href="#" class="btn btn-danger">Continue Reading</a>
                 </div>
               </div>
         </div>
@@ -557,7 +557,7 @@
                 <div class="card-body">
                   <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
               
-                  <a href="#" class="btn btn-primary">Continue Reading</a>
+                  <a href="#" class="btn btn-danger">Continue Reading</a>
                 </div>
               </div>
         
@@ -568,7 +568,7 @@
             <div class="card-body">
               <h5 class="card-title">5 Best Reasons Why a Website is Essential for Every Business</h5>
           
-              <a href="#" class="btn btn-primary">Continue Reading</a>
+              <a href="#" class="btn btn-danger">Continue Reading</a>
             </div>
           </div>
         </div>
@@ -788,9 +788,16 @@
       <script>
 $(document).ready(function () {
     $("#load_btn").on("click", function () {
-        $(".hidden:hidden").slice(0, 3).slideDown(); // Show the next 3 hidden elements
+        // Show the next 3 hidden elements
+        $(".hidden:hidden").slice(0, 3).slideDown();
+
+        // Check if there are no more hidden elements
+        if ($(".hidden:hidden").length === 0) {
+            $("#load_btn").hide(); // Hide the "Load More" button
+        }
     });
 });
+
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {

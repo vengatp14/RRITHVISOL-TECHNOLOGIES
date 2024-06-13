@@ -30,7 +30,7 @@
       
     }
       circle {
-        fill:rgb(255, 255, 255);
+        fill:transparent;
      
       }
   .left, .right {
@@ -60,11 +60,13 @@
       transform: translate(-50%,-50%);
       transition:transform 0.1s ease-out ;
       border-radius: 100%;
-      background-color:red;      
+     
     }
     .cursor__ball--big {
       width: 30px;
       height: 30px;
+      background-color:transparent;
+      border: 1px solid red;  
     }
     
     .cursor__ball--small {

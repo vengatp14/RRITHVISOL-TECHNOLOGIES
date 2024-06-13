@@ -1,28 +1,3 @@
- 
- (function($) {
-    "use strict";
- 
- // Testimonials carousel
-  $(".testimonial-carousel").owlCarousel({
-    autoplay: true,
-    smartSpeed: 1000,
-    margin: 25,
-    dots: false,
-    loop: true,
-    nav: true,
-    navText: [
-        '<i class="bi bi-chevron-left"></i>',
-        '<i class="bi bi-chevron-right"></i>'
-    ],
-    responsive: {
-        0: {
-            items: 1
-        },
-        992: {
-            items: 2
-        }
-    }
-});
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
   loop:true,
@@ -33,12 +8,17 @@ $(document).ready(function(){
           items:1
       },
       600:{
-          items:3
+          items:2
       },
       1000:{
-          items:5
+          items:2
       }
   }
   })
-  })
- });(jquery);
+  });
+
+ 
+      $(document).ready(function(){
+$( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+$( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
+})

@@ -44,7 +44,7 @@
 <!-- js query cdn link  -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
 <body>
@@ -52,7 +52,7 @@
 
         <!-- cursor animation -->
         <div class="cursor">
-            <div class="cursor__ball cursor__ball--big">
+            <div class="cursor__ball cursor__ball--big" style="fill: none;">
               <svg height="30" width="30">
                 <circle cx="15" cy="15" r="12" stroke-width="0" > </circle>
               </svg>
@@ -782,16 +782,16 @@
 
     <!-- ======= Testimonials Section ======= -->
      <!-- Testimonial Start -->
-     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+     <div class="container-xxl py-5 wow fadeInUp test_sec" data-wow-delay="0.1s">
         <div class="container py-5 px-lg-5">
-            <p class="section-title text-secondary justify-content-center"><span></span>Testimonial<span></span></p>
+            <p class="section-title text-center"><span>Testimonial</span></p>
             <h1 class="text-center mb-5">What Say Our Clients!</h1>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item bg-light rounded my-4">
                     <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 65px; height: 65px;">
-                        <div class="ps-4">
+                       
+                        <div class="ps-0">
                             <h5 class="mb-1">Client Name</h5>
                             <span>Profession</span>
                         </div>
@@ -800,8 +800,8 @@
                 <div class="testimonial-item bg-light rounded my-4">
                     <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 65px; height: 65px;">
-                        <div class="ps-4">
+                       
+                        <div class="ps-0">
                             <h5 class="mb-1">Client Name</h5>
                             <span>Profession</span>
                         </div>
@@ -810,13 +810,14 @@
                 <div class="testimonial-item bg-light rounded my-4">
                     <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 65px; height: 65px;">
-                        <div class="ps-4">
+                   
+                        <div class="ps-0">
                             <h5 class="mb-1">Client Name</h5>
                             <span>Profession</span>
                         </div>
                     </div>
                 </div>
+              
             </div>
         </div>
     </div>
@@ -1034,28 +1035,13 @@
     </div>
     <!-- /.main-page-wrapper -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
 
 
 
-<script>
-     /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-  </script>
+
+
 
 
 <script>
