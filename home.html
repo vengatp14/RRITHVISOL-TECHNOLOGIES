@@ -37,7 +37,7 @@
 <!-- owl corosel css link  -->
  <!-- <link rel="stylesheet" href="./static/vendor/owl.corosel/owl.carousel.min.css"> -->
 <!-- cusor css link  -->
-<link rel="stylesheet" href="./static/css/cursor.css">
+<link rel="stylesheet" href="./static/css/cir.css">
 <!-- boostrap icon link  -->
 <!-- Option 1: Include in HTML -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -49,8 +49,20 @@
 
 <body>
     <div class="main-page-wrapper">
-        <!-- cursor  -->
-        <div class="custom-cursor" id="customCursor"></div>
+
+        <!-- cursor animation -->
+        <div class="cursor">
+            <div class="cursor__ball cursor__ball--big">
+              <svg height="30" width="30">
+                <circle cx="15" cy="15" r="12" stroke-width="0" style="transform: translateY(-4px);"> </circle>
+              </svg>
+            </div>
+            <div class="cursor__ball cursor__ball--small">
+              <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+              </svg>
+            </div>
+        </div>
         <!-- ===================================================
                 Loading Transition
             ==================================================== -->
@@ -1091,7 +1103,8 @@
     }
 </script>
 
-    
+<script src="./static/js/cir.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 
  
 </body>
