@@ -1325,13 +1325,14 @@
     .fancy-feature-two .illustration-holder,
     .hero-banner-three .illustration-holder {
         position: relative;
-        top: auto;
+       bottom: 625px;
         right: auto;
-        left: auto;
+        left: 50px;
         width: 100%;
         margin: 80px auto 0;
         max-width: 470px;
         padding: 0 10px;
+        z-index: -1;
     }
     .fancy-feature-two .illustration-holder-two,
     .fancy-feature-two .illustration-holder {

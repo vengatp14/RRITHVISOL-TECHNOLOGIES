@@ -1234,18 +1234,18 @@ body .btn-eight:hover {
     }
 } 
 
-.theme-menu-four:before {
+/* .theme-menu-four:before {
     content: '';
     position: absolute;
     border-radius: 50%;
     width: 220px;
     height: 220px;
-    /* left: -50px;
-    top: -70px; */
-    /* background: #FFFFFF; */
+     left: -50px;
+    top: -70px; 
+    background: #FFFFFF;
     box-shadow: 6px 73px 62px rgba(0, 12, 119, 0.03);
     z-index: -1;
-}
+} */
 
 .theme-menu-four.sticky-menu.fixed:before {
     display: none;
@@ -8584,7 +8584,7 @@ transition: box-shadow .3s ease;
 }
   /* !!!!!!!!!!!!!!!!!!!! blog page css starts !!!!!!!!!!!!!!!!!!!!!!! */
   .blog-ban{
-    padding: 100px;
+    padding: 60px;
   }
   @media screen and (min-width:0px) and (max-width:640px){
     .blog-ban{
@@ -8713,7 +8713,7 @@ transition: box-shadow .3s ease;
        background-color: #E1F7F5 ;
        display: flex;
        border-radius: 60%;
-           padding: 20px 48px 15px 30px   !important;
+           padding: 26px 48px 21px 31px   !important;
            height: 80px !important;
            text-align: center;
            width: 36px !important;
@@ -8772,7 +8772,7 @@ transition: box-shadow .3s ease;
     background-color: #E1F7F5 ;
     display: flex;
     border-radius: 50%;
-        padding: 23px 47px 15px 30px   !important;
+        padding: 26px 47px 15px 30px   !important;
         height: 80px !important;
         text-align: center;
         width: 36px !important;
