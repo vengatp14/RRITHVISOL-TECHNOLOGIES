@@ -387,7 +387,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="address-block-two text-center mb-40 sm-mb-20 mt-lg-5">
+                        <div class="address-block-two text-center mb-40 sm-mb-20 mt-lg-5 h-75">
                             <div class="icon d-flex align-items-center justify-content-center m-auto"><img src="/static/images/icon/location.svg" alt=""></div>
                             <h5 class="title">Our Address</h5>
                          
@@ -400,7 +400,7 @@
                         <!-- /.address-block-two -->
                     </div>
                     <div class="col-md-4">
-                        <div class="address-block-two text-center mb-40 sm-mb-20 mt-lg-5">
+                        <div class="address-block-two text-center mb-40 sm-mb-20 mt-lg-5 h-75">
                             <div class="icon d-flex align-items-center justify-content-center m-auto"><img src="/static/images/icon/contact.svg" alt=""></div>
                             <h5 class="title">Contact Info</h5>
                             <p>Open a chat or give us call at <br><a href="tel:(+91) +91 7845833637" class="call">(+91) 7845833637</a><br>
@@ -409,7 +409,7 @@
                         <!-- /.address-block-two -->
                     </div>
                     <div class="col-md-4">
-                        <div class="address-block-two text-center mb-40 sm-mb-20 mt-lg-5">
+                        <div class="address-block-two text-center mb-40 sm-mb-20 mt-lg-5 h-75">
                             <div class="icon d-flex align-items-center justify-content-center m-auto"><img src="/static/images/icon/chat.svg" alt=""></div>
                             <h5 class="title">Live Support</h5>
                             <p>live chat service <br><a href="https://wa.me/917845833637" class="webaddress">Chat with us</a></p>
@@ -427,7 +427,8 @@
                                 <form action="inc/contact.php"  data-toggle="validator">
                                     <div class="messages"></div>
                                     <div class="row controls">
-                                        <div class="col-12">
+                                        
+                                        <div class="col-lg-6">
                                             <div class="input-group-meta form-group mb-30">
                                                 <label>Name*</label>
                                                 <input type="text" placeholder="" name="name" required="required" data-error="Name is required.">
@@ -435,10 +436,17 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-12">
+                                        <div class="col-lg-6">
                                             <div class="input-group-meta form-group mb-30">
                                                 <label>Email*</label>
                                                 <input type="email" placeholder="" name="email" required="required" data-error="Valid email is required.">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-group-meta form-group mb-30">
+                                                <label>Phone Number*</label>
+                                                <input id="phone" type="phonenumber" placeholder="" name="number" required="required" data-error="Valid email is required.">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
