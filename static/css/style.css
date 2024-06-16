@@ -5553,7 +5553,7 @@ body .btn-eight:hover {
     background-image: url(/static/images/assets/con-ban.png);
     position: relative;
     z-index: 1;
-    padding: 115px 0 165px;
+    padding: 165px 0 165px;
     overflow: hidden;
 }
 
@@ -6781,6 +6781,12 @@ body .btn-eight:hover {
     font-size: 22px;
     color: var(--prime-three);
 }
+@media screen and (min-width:640px) and (max-width:768px){
+    .contact-section-one .address-block-two p .call {
+        font-size: 17px;
+        color: var(--prime-three);
+    }
+}
 
 .contact-section-one .address-block-two p .call:hover {
     text-decoration: underline;
@@ -7565,21 +7571,24 @@ body .btn-eight:hover {
 
 }
  .pro-crd:hover img{
-    background: radial-gradient(circle, #5AB2FF 51%, #CAF4FF 13%);
+    background: radial-gradient(circle, #FF6969 51%, #D8EFD3 13%);
  }
-
 
 .pro-crd p{
     line-height: 30px !important;
 }
 
 .pro-sec     .pro-crd:hover{
-background-color: #CAF4FF;
+background-color: #D8EFD3;
 border-radius: 10px;
+
 padding: 10px;
 box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.5); /* White with 50% opacity */
 transition: box-shadow .3s ease;
 /* transform: scale(1.1); */
+       }
+       .pro-sec .pro-crd:hover p{
+        color: #000;
        }
 
 
@@ -8673,6 +8682,16 @@ transition: box-shadow .3s ease;
       .blog-crd-sec .blog-crd{
         width: 360px;
       }
+  }
+  .blog-crd:hover{
+    background-color: pink;
+    border-radius: 10px;
+    padding: 8px;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+  }
+  .blog-crd:hover img{
+border-radius: 8px;
   }
     /* !!!!!!!!!!!!!!!!!about us page process_2 section css !!!!!!!!!!!!!!!!!!!!!!!!! */
 
