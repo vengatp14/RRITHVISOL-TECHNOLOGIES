@@ -7836,7 +7836,7 @@ transition: box-shadow .3s ease;
  /* !!!!!!!! 3rd party api section css starts !!!!!!!!!!!!!!!!! */
 
  .trd-par-api{
-    background-color: #CDE8E5;
+    background-color: transparent;
     padding: 10px;
     box-shadow: 3px 3px 3px 3px #CDE8E5 , black;
     border-radius: 15px;
@@ -8999,7 +8999,7 @@ border-radius: 8px;
     align-items: center;
     justify-content: center;
     color: var(--primary);
-    background: var(--light);
+    background: red;
     border-radius: 60px;
     font-size: 22px;
     transition: .5s;
