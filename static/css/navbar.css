@@ -451,5 +451,24 @@
     .br_tag{
         display: none !important;
     }
+    .ser_drop_head{
+        color: #ec143c;
+        font-size: 18px;
+       margin-left: 16px;
+       font-weight: 600;
+     
+    }
+    
+    .ser_drop_head:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #ff7575;
+    margin: 5px 0 0;
+}
+.let_talk_btn{
+    margin-bottom: 13px;
+}
 }
 
