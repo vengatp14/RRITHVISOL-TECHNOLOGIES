@@ -8999,7 +8999,7 @@ border-radius: 8px;
     align-items: center;
     justify-content: center;
     color: var(--primary);
-    background: red;
+    background: var(--prime-three);
     border-radius: 60px;
     font-size: 22px;
     transition: .5s;
@@ -9047,7 +9047,7 @@ border-radius: 8px;
     }
 }
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
-    background: red !important;
+    background: var(--prime-three) !important;
     color: inherit;
     border: none;
     padding: 0 !important;
@@ -9056,6 +9056,7 @@ border-radius: 8px;
 .test_icon{
     position: relative;
     bottom: 25px;
+    color: var(--prime-three);
 }
 /* !!!!!!!!!!!!!!!!!!!! nav btn css !!!!!!!!!!! */
 
