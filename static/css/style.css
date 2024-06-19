@@ -8384,7 +8384,26 @@ transition: box-shadow .3s ease;
         }
       }
       
-      @media (min-width: 1440px) and (max-width: 2560px) {
+@media screen and (min-width:900px) and (max-width:1440px){
+    .content-slider {
+        position: absolute;
+        z-index: 999;
+        top: 185%;
+        left: 2px !important;
+        right: 0;
+        text-align: center;
+        color: #fff;
+      }
+      .side-link {
+          position: fixed;
+          top: 40%; /* Adjust this value as needed */
+          transform: translateY(-50%);
+          width: 40% !important;
+        }
+}
+
+
+      @media (min-width: 1441px) and (max-width: 2560px) {
         .content-slider {
           position: absolute;
           z-index: 999;
@@ -9091,3 +9110,10 @@ border-radius: 8px;
      }
  }
  /* !!!!!!!!!!!!!!!!!!!!! schdule a meeting button css */
+
+ @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}
