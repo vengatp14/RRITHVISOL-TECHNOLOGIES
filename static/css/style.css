@@ -259,7 +259,7 @@
 /*^^^^^^^^^^^^^^^^^^^^ Global Prefix ^^^^^^^^^^^^^^^^^^^^^*/
 
 .main-page-wrapper {
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body {
